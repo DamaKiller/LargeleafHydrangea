@@ -1,7 +1,10 @@
-#以0～1000为例
+#以123为例
 
-for num in range(0, 1000):
-    low = num % 10
-    mid = num // 10 % 10
-    high = num // 100
-print(low，mid，high)
+num = 123
+#个位数
+low = num % 10 
+#十位数
+mid = num // 10 % 10
+#百位数
+high = num // 100
+print(low, mid, high)
