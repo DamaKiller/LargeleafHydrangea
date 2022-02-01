@@ -1,4 +1,4 @@
-# 可在日常工作中使用的小技巧
+# 可在日常工作中使用的小技巧及注意点
 ## 1. [coding_technique](code_technique)
  - [合并两个字典](./code_technique/合并两个字典.py)
  - [如何取数各个位上的数](./code_technique/如何取数各个位上的数.py)
