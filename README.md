@@ -6,5 +6,4 @@
  - [元组的相对不可变性](./Coding/元组的相对不可变性.py)
 ## 2. [Github](Github)
  - [Github中相对链接问题](./Github/Github中相对链接问题.md)
-## 3. [Operating System](Operating System)
- - [进程与线程](./Operating System/进程与线程.md)
+
