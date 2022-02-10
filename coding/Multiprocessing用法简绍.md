@@ -18,20 +18,20 @@ Semaphore
 **Process语法结构如下：**` Process(group=None, target=None, name=None, args=(), kwargs={}) `  
 target：如果传递了函数的引用，这个子进程就执行这里(函数)的代码  
 args：给target指定的函数传递的参数，以元组的方式传递  
-kwargs：给target指定的函数传递命名参数  ,以字典的方式传递
-name：给进程设定一个名字，可以不设定   
+kwargs：给target指定的函数传递命名参数  ,以字典的方式传递  
+name：给进程设定一个名字，可以不设定     
 group：指定进程组，大多数情况下用不到  
 
 **Process创建的实例对象的常用方法：**  
 p.start()：启动子进程实例（创建子进程）  
-p.is_alive()：判断子进程p是否仍然运行，返回True 
+p.is_alive()：判断子进程p是否仍然运行，返回True   
 p.join([timeout])：主线程阻塞,等待子进程p终止后再继续,timeout可选
 p.terminate()：强制终止进程p，可能产生僵尸进程和死锁  
 
 **Process创建的实例对象的常用属性：**  
-p.daemon：让子进程以守护进程方式运行,必须在p.start()之前设置
-p.name：当前进程的别名，默认为Process-N，N为从1开始递增的整数  
-p.pid：当前进程的pid（进程号）  
+p.daemon：让子进程以守护进程方式运行,必须在p.start()之前设置  
+p.name：当前进程的别名，默认为Process-N，N为从1开始递增的整数    
+p.pid：当前进程的pid（进程号）    
 需要注意的是start()，join()，is_alive()， terminate()方法只能由创建进程对象的过程调用 
 
 示例：
@@ -46,6 +46,19 @@ if __name__ == '__main__':
     process_1 = multiprocessing.Process(group=None, target=work1)
     process_1.start()
 ```  
+结果：
+```
+work： 0 <Process name='Process-1' parent=19704 started>
+work： 1 <Process name='Process-1' parent=19704 started>
+work： 2 <Process name='Process-1' parent=19704 started>
+work： 3 <Process name='Process-1' parent=19704 started>
+work： 4 <Process name='Process-1' parent=19704 started>
+work： 5 <Process name='Process-1' parent=19704 started>
+work： 6 <Process name='Process-1' parent=19704 started>
+work： 7 <Process name='Process-1' parent=19704 started>
+work： 8 <Process name='Process-1' parent=19704 started>
+work： 9 <Process name='Process-1' parent=19704 started>
+```
 ```
 import multiprocessing
 
@@ -59,7 +72,11 @@ if __name__ == "__main__":
     p2 = multiprocessing.Process(target=test, args=(4,), kwargs={'b':5, 'c':6}) #两种给子进程传递参数的方法
     p2.start()
 ```
-
+结果：
+```
+4 5 6
+1 2 3
+```
 **获取进程pid方法：**  
 有两种方法可以获取    
 1）multiprocessing.current_process().pid  
@@ -115,18 +132,22 @@ if __name__ == '__main__':
     p.start()
     print('主......') #只要终端打印出这一行内容，那么守护进程p也就跟着结束掉了
 #运行结果:子进程还没来得及打印,主进程就结束了,子进程也就结束了
+```
+结果：
+```
 主......
 ```
-# 三.pool进程池模块
-**pool语法结构如下：** 
-Pool(processes=None, initializer=None, initargs, maxtasksperchild=None)    
+# 三.pool进程池模块  
+**pool语法结构如下：**   
+Pool(processes=None, initializer=None, initargs, maxtasksperchild=None, context)    
 processes：使用的工作进程的数量；若processes是None，默认适用os.cpu_count()返回的数量  
-initializer：若initializer是None，则每一个工作进程在开始的时候就会调用initializer(*initargs)  
+initializer：如果 initializer 不为 None，则每个工作进程将会在启动时调用 initializer(*initargs))  
 maxtasksperchild：工作进程退出前可以完成的任务数，完成后用一个新的工作进程来替代原进程，让闲置的资源释放，maxtasksperchild默认是None，此意味只要Pool存在工作进程就一直存活  
+context:可被用于指定启动的工作进程的上下文。通常一个进程池是使用函数 multiprocessing.Pool() 或者一个上下文对象的 Pool() 方法创建的。在这两种情况下， context 都是适当设置的  
 **pool创建的实例对象的常用方法：**  
 p.apply( func=?, args=(), kwds={} ):将 func 函数提交给进程池处理。其中 args 代表传给 func 的位置参数，kwds 代表传给 func 的关键字参数。该方法会被阻塞直到 func 函数执行完成，实际上这也就说所谓的同步执行。（同步执行，按照加入进程池的顺序执行事件，每次执行完一个再执行另一个，无法获取返回值。）   
 p.apply_async( func=?, args=(), kwds={}, callback=?, error_callback=？ ):这是 apply() 方法的异步版本，该方法不会被阻塞。其中 callback 指定 func 函数完成后的回调函数，error_callback 指定 func 函数出错后的回调函数。（异步执行，同时启动进程池中多个进程执行事件，可以获取事件返回值）  
-p.map(func, iterable[, chunksize=None]):
+map(function=？, iterable=？, …):function传的是一个函数名，可以是python内置的，也可以是自定义的。 iterable传的是一个可以迭代的对象，例如列表，元组，字符串这样的，map函数返回结果是一个列表。这个函数的意思就是将function应用于iterable的每一个元素，结果以列表的形式返回。注意到没有，iterable后面还有省略号，意思就是可以传很 多个iterable，如果有额外的iterable参数，并行的从这些参数中取元素，并调用function。其中iterable参数个数可以和其他的iterable参数个数不一致,该函数可以单独使用 
 p.close():关闭进程池。在调用该方法之后，该进程池不能再接收新任务，它会把当前进程池中的所有任务执行完成后再关闭自己   
 p.terminate()：立即中止进程池  
 p.join():等待所有进程完成  
@@ -174,13 +195,13 @@ p = mp.Pool(processes = 4)#创建4条进程
 
 pool_result = []
 for i in range(10):
-    msg = ‘hello-%d‘%i
+    msg = 'hello-%d'%i
     r = p.apply(worker,(msg,))#向进程池中添加事件
     pool_result.append(r)
 
 #获取事件函数的返回值
 for r in pool_result:
-    print(‘return:‘,r) 
+    print('return:',r) 
 
 p.close()#　关闭进程池,不再接受请求
 p.join() # 等待进程池中的事件执行完毕，回收进程池
@@ -234,13 +255,13 @@ p = mp.Pool(processes = 4) #创建4条进程
 
 pool_result = []
 for i in range(10):
-    msg = ‘hello-%d‘%i
+    msg = 'hello-%d'%i
     r = p.apply_async(worker,(msg,)) #向进程池中添加事件
     pool_result.append(r)
 
 #获取事件函数的返回值
 for r in pool_result:
-    print(‘return:‘,r)
+    print('return:',r)
 
 p.close()#关闭进程池,不再接受请求
 p.join()# 等待进程池中的事件执行完毕，回收进程池
@@ -279,4 +300,37 @@ p.join()# 等待进程池中的事件执行完毕，回收进程池
 > 由于这个是异步方式添加任务，所以运行非常快  
 > 由于for是内置循环函数，执行效率较高，所以在结果的前10行均为for语句执行结果  
 > 由于任务是异步执行，所以在结果中是“乱序”；并不像applay那样有序打印  
+**map函数**
+```
+a = [1,2,3,4,5]
 
+res = map(str,a)
+print(res)
+```
+结果：  
+><map object at 0x00000189530DA580>迭代器  
+> `print(list(res))` 这样就可以看见其中的内容为 ['1', '2', '3', '4', '5']可以将list(res)保存到一个变量中，方便以后使用
+
+```
+a = [1,2,3,4,5]
+b = [6,7,8,9,10]
+
+def add(x,y):
+    return x,y
+res = map(add,a,b)
+print(list(res))
+```
+结果：  
+> [(1, 6), (2, 7), (3, 8), (4, 9), (5, 10)]
+```
+a = [1,2,3,4,5]
+b = [6,7,8,9,10]
+c = [11,12,13]
+
+def add(x,y,z):
+    return x,y,z
+res = map(add,a,b,c)
+print(list(res))
+```
+结果：
+> [(1, 6, 11), (2, 7, 12), (3, 8, 13)]
