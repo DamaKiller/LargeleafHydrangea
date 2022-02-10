@@ -147,7 +147,8 @@ context:可被用于指定启动的工作进程的上下文。通常一个进程
 **pool创建的实例对象的常用方法：**  
 p.apply( func=?, args=(), kwds={} ):将 func 函数提交给进程池处理。其中 args 代表传给 func 的位置参数，kwds 代表传给 func 的关键字参数。该方法会被阻塞直到 func 函数执行完成，实际上这也就说所谓的同步执行。（同步执行，按照加入进程池的顺序执行事件，每次执行完一个再执行另一个，无法获取返回值。）   
 p.apply_async( func=?, args=(), kwds={}, callback=?, error_callback=？ ):这是 apply() 方法的异步版本，该方法不会被阻塞。其中 callback 指定 func 函数完成后的回调函数，error_callback 指定 func 函数出错后的回调函数。（异步执行，同时启动进程池中多个进程执行事件，可以获取事件返回值）  
-map(function=？, iterable=？, …):function传的是一个函数名，可以是python内置的，也可以是自定义的。 iterable传的是一个可以迭代的对象，例如列表，元组，字符串这样的，map函数返回结果是一个列表。这个函数的意思就是将function应用于iterable的每一个元素，结果以列表的形式返回。注意到没有，iterable后面还有省略号，意思就是可以传很 多个iterable，如果有额外的iterable参数，并行的从这些参数中取元素，并调用function。其中iterable参数个数可以和其他的iterable参数个数不一致,该函数可以单独使用 
+map(function=？, iterable=？, …):function传的是一个函数名，可以是python内置的，也可以是自定义的。 iterable传的是一个可以迭代的对象，例如列表，元组，字符串这样的，map函数返回结果是一个列表。这个函数的意思就是将function应用于iterable的每一个元素，结果以列表的形式返回。注意到没有，iterable后面还有省略号，意思就是可以传很 多个iterable，如果有额外的iterable参数，并行的从这些参数中取元素，并调用function。其中iterable参数个数可以和其他的iterable参数个数不一致,多进程中的map函数类似于 Python 的 map() 全局函数，只不过此处使用新进程对 iterable 的每一个元素执行 func 函数  
+map_async( func=？, iterable=？, …, callback=?, error_callback=? )：这是 map() 方法的异步版本，该方法不会被阻塞。其中 callback 指定 func 函数完成后的回调函数，error_callback 指定 func 函数出错后的回调函数    
 p.close():关闭进程池。在调用该方法之后，该进程池不能再接收新任务，它会把当前进程池中的所有任务执行完成后再关闭自己   
 p.terminate()：立即中止进程池  
 p.join():等待所有进程完成  
@@ -207,37 +208,39 @@ p.close()#　关闭进程池,不再接受请求
 p.join() # 等待进程池中的事件执行完毕，回收进程池
 ```
 结果：
-> 8419
-> hello-0
-> 8418
-> hello-1
-> 8420
-> hello-2
-> 8421
-> hello-3
-> 8419
-> hello-4
-> 8418
-> hello-5
-> 8420
-> hello-6
-> 8421
-> hello-7
-> 8419
-> hello-8
-> 8418
-> hello-9
-> return: hello-0
-> return: hello-1
-> return: hello-2
-> return: hello-3
-> return: hello-4
-> return: hello-5
-> return: hello-6
-> return: hello-7
-> return: hello-8
-> return: hello-9
-> 这段代码运行较慢，和进程阻塞有关。相当于单线程
+```
+8419  
+hello-0  
+8418  
+hello-1  
+8420  
+hello-2  
+8421  
+hello-3  
+8419  
+hello-4  
+8418  
+hello-5  
+8420  
+hello-6  
+8421  
+hello-7
+8419
+hello-8
+8418
+hello-9　　　　
+return: hello-0　　
+return: hello-1　　
+return: hello-2　　
+return: hello-3　　
+return: hello-4　　
+return: hello-5　　
+return: hello-6　　
+return: hello-7　　
+return: hello-8　　
+return: hello-9　
+#这段代码运行较慢，和进程阻塞有关。相当于单线程
+```  
 **applay_async方式添加任务**
 ```
 import multiprocessing as mp
@@ -267,39 +270,41 @@ p.close()#关闭进程池,不再接受请求
 p.join()# 等待进程池中的事件执行完毕，回收进程池
 ```
 结果：
-> return: <multiprocessing.pool.ApplyResult object at 0x7f66d0e37d68>
-> return: <multiprocessing.pool.ApplyResult object at 0x7f66d0e37e80>
-> return: <multiprocessing.pool.ApplyResult object at 0x7f66d0e37f98>
-> return: <multiprocessing.pool.ApplyResult object at 0x7f66d0e410f0>
-> return: <multiprocessing.pool.ApplyResult object at 0x7f66d0e41208>
-> return: <multiprocessing.pool.ApplyResult object at 0x7f66d0e41320>
-> return: <multiprocessing.pool.ApplyResult object at 0x7f66d0e41438>
-> return: <multiprocessing.pool.ApplyResult object at 0x7f66d0e41550>
-> return: <multiprocessing.pool.ApplyResult object at 0x7f66d0e41668>
-> return: <multiprocessing.pool.ApplyResult object at 0x7f66d0e41780>
-> 8739
-> 8740
-> 8742
-> 8741
-> hello-0
-> hello-3
-> 8742
-> hello-1
-> 8739
-> 8740
-> hello-2
-> 8741
-> hello-5
-> 8739
-> hello-6
-> 8740
-> hello-7
-> hello-4
-> hello-8
-> hello-9
-> 由于这个是异步方式添加任务，所以运行非常快  
-> 由于for是内置循环函数，执行效率较高，所以在结果的前10行均为for语句执行结果  
-> 由于任务是异步执行，所以在结果中是“乱序”；并不像applay那样有序打印  
+```
+return: <multiprocessing.pool.ApplyResult object at 0x7f66d0e37d68>
+return: <multiprocessing.pool.ApplyResult object at 0x7f66d0e37e80>
+return: <multiprocessing.pool.ApplyResult object at 0x7f66d0e37f98>
+return: <multiprocessing.pool.ApplyResult object at 0x7f66d0e410f0>
+return: <multiprocessing.pool.ApplyResult object at 0x7f66d0e41208>
+return: <multiprocessing.pool.ApplyResult object at 0x7f66d0e41320>
+return: <multiprocessing.pool.ApplyResult object at 0x7f66d0e41438>
+return: <multiprocessing.pool.ApplyResult object at 0x7f66d0e41550>
+return: <multiprocessing.pool.ApplyResult object at 0x7f66d0e41668>
+return: <multiprocessing.pool.ApplyResult object at 0x7f66d0e41780>
+8739　　
+8740　　
+8742　　
+8741　　
+hello-0　　
+hello-3　　
+8742　　
+hello-1　　
+8739　　
+8740　　
+hello-2　　
+8741　　
+hello-5　　
+8739　　
+hello-6　　
+8740　　
+hello-7　　
+hello-4 　
+hello-8　　
+hello-9　　
+#由于这个是异步方式添加任务，所以运行非常快  
+#由于for是内置循环函数，执行效率较高，所以在结果的前10行均为for语句执行结果  
+#由于任务是异步执行，所以在结果中是“乱序”；并不像applay那样有序打印  
+```
 **map函数**
 ```
 a = [1,2,3,4,5]
