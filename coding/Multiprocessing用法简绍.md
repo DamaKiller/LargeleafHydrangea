@@ -118,7 +118,8 @@ if __name__ == '__main__':
 主......
 ```
 # 三.pool进程池模块
-**pool语法结构如下：** Pool(processes=None, initializer=None, initargs, maxtasksperchild=None)
+**pool语法结构如下：** 
+Pool(processes=None, initializer=None, initargs, maxtasksperchild=None)    
 processes：使用的工作进程的数量；若processes是None，默认适用os.cpu_count()返回的数量  
 initializer：若initializer是None，则每一个工作进程在开始的时候就会调用initializer(*initargs)  
 maxtasksperchild：工作进程退出前可以完成的任务数，完成后用一个新的工作进程来替代原进程，让闲置的资源释放，maxtasksperchild默认是None，此意味只要Pool存在工作进程就一直存活  
@@ -132,6 +133,150 @@ p.join():等待所有进程完成
 注意：  
 >调用join之前，先调用close或者terminate方法，否则会出错。执行完close后不会有新的进程加入到pool,join函数等待所有子进程结束  
 >向进程池对象中添加事件，事件排队执行  
->如果主进程退出，则进程池中所有进程都退出  
+>如果主进程退出，则进程池中所有进程都退出 
 
+示例： 
+```
+import multiprocessing as mp
+
+def test():
+    pass
+
+p = mp.Pool(processes = 5) # 创建5条进程
+
+for i in range(10):
+    p.apply_async(test) # 向进程池添加任务
+
+p.close() # 关闭进程池，不再接受请求
+p.join() # 等待所有的子进程结束
+```
+> 进程池Pool被创建出来后， p.apply_async(test) 语句不停地循环执行，相当于向进程池中提交了10个请求，它们会被放到一个队列中  
+> p = mp.Pool(5) 执行完毕后创建了5条进程，但尚未给它们分配各自的任务；也就意味着，无论有多少任务，实际的进程数只有5条，每次最多5条进程并行  
+> 当Pool中有进程任务执行完毕后，这条进程资源会被释放，Pool会按先进先出的原则取出一个新的请求给空闲的进程继续执行  
+> 当Pool所有的进程任务完成后，会产生5个僵尸进程，如果主进程/主线程不结束，系统不会自动回收资源，需要调用join函数负责回收  
+> 在创建Pool进程池时，若不指定进程的最大数量，默认创建的进程数为系统的内核数量
+> 如果采用p.apply(test)阻塞方式添加任务，其每次只能向进程池中添加一条任务，然后for循环会被阻塞等待，直到添加的任务被执行完毕，进程池中的5个进程交替执行新来的任务，此时相当于单进程  
+
+**apply方式添加任务**
+```
+import  multiprocessing as mp
+import os
+from time import sleep
+
+def worker(msg):
+    print(os.getpid())
+    sleep(2)
+    print(msg)
+    return msg
+
+# 创建进程池对象
+p = mp.Pool(processes = 4)#创建4条进程
+
+pool_result = []
+for i in range(10):
+    msg = ‘hello-%d‘%i
+    r = p.apply(worker,(msg,))#向进程池中添加事件
+    pool_result.append(r)
+
+#获取事件函数的返回值
+for r in pool_result:
+    print(‘return:‘,r) 
+
+p.close()#　关闭进程池,不再接受请求
+p.join() # 等待进程池中的事件执行完毕，回收进程池
+```
+结果：
+> 8419
+> hello-0
+> 8418
+> hello-1
+> 8420
+> hello-2
+> 8421
+> hello-3
+> 8419
+> hello-4
+> 8418
+> hello-5
+> 8420
+> hello-6
+> 8421
+> hello-7
+> 8419
+> hello-8
+> 8418
+> hello-9
+> return: hello-0
+> return: hello-1
+> return: hello-2
+> return: hello-3
+> return: hello-4
+> return: hello-5
+> return: hello-6
+> return: hello-7
+> return: hello-8
+> return: hello-9
+> 这段代码运行较慢，和进程阻塞有关。相当于单线程
+**applay_async方式添加任务**
+```
+import multiprocessing as mp
+import os 
+from time import sleep 
+
+def worker(msg):
+    print(os.getpid())
+    sleep(2)
+    print(msg)
+    return msg
+
+#创建进程池对象
+p = mp.Pool(processes = 4) #创建4条进程
+
+pool_result = []
+for i in range(10):
+    msg = ‘hello-%d‘%i
+    r = p.apply_async(worker,(msg,)) #向进程池中添加事件
+    pool_result.append(r)
+
+#获取事件函数的返回值
+for r in pool_result:
+    print(‘return:‘,r)
+
+p.close()#关闭进程池,不再接受请求
+p.join()# 等待进程池中的事件执行完毕，回收进程池
+```
+结果：
+> return: <multiprocessing.pool.ApplyResult object at 0x7f66d0e37d68>
+> return: <multiprocessing.pool.ApplyResult object at 0x7f66d0e37e80>
+> return: <multiprocessing.pool.ApplyResult object at 0x7f66d0e37f98>
+> return: <multiprocessing.pool.ApplyResult object at 0x7f66d0e410f0>
+> return: <multiprocessing.pool.ApplyResult object at 0x7f66d0e41208>
+> return: <multiprocessing.pool.ApplyResult object at 0x7f66d0e41320>
+> return: <multiprocessing.pool.ApplyResult object at 0x7f66d0e41438>
+> return: <multiprocessing.pool.ApplyResult object at 0x7f66d0e41550>
+> return: <multiprocessing.pool.ApplyResult object at 0x7f66d0e41668>
+> return: <multiprocessing.pool.ApplyResult object at 0x7f66d0e41780>
+> 8739
+> 8740
+> 8742
+> 8741
+> hello-0
+> hello-3
+> 8742
+> hello-1
+> 8739
+> 8740
+> hello-2
+> 8741
+> hello-5
+> 8739
+> hello-6
+> 8740
+> hello-7
+> hello-4
+> hello-8
+> hello-9
+> 由于这个是异步方式添加任务，所以运行非常快  
+> 由于for是内置循环函数，执行效率较高，所以在结果的前10行均为for语句执行结果  
+> 由于任务是异步执行，所以在结果中是“乱序”；并不像applay那样有序打印  
 
