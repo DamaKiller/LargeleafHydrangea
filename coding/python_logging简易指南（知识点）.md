@@ -100,6 +100,36 @@ logger对象主要做三个工作：
 > 将日志消息传送给所有感兴趣的日志handlers或配置filter。       
 >> `logger.addHandler(log_handler)`或`Logger.removeHandler()` 为该logger对象添加和移除一个handler对象。 `Logger.addFilter() `或`Logger.removeFilter()` 为该logger对象添加和移除一个filter对象    
 
+logger对象创建之后，可以使用下面的方法来创建日志记录：  
+|方法|描述|
+|:---:|:---:|
+|Logger.debug(), Logger.info(), Logger.warning(), Logger.error(), Logger.critical()|创建一个与它们的方法名对应等级的日志记录|
+|Logger.exception()|创建一个类似于Logger.error()的日志消息|
+|Logger.log()|需要获取一个明确的日志level参数来创建一个日志记录|
+
+注：Logger.exception()与Logger.error()的区别在于：Logger.exception()将会输出堆栈追踪信息，另外通常只是在一个exception handler中调用该方法。
+
+关于logger的层级结构与有效等级的说明：
+- logger的名称是一个以'.'分割的层级结构，每个'.'后面的logger都是'.'前面的logger的children，例如，有一个名称为 foo 的logger，其它名称分别为 foo.bar, foo.bar.baz 和 foo.bam都是 foo 的后代。
+- logger有一个"有效等级（effective level）"的概念。如果一个logger上没有被明确设置一个level，那么该logger就是使用它parent的level;如果它的parent也没有明确设置level则继续向上查找parent的parent的有效level，依次类推，直到找到个一个明确设置了level的祖先为止。需要说明的是，root logger总是会有一个明确的level设置（默认为 WARNING）。当决定是否去处理一个已发生的事件时，logger的有效等级将会被用来决定是否将该事件传递给该logger的handlers进行处理。
+- child loggers在完成对日志消息的处理后，默认会将日志消息传递给与它们的祖先loggers相关的handlers。因此，我们不必为一个应用程序中所使用的所有loggers定义和配置handlers，只需要为一个顶层的logger配置handlers，然后按照需要创建child loggers就可足够了。我们也可以通过将一个logger的propagate属性设置为False来关闭这种传递机制。
+
+**Handler类**
+Handler对象的作用是（基于日志消息的level）将消息分发到handler指定的位置（文件、网络、邮件等）。Logger对象可以通过addHandler()方法为自己添加0个或者更多个handler对象。
+例子：  
+一个应用程序可能想要实现以下几个日志需求：    
+- 把所有日志都发送到一个日志文件中；  
+- 把所有严重级别大于等于error的日志发送到stdout（标准输出）；  
+- 把所有严重级别为critical的日志发送到一个email邮件地址。  
+这种场景就需要3个不同的handlers，每个handler复杂发送一个特定严重级别的日志到一个特定的位置。  
+
+handler方法：
+|方法|描述|
+|:---:|:---:|
+|Handler.setLevel()|设置handler将会处理的日志消息的最低严重级别|
+|Handler.setFormatter()|为handler设置一个格式器对象|
+|Handler.addFilter() 和 Handler.removeFilter()|为handler添加和删除一个过滤器对象|
+
 # 简单配置使用
 **第一种方法例子：** 
 ```
