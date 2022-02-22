@@ -185,3 +185,28 @@ CRITICAL:root:This is a critical log.
 ![image](https://user-images.githubusercontent.com/96570699/154871882-8e771e7c-8573-40ae-88e3-f612ef49e70e.png)
 日志级别：  
 ![image](https://user-images.githubusercontent.com/96570699/154847064-9cdef204-01c0-4a5a-b850-9848df06a1ae.png)
+
+**第二种方法例子：** 
+```
+class log_processing():
+    def __init__(self, log_name):
+        #logger対象設定
+        self.logger = logging.getLogger('log_process')
+        self.logger.setLevel(level=logging.INFO)
+        
+        format = "%(asctime)s %(levelname)s %(message)s"
+        log_formatter = logging.Formatter(format)
+        
+        log_handler = logging.FileHandler('log_name')
+        log_handler.setLevel(logging.INFO)
+        log_handler.setFormatter(log_formatter)
+        self.logger.addHandler(log_handler) 
+        
+log_process = log_processing('log_name.log')
+log_process.logger.info('Start the operation.')
+```
+结果：
+```
+#在文件的同级目录会产生一个log_name.log文件，其中的内容如下
+2022-02-22 10:07:11,359 INFO Start the operation.
+```
