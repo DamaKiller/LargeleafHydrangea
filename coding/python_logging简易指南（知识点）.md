@@ -6,15 +6,16 @@ loggging模块提供了两种使用logging模块的方式
 
 ## 第一种方法
 **logging模块定义的模块级别的常用函数：**
-```
-logging.debug(msg, *args, **kwargs)    #创建一条严重级别为DEBUG的日志记录
-logging.info(msg, *args, **kwargs)    #创建一条严重级别为INFO的日志记录
-logging.warning(msg, *args, **kwargs)    #创建一条严重级别为WARNING的日志记录
-logging.error(msg, *args, **kwargs)    #创建一条严重级别为ERROR的日志记录
-logging.critical(msg, *args, **kwargs)    #创建一条严重级别为CRITICAL的日志记录
-logging.log(level, *args, **kwargs)    #创建一条严重级别为level的日志记录
-logging.basicConfig(**kwargs)    #对root logger进行一次性配置
-```
+|方法|描述|
+|:---:|:---:|
+|logging.debug(msg, *args, **kwargs)|创建一条严重级别为DEBUG的日志记录|
+|logging.info(msg, *args, **kwargs)|创建一条严重级别为INFO的日志记录|
+|logging.warning(msg, *args, **kwargs)|创建一条严重级别为WARNING的日志记录|
+|logging.error(msg, *args, **kwargs)|创建一条严重级别为ERROR的日志记录|
+|logging.critical(msg, *args, **kwargs)|创建一条严重级别为CRITICAL的日志记录|
+|logging.log(level, *args, **kwargs)|创建一条严重级别为level的日志记录|
+|logging.basicConfig(**kwargs)|对root logger进行一次性配置|
+
 注：其中`logging.basicConfig(**kwargs)`函数用于指定“要记录的日志级别”、“日志格式”、“日志输出位置”、“日志文件的打开模式”等信息，其他几个都是用于记录各个级别日志的函数。  
 
 该函数可接收的关键字参数如下：
@@ -89,6 +90,7 @@ logging.critical("This is a critical log.")
 > 总结：即通过logger这个接口，通过为handler设置filter和formatter来让它工作，输出满足需求的日志。
 
 注：logging模块提供的模块级别的那些函数实际上也是通过这几个组件的相关实现类来记录日志的，只是在创建这些类的实例时设置了一些默认值。  
+
 **Logger类**  
 logger对象主要做三个工作：  
 > 向应用程序代码提供接口，使应用程序可以在运行时记录日志消息；    
@@ -114,7 +116,7 @@ logger对象创建之后，可以使用下面的方法来创建日志记录：
 - logger有一个"有效等级（effective level）"的概念。如果一个logger上没有被明确设置一个level，那么该logger就是使用它parent的level;如果它的parent也没有明确设置level则继续向上查找parent的parent的有效level，依次类推，直到找到个一个明确设置了level的祖先为止。需要说明的是，root logger总是会有一个明确的level设置（默认为 WARNING）。当决定是否去处理一个已发生的事件时，logger的有效等级将会被用来决定是否将该事件传递给该logger的handlers进行处理。
 - child loggers在完成对日志消息的处理后，默认会将日志消息传递给与它们的祖先loggers相关的handlers。因此，我们不必为一个应用程序中所使用的所有loggers定义和配置handlers，只需要为一个顶层的logger配置handlers，然后按照需要创建child loggers就可足够了。我们也可以通过将一个logger的propagate属性设置为False来关闭这种传递机制。
 
-**Handler类**
+**Handler类**  
 Handler对象的作用是（基于日志消息的level）将消息分发到handler指定的位置（文件、网络、邮件等）。Logger对象可以通过addHandler()方法为自己添加0个或者更多个handler对象。
 例子：  
 一个应用程序可能想要实现以下几个日志需求：    
@@ -129,6 +131,32 @@ handler方法：
 |Handler.setLevel()|设置handler将会处理的日志消息的最低严重级别|
 |Handler.setFormatter()|为handler设置一个格式器对象|
 |Handler.addFilter() 和 Handler.removeFilter()|为handler添加和删除一个过滤器对象|
+
+创建handler方法后常用的方法:
+|Handler|描述|
+|:---:|:---:|
+|logging.StreamHandler|将日志消息发送到输出到Stream，如std.out, std.err或任何file-like对象|
+|logging.FileHandler|将日志消息发送到磁盘文件，默认情况下文件大小会无限增长|
+|logging.handlers.RotatingFileHandler|将日志消息发送到磁盘文件，并支持日志文件按大小切割|
+|logging.hanlders.TimedRotatingFileHandler|将日志消息发送到磁盘文件，并支持日志文件按时间切割|
+|logging.handlers.HTTPHandler|将日志消息以GET或POST的方式发送给一个HTTP服务器|
+|logging.handlers.SMTPHandler|将日志消息发送给一个指定的email地址|
+|logging.NullHandler|该Handler实例会忽略error messages，通常被想使用logging的library开发者使用来避免'No handlers could be found for logger XXX'信息的出现|
+
+**Formater类**  
+Formater对象用于配置日志信息的最终顺序、结构和内容。  
+`formatter = logging.Formatter(fmt=None, datefmt=None, style='%')`  
+该构造方法可以接收3个可选参数：  
+> fmt：指定消息格式化字符串，如果不指定该参数则默认使用message的原始值  
+> datefmt：指定日期格式字符串，如果不指定该参数则默认使用"%Y-%m-%d %H:%M:%S"  
+> style：Python 3.2新增的参数，可取值为 '%', '{'和 '$'，如果不指定该参数则默认使用'%'  
+
+**Filter类**  
+Handlers 和 Loggers 可以使用 Filters 来完成比级别更复杂的过滤。Filter是一个过滤器基类，它只允许某个logger层级下的日志事件通过过滤。  
+`filter = logging.Filter(name='')`  
+例如，一个filter实例化时传递的name参数值为'A.B'，那么该filter实例将只允许名称为类似如下规则的loggers产生的日志记录通过过滤：'A.B'，'A.B,C'，'A.B.C.D'，'A.B.D'，而名称为'A.BB', 'B.A.B'的loggers产生的日志则会被过滤掉。如果name的值为空字符串，则允许所有的日志事件通过过滤。  
+filter方法用于具体控制传递的record记录是否能通过过滤，如果该方法返回值为0表示不能通过过滤，返回值为非0表示可以通过过滤。  
+
 
 # 简单配置使用
 **第一种方法例子：** 
