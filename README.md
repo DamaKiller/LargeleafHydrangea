@@ -6,7 +6,7 @@
  - [如何取数各个位上的数](./coding/如何取数各个位上的数.py)  
  - [导入模块不执行运行模块执行的代码](./coding/导入模块不执行运行模块执行的代码.md)  
 
- > **python库_lib**    
+ > **python_lib**    
  
 - [Multiprocessing用法简绍(1)](./coding/Multiprocessing用法简绍(1).md)    
 - [python_logging简易指南](./coding/python_logging简易指南.md)   
