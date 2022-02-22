@@ -82,7 +82,8 @@ logging.critical("This is a critical log.")
 |日志器|loggers|提供应用程序代码直接使用的接口|
 |处理器|handlers|用于将日志记录发送到指定的目的位置|
 |过滤器|filters|提供更精细的日志过滤功能，用于决定哪些日志记录将会被输出（其它的日志记录将会被忽略）|  
-|格式器|formatters|用于控制日志信息的最终输出格式|   
+|格式器|formatters|用于控制日志信息的最终输出格式| 
+
 它们之间的关系：
 > 日志器（logger）需要通过处理器（handler）将日志信息输出到目标位置，如：文件、sys.stdout、网络等；  
 > 不同的处理器（handler）可以将日志输出到不同的位置,日志器（logger）可以设置多个处理器（handler）将同一条日志记录输出到不同的位置；  
