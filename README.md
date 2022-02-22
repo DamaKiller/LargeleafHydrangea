@@ -5,6 +5,7 @@
  - [导入模块不执行运行模块执行的代码](./coding/导入模块不执行运行模块执行的代码.md)
  - [元组的相对不可变性](./coding/元组的相对不可变性.py)
  - [Multiprocessing用法简绍(1)](./coding/Multiprocessing用法简绍(1).md)
+ - [python_logging简易指南](./coding/python_logging简易指南.md)
 ## 2. [Github](Github)
  - [Github中相对链接问题](./Github/Github中相对链接问题.md)
 ## 2. [Operating_System](Operating_System)
