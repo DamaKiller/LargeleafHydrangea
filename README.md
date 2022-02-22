@@ -4,6 +4,7 @@
 - [合并两个字典](./coding/coding_technique/合并两个字典.py)  
 - [如何取数各个位上的数](./coding/coding_technique/如何取数各个位上的数.py)  
 - [导入模块不执行运行模块执行的代码](./coding/coding_technique/导入模块不执行运行模块执行的代码.md)  
+- [列表转化为dataframe格式](./coding/coding_technique/列表转化为dataframe格式.py)  
 
 ### [python_lib](python_lib)    
 - [Multiprocessing用法简绍(1)](./coding/python_lib/Multiprocessing用法简绍(1).md)    
