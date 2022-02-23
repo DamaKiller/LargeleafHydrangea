@@ -7,6 +7,7 @@
 - [列表转化为dataframe格式](./coding/coding_technique/列表转化为dataframe格式.py) 
 - [获取文件路径方法](./coding/coding_technique/获取文件路径方法.py)
 - [列表中元素的处理](./coding/coding_technique/列表中元素的处理.py)
+- [pandas按行按列遍历Dataframe方法](./coding/coding_technique/pandas按行按列遍历Dataframe方法.py.py)
 
 ### [python_lib](python_lib)    
 - [Multiprocessing用法简绍(1)](./coding/python_lib/Multiprocessing用法简绍(1).md)    
