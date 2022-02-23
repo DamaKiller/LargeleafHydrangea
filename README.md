@@ -14,10 +14,10 @@
 
 - [Multiprocessing用法简绍(1)](./coding/python_lib/Multiprocessing用法简绍(1).md)    
 
-> logging
+> Logging
 - [logging简易指南](./coding/python_lib/python_logging简易指南.md)  
 
-> pandas
+> Pandas
 
 
 ### [python_knowledge](python_knowledge)  
