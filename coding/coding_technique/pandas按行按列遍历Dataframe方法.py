@@ -45,17 +45,20 @@ for index, row in df.iteritems():
 #返回值：一个迭代器，用于遍历DataFrame中每一行的namedtuple，第一个字段可能是索引，而后面的字段是列值。
 for row in df.itertuples():
     print(row)    
-#结果：
 #Pandas(Index=0, c1=11, c2=22)
 #Pandas(Index=1, c1=33, c2=44)
 #Pandas(Index=2, c1=55, c2=66)
 
 #通过设置index参数为False时，我们可以删除索引作为元组的第一个元素：
+for row in df.itertuples(index=False):
+    print(row)
 #Pandas(c1=11, c2=22)
 #Pandas(c1=33, c2=44)
 #Pandas(c1=55, c2=66)
 
 #改变name参数，我们为产生的namedtuple设置自定义名称：
+for row in df.itertuples(name='cat'):
+    print(row)
 #cat(Index=0, c1=11, c2=22)
 #cat(Index=1, c1=33, c2=44)
 #cat(Index=2, c1=55, c2=66)
