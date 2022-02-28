@@ -9,7 +9,7 @@
 - [列表中元素的处理](./coding/coding_technique/列表中元素的处理.py)
 - [python读取文件方式](./coding/coding_technique/python读取文件方式.md)
 
-### [python_lib](python_lib)  
+### [python_lib](./coding/python_lib)  
 > Multiprocessing
 
 - [Multiprocessing用法简绍(1)](./coding/python_lib/Multiprocessing用法简绍(1).md)    
@@ -18,7 +18,7 @@
 - [logging简易指南](./coding/python_lib/python_logging简易指南.md)  
 
 > Pandas
-- [pandas按行按列遍历Dataframe方法](./coding/coding_technique/pandas按行按列遍历Dataframe方法.py)
+- [pandas按行按列遍历Dataframe方法](./coding/python_lib/pandas按行按列遍历Dataframe方法.py)
 
 ### [python_knowledge](./coding/python_knowledge)  
 - [元组的相对不可变性](./coding/python_knowledge/元组的相对不可变性.py)  
