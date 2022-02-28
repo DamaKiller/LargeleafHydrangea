@@ -7,7 +7,7 @@
 - [列表转化为dataframe格式](./coding/coding_technique/列表转化为dataframe格式.md) 
 - [获取文件路径方法](./coding/coding_technique/获取文件路径方法.py)
 - [列表中元素的处理](./coding/coding_technique/列表中元素的处理.py)
-- [python读取文件方式](./coding/coding_technique/python读取文件方式.py)
+- [python读取文件方式](./coding/coding_technique/python读取文件方式.md)
 
 ### [python_lib](python_lib)  
 > Multiprocessing
