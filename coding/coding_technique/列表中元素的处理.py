@@ -38,7 +38,7 @@ print(b)
 
 #startwith()函数
 #str1.startswith(str2, beg=0,end=len(string)); str1 -- 检测的字符串 str2 -- 要匹配的字符串 beg -- 可选参数用于设置字符串检测的起始位置 
-#                                              strend -- 可选参数用于设置字符串检测的结束位置 （如果检测到字符串则返回True，否则返回False）
+#                                              end -- 可选参数用于设置字符串检测的结束位置 （如果检测到字符串则返回True，否则返回False）
 str = "this is string example....wow!!!";
 print(str.startswith( 'this' ))            #True
 print(str.startswith( 'is', 2, 4 ))        #True
