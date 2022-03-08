@@ -20,6 +20,9 @@
 > Pandas
 - [pandas按行按列遍历Dataframe方法](./coding/python_lib/pandas按行按列遍历Dataframe方法.py)
 
+> virtualenv
+- [virtualenv创建环境一些列问题](./coding/python_lib/irtualenv创建环境一些列问题.md)
+
 ### [python_knowledge](./coding/python_knowledge)  
 - [元组的相对不可变性](./coding/python_knowledge/元组的相对不可变性.py)  
 
