@@ -24,7 +24,8 @@
 - [virtualenv创建环境一些列问题](./coding/python_lib/virtualenv创建环境一些列问题.md)
 
 ### [python_knowledge](./coding/python_knowledge)  
-- [元组的相对不可变性](./coding/python_knowledge/元组的相对不可变性.py)  
+- [元组的相对不可变性](./coding/python_knowledge/元组的相对不可变性.py) 
+- [赋值浅拷贝深拷贝问题](./coding/python_knowledge/赋值浅拷贝深拷贝问题.md) 
 
 ## 2. [Github](Github)
  - [Github中相对链接问题](./Github/Github中相对链接问题.md)
