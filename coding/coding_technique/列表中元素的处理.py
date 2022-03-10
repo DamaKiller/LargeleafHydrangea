@@ -24,6 +24,16 @@ newlist = filter(is_odd, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
 print(list(newlist))    #[1, 3, 5, 7, 9]
 
 
+#map()函数
+#map(function, iterable, ...) function -- 运行函数  iterable -- 可迭代对象  
+def test(x, y, z):
+    return x, y, z
+l1 = [1, 2, 3]
+l2 = [1, 2, 3, 4]
+l3 = [1, 2, 3, 4, 5]
+l4 = map(test, l1, l2, l3)
+print(list(l4))    #[(1, 1, 1), (2, 2, 2), (3, 3, 3)]
+
 
 #去除列表中以什么为开头的字符串
 a = ['#table_1', 'list_1', '#table_2', 'list_2', '#table_3', 'list_3']
