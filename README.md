@@ -8,6 +8,7 @@
 - [获取文件路径方法](./coding/coding_technique/获取文件路径方法.py)
 - [列表中元素的处理](./coding/coding_technique/列表中元素的处理.py)
 - [python读取文件方式](./coding/coding_technique/python读取文件方式.md)
+- [函数参数问题](./coding/coding_technique/函数参数问题.md)
 
 ### [python_lib](./coding/python_lib)  
 > Multiprocessing
