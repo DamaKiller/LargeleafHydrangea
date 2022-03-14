@@ -9,6 +9,7 @@
 - [列表中元素的处理](./coding/coding_technique/列表中元素的处理.py)
 - [python读取文件方式](./coding/coding_technique/python读取文件方式.md)
 - [函数参数问题](./coding/coding_technique/函数参数问题.md)
+- [推导式问题](./coding/coding_technique/推导式问题.py)
 
 ### [python_lib](./coding/python_lib)  
 > Multiprocessing
