@@ -29,9 +29,12 @@
 - [元组的相对不可变性](./coding/python_knowledge/元组的相对不可变性.py) 
 - [赋值浅拷贝深拷贝问题](./coding/python_knowledge/赋值浅拷贝深拷贝问题.md) 
 
-## 2. [Github](Github)
+## 2. [Github](./Github)
  - [Github中相对链接问题](./Github/Github中相对链接问题.md)
 
 ## 3. [Operating_System](./Operating_System)
  - [进程与线程](./Operating_System/进程与线程.md)
+
+## 4.[AWS](./AWS)
+ - [S3_bucket的一些操作](./AWS/aws S3_bucket的一些操作.md)
 
