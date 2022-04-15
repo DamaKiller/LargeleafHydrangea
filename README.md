@@ -36,5 +36,5 @@
  - [进程与线程](./Operating_System/进程与线程.md)
 
 ## 4.[AWS](./AWS)
- - [S3_bucket的一些操作](./AWS/aws S3_bucket的一些操作.md)
+ - [S3_bucket的一些操作](./AWS/S3_bucket的一些操作.md)
 
