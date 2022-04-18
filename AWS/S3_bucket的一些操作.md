@@ -24,3 +24,9 @@ try:
 except Exception as e:
     print('fail')
 ```
+
+**从S3下载文件到指定目录**
+```
+s3 = boto3.client('s3')
+s3.download_file(bucket_name, KEY, FILE_PATH)   #bucket_name:想要下载文件所在的bucket KEY：想要下载的文件名 FILE_PATH：下载的目标地址，需要指定到文件名
+```
