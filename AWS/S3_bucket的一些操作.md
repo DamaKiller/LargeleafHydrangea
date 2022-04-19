@@ -20,7 +20,7 @@ k.set_contents_from_string('')
 bucket_name = 'your_want_check_bucket'
 KEY = 'file_name'
 try:
-    obj = s3.get_object(Bucket=bucket_name,Key=KEY)     #该语句会上bucket检查是否存在该文件，若不存在则会报错！
+    obj = s3.get_object(Bucket=bucket_name,Key=KEY)     #该语句会上bucket检查是否存在该文件，若不存在则会报错！ 该key不要用/开头，例abc/123。
 except Exception as e:
     print('fail')
 ```
