@@ -11,10 +11,10 @@ s3.meta.client.copy(copy_source, 'otherbucket', 'otherkey')   #otherbucket：目
 
 **在bucket下创建文件夹**
 ```
-bucket = s3.Bucket('bucket_name')
-k = bucket.new_key('abc/123/')      #文件夹名必须以/结尾
-k.set_contents_from_string('')
+s3 = boto3.client('s3')
+s3.put_object(Bucket='mybucket', Key='mykey')   #mybucket:想要创建文件夹的bucket名   Key：创建的文件夹名，必须要以'/'结尾，例如：ABC/
 ```
+
 **判断bucket是否存在某文件**
 ```
 bucket_name = 'your_want_check_bucket'
@@ -29,4 +29,11 @@ except Exception as e:
 ```
 s3 = boto3.client('s3')
 s3.download_file(bucket_name, KEY, FILE_PATH)   #bucket_name:想要下载文件所在的bucket KEY：想要下载的文件名 FILE_PATH：下载的目标地址，需要指定到文件名
+```
+
+**上传文件到s3指定目录**
+```
+s3 = boto3.client('s3')
+s3_client.upload_file(Filename = file_path, Bucket=bucket, Key = (dir_path + file) )
+#file_path:本地文件的地址  bucket：想要上传到的bucket名    Key：为上传到s3的地址，为bucket后的地址，例：abc/ABC,ABC为上传到s3上后想要的文件名。
 ```
