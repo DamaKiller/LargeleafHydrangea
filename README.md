@@ -10,6 +10,7 @@
 - [python读取文件方式](./coding/coding_technique/python读取文件方式.md)
 - [函数参数问题](./coding/coding_technique/函数参数问题.md)
 - [推导式问题](./coding/coding_technique/推导式问题.py)
+- [Python类型标注](./coding/coding_technique/Python类型标注.md) 
 
 ### [python_lib](./coding/python_lib)  
 > Multiprocessing
@@ -28,7 +29,6 @@
 ### [python_knowledge](./coding/python_knowledge)  
 - [元组的相对不可变性](./coding/python_knowledge/元组的相对不可变性.py) 
 - [赋值浅拷贝深拷贝问题](./coding/python_knowledge/赋值浅拷贝深拷贝问题.md) 
-- [Python类型标注](./coding/python_knowledge/Python类型标注.md) 
 
 ## 2. [Github](./Github)
  - [Github中相对链接问题](./Github/Github中相对链接问题.md)
