@@ -28,6 +28,7 @@
 ### [python_knowledge](./coding/python_knowledge)  
 - [元组的相对不可变性](./coding/python_knowledge/元组的相对不可变性.py) 
 - [赋值浅拷贝深拷贝问题](./coding/python_knowledge/赋值浅拷贝深拷贝问题.md) 
+- [Python类型标注](./coding/python_knowledge/Python类型标注.md) 
 
 ## 2. [Github](./Github)
  - [Github中相对链接问题](./Github/Github中相对链接问题.md)
