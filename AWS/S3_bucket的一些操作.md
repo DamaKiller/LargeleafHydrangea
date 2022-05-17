@@ -7,6 +7,7 @@ copy_source = {
     'Key': 'mykey'    #要复制的文件名 
  }
 s3.meta.client.copy(copy_source, 'otherbucket', 'otherkey')   #otherbucket：目标bucket  otherkey：复制文件的名字，前面可以接文件夹名
+s3.Object(bucket_name, KEY).delete()    #可以把原bucket下的文件删掉来实现文件移动的目的
 ```
 
 **在bucket下创建文件夹**
