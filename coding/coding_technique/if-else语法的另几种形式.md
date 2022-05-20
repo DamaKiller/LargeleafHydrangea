@@ -14,7 +14,7 @@ print(w)    #2
 x = 1
 y = 2
 
-w = x if x > y else y
+w = x if x > y else y    #三元表达式
 
 print(w)    #2
 ```  
