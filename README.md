@@ -40,4 +40,6 @@
 
 ## 4.[AWS](./AWS)
  - [S3_bucket的一些操作](./AWS/S3_bucket的一些操作.md)
-
+ 
+ ## 4.[algorithm](./algorithm)
+ - [二分查找](./algorithm/二分查找.md)
