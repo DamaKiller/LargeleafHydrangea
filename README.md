@@ -13,6 +13,8 @@
 - [Python类型标注](./coding/coding_technique/Python类型标注.md) 
 - [if-else语法的另几种形式](./coding/coding_technique/if-else语法的另几种形式.md)
 - [python引发异常和断言](./coding/coding_technique/python引发异常和断言.md)
+- [Pyhon设置环境变量](./coding/coding_technique/Pyhon设置环境变量.md)
+- [Python 函数装饰器](./coding/coding_technique/Python 函数装饰器.md)
 
 ### [python_lib](./coding/python_lib)  
 > Multiprocessing
