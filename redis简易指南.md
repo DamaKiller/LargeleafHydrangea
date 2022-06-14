@@ -67,8 +67,8 @@ r = redis.StrictRedis(host = '127.0.0.1', port = 6379, db = 0, decode_responses=
 print(r.setnx('fruit', 'apple'))    #该键不存在
 ```
 ![image](https://user-images.githubusercontent.com/96570699/173323644-dc68528f-849e-4913-a943-f041783c2ae3.png)    
-#### 2.setex命令
-设置值,time为过期时间。（数字秒 或 timedelta对象）
+#### 3.setex命令
+设置值,time为过期时间。（数字秒 或 timedelta对象）  
 **`setex(name, time, value)`**
 ```
 r = redis.StrictRedis(host = '127.0.0.1', port = 6379, db = 0, decode_responses=True)
@@ -77,9 +77,19 @@ time.sleep(3)
 print(r.get('fruit_other'))
 ```
 ![image](https://user-images.githubusercontent.com/96570699/173324597-1063f6d9-0f29-4084-8053-ef70f0a656cc.png)  
-#### 2.mset命令
-批量设置值
-**mset(*args, **kwargs)**
+#### 4.mset命令
+批量设置值，传入的参数必须是一个字典。  
+**`mset(dict)`**
 ```
-
+r = redis.StrictRedis(host = '127.0.0.1', port = 6379, db = 0, decode_responses=True)
+dict = {"a" : "v1", "b" : "v2"}
+r.mset(dict)
 ```
+#### 5.mget命令
+批量获取值,传入的参数必须是一个列表。  
+**`mget(list)`**
+```
+r = redis.StrictRedis(host = '127.0.0.1', port = 6379, db = 0, decode_responses=True)
+print(r.mget(['a', 'b']))
+```
+![image](https://user-images.githubusercontent.com/96570699/173478522-c44af60f-606c-47a7-9125-161ab3c935c4.png)
