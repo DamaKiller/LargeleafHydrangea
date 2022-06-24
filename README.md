@@ -15,6 +15,7 @@
 - [python引发异常和断言](./coding/coding_technique/python引发异常和断言.md)
 - [Pyhon设置环境变量](./coding/coding_technique/Pyhon设置环境变量.md)
 - [Python函数装饰器](./coding/coding_technique/Python函数装饰器.md)
+- [Python闭包](./coding/coding_technique/Python闭包.md)
 
 ### [python_lib](./coding/python_lib)  
 > Multiprocessing
@@ -46,3 +47,8 @@
  
  ## 4.[algorithm](./algorithm)
  - [二分查找](./algorithm/二分查找.md)
+
+ ## 5.[Redis](./Redis)
+ - [redis.Redis与redis.StrictRedis类的区别](./Redis/redis.Redis与redis.StrictRedis类的区别.md)
+ - [redis简易指南](./Redis/redis简易指南.md)
+ 
