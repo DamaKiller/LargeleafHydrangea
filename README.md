@@ -47,8 +47,10 @@
  
  ## 4.[algorithm](./algorithm)
  - [二分查找](./algorithm/二分查找.md)
+ - [双指针](./algorithm/双指针.md)
+ - [滑动窗口算法](./algorithm/滑动窗口算法.md)
 
  ## 5.[Redis](./Redis)
  - [redis.Redis与redis.StrictRedis类的区别](./Redis/redis.Redis与redis.StrictRedis类的区别.md)
- - [redis简易指南](./Redis/redis简易指南.md)
+ - [redis注意事项](./Redis/redis注意事项.md)
  
