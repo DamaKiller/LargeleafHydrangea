@@ -4,7 +4,7 @@
 - [合并两个字典](./coding/coding_technique/合并两个字典.py)  
 - [如何取数各个位上的数](./coding/coding_technique/如何取数各个位上的数.py)  
 - [导入模块不执行运行模块执行的代码](./coding/coding_technique/导入模块不执行运行模块执行的代码.md)  
-- [列表转化为dataframe格式](./coding/coding_technique/列表转化为dataframe格式.md) 
+- [转化dataframe问题](./coding/coding_technique/转化dataframe问题.md) 
 - [获取文件路径方法](./coding/coding_technique/获取文件路径方法.py)
 - [列表中元素的处理](./coding/coding_technique/列表中元素的处理.py)
 - [python读取文件方式](./coding/coding_technique/python读取文件方式.md)
