@@ -52,3 +52,10 @@ print(my_list)
 item = data.fillna('')    #data为每行csv数据
 ```
 ![image](https://user-images.githubusercontent.com/96570699/175261402-352da6b2-d1d3-4c3a-bfe0-6c8e0e634b0c.png)
+
+# dateframe的merge问题
+## merge三个以上dateframe
+```
+df = reduce(lambda x, y: pandas.merge(x, y, on=[column_index], how=连接方式,), dfs)   #dfs为dataframe列表
+```
+
