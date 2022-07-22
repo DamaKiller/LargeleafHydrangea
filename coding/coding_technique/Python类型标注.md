@@ -6,7 +6,7 @@ def greeting(name:str) -> str:
 
 print(greeting('xiaoli'))   #hello xiaoli
 ```  
-List, Tuple, Dict要想实现类型标注，必须从`typing`包中导入类型。可以用[]来指定内部基础类型,Tuple, Dict也要用[]来指定。  
+List, Tuple, Dict要想实现类型标注，必须从`typing`包中导入类型。**可以用[]来指定内部基础类型,Tuple, Dict也要用[]来指定。**  
 ```
 from typing import List
 
