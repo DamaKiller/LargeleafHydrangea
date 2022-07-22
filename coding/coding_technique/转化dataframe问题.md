@@ -59,3 +59,6 @@ item = data.fillna('')    #data为每行csv数据
 df = reduce(lambda x, y: pandas.merge(x, y, on=[column_index], how=连接方式,), dfs)   #dfs为dataframe列表
 ```
 
+**reduce函数**
+`reduce(function, iterable)`
+reduce函数会将可迭代数据中的第一个和第二个运算，然后将结果和第三个运算，以此类推。
