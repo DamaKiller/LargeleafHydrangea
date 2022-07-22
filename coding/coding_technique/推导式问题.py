@@ -9,7 +9,7 @@ print(dict)
 #{0: 'A', 1: 'B', 2: 'C', 3: 'D', 4: 'E', 5: 'F', 6: 'G', 7: 'H', 8: 'I', 9: 'J'}
 
 #创建集合
-set = {x for x in range(20) if x%2==0}
+set = {x for x in range(20) if x%2==0}    #若有else， 则if else 要写在for循环前面。
 print(type(set))
 print(set)
 #结果
