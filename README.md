@@ -4,7 +4,6 @@
 - [合并两个字典](./coding/coding_technique/合并两个字典.py)  
 - [如何取数各个位上的数](./coding/coding_technique/如何取数各个位上的数.py)  
 - [导入模块不执行运行模块执行的代码](./coding/coding_technique/导入模块不执行运行模块执行的代码.md)  
-- [转化dataframe问题](./coding/coding_technique/转化dataframe问题.md) 
 - [获取文件路径方法](./coding/coding_technique/获取文件路径方法.py)
 - [列表中元素的处理](./coding/coding_technique/列表中元素的处理.py)
 - [python读取文件方式](./coding/coding_technique/python读取文件方式.md)
@@ -16,11 +15,9 @@
 - [Pyhon设置环境变量](./coding/coding_technique/Pyhon设置环境变量.md)
 - [Python函数装饰器](./coding/coding_technique/Python函数装饰器.md)
 - [Python闭包](./coding/coding_technique/Python闭包.md)
-- [pyhton命令行参数问题](./coding/coding_technique/pyhton命令行参数问题.md)
 
 ### [python_lib](./coding/python_lib)  
 > Multiprocessing
-
 - [Multiprocessing用法简绍(1)](./coding/python_lib/Multiprocessing用法简绍(1).md)    
 
 > Logging
@@ -28,9 +25,13 @@
 
 > Pandas
 - [pandas按行按列遍历Dataframe方法](./coding/python_lib/pandas按行按列遍历Dataframe方法.py)
+- [转化dataframe问题](./coding/python_lib/转化dataframe问题.md) 
 
 > virtualenv
 - [virtualenv创建环境一些列问题](./coding/python_lib/virtualenv创建环境一些列问题.md)
+
+> sys
+- [python命令行参数问题](./coding/python_lib/python命令行参数问题.md)
 
 ### [python_knowledge](./coding/python_knowledge)  
 - [元组的相对不可变性](./coding/python_knowledge/元组的相对不可变性.py) 
