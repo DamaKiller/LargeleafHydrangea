@@ -15,7 +15,6 @@
 - [Pyhon设置环境变量](./coding/coding_technique/Pyhon设置环境变量.md)
 - [Python函数装饰器](./coding/coding_technique/Python函数装饰器.md)
 - [Python闭包](./coding/coding_technique/Python闭包.md)
-- [pyhton命令行参数问题](./coding/coding_technique/pyhton命令行参数问题.md)
 
 ### [python_lib](./coding/python_lib)  
 > Multiprocessing
@@ -30,6 +29,9 @@
 
 > virtualenv
 - [virtualenv创建环境一些列问题](./coding/python_lib/virtualenv创建环境一些列问题.md)
+
+> sys
+- [pyhton命令行参数问题](./coding/python_lib/pyhton命令行参数问题.md)
 
 ### [python_knowledge](./coding/python_knowledge)  
 - [元组的相对不可变性](./coding/python_knowledge/元组的相对不可变性.py) 
