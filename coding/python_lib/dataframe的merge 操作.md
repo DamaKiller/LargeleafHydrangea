@@ -1,0 +1,56 @@
+# 1.什么是dateframe merge
+merge操作类似于数据库当中两张表的join，可以通过一个或者多个key将多个dataframe链接起来。
+merge是按照两个dataframe共有的column进行连接，两个dataframe必须具有同名的column。
+# 2.merge操作
+`pd.merge(left, right, on=None, how='inner', left_on=None, right_on=None, left_index=False, right_index=False, 
+          sort=False, suffixes=('_x', '_y'), copy=True, indicator=False, validate=None)
+`  
+**参数**
+- **left和right：** 第一个DataFrame和第二个DataFrame对象，merge只能实现两个DataFrame的合并，无法一次实现多个合并。
+- **on：** 指定参考column，要求两个df必须至少有一个相同的column，默认为None以最多相同的column为参考。
+- **how：** 合并的方式，默认为inner取参考column的交集，outer取并集保留所有行；outer、left、right中的缺失值都以NaN填充；
+  left按照左边对象为参考进行合并即保留左边的所有行，right按照右边对象为参考进行合并即保留右边所有行。  
+  ```
+  df1 = pd.DataFrame({'key':['A','B','C','D'],
+                    'value':[1,2,3,4]})
+  df2 = pd.DataFrame({'key':['A','E','F','G'],
+                    'value':[5,6,7,8]})
+  ```
+  **内连接** ![image](https://user-images.githubusercontent.com/96570699/182077851-d5b6ad28-0040-4c49-b889-cd7b65b8e97b.png)
+  **外连接** ![image](https://user-images.githubusercontent.com/96570699/182077223-ec005a1f-5672-4000-bca2-724af3449d84.png)  
+  **左连接** ![image](https://user-images.githubusercontent.com/96570699/182077939-b9409da9-ed84-466f-81f3-99842912fe95.png)
+  **右连接** ![image](https://user-images.githubusercontent.com/96570699/182077982-461b8297-7002-4f55-8d9e-3d7933d37fb8.png)
+- **left_on=None和right_on=None：** 以上on是在两个df有相同的column的情况下使用，如果两个df没有相同的column，使用left_on和right_on分别指明左边和右边的参考column。
+   ```
+   df1 = pd.DataFrame({'index':['A','B','C','D'],
+                      'value':[1,2,3,4]})
+   df2 = pd.DataFrame({'key':['A','E','F','G'],
+                      'value':[5,6,7,8]})
+   df3 = pd.merge(df1, df2, how='outer', left_on='index', right_on='key')
+   print(df3)
+   ```
+   ![image](https://user-images.githubusercontent.com/96570699/182079217-205916df-f922-4368-b237-68758612c588.png)
+- **left_index和right_index：** 指定是否以索引为参考进行合并, left_index=True 必须和right_index=True共同使用。  
+  ```
+  df1 = pd.DataFrame({'key':['A','B','C','D'],
+                    'value':[1,2,3,4]})
+  df2 = pd.DataFrame({'key':['A','E','F','G'],
+                    'value':[5,6,7,8]})
+  df3 = pd.merge(df1, df2,how='outer',left_index=True, right_index=True)
+  print(df3)
+  ```
+  ![image](https://user-images.githubusercontent.com/96570699/182081620-5a03eb14-d753-481f-bf58-7d95ca15eed2.png)
+- **sort：** 合并结果是否按on指定的参考进行排序。
+- **suffixed：** 合并后如果有重复column，分别加上什么后缀。如果两者相同的column未被指定为参考列，
+  那么结果中这两个相同的column名称会被加上后缀，默认为左右分别为_x和_y,可以通过该参数修改默认后缀。
+  ```
+  df1 = pd.DataFrame({'key':['A','B','C','D'],
+                    'value':['1','2','3','4']})
+  df2 = pd.DataFrame({'key':['A','E','F','G'],
+                    'value':['5','6','7','8']})
+  df3 = pd.merge(df1, df2, on='key', suffixes=('_df1','_df2'))
+  print(df3)
+  ```
+  ![image](https://user-images.githubusercontent.com/96570699/182083056-22d6b133-1032-42ac-9687-e4996a1bfe66.png)
+
+
