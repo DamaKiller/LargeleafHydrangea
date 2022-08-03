@@ -26,6 +26,7 @@
 > Pandas
 - [pandas按行按列遍历Dataframe方法](./coding/python_lib/pandas按行按列遍历Dataframe方法.py)
 - [转化dataframe问题](./coding/python_lib/转化dataframe问题.md) 
+- [dataframe的merge 操作](./coding/python_lib/dataframe的merge 操作.md)
 
 > virtualenv
 - [virtualenv创建环境一些列问题](./coding/python_lib/virtualenv创建环境一些列问题.md)
