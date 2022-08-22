@@ -1,7 +1,8 @@
 # 一.简绍
-该语法是在3.6版本加入的，它的用法是正常执行（不是通过break跳出循环）完for循环中的操作后，再执行else中的语句。
+该语法是在3.6版本加入的,使用时需注意。  
+for/while-else它的用法是正常执行（不是通过break跳出循环）完for循环中的操作后，再执行else中的语句。
 
-# 二.例子
+# 二.for-else例子
 ```
 a = [1,2,3,4,5]
 for i in a:
@@ -43,4 +44,27 @@ else:
     print('done')
 ```
 ![image](https://user-images.githubusercontent.com/96570699/185847161-16f7374a-d2b7-4014-859f-61ef932dce27.png)
+
+# 三.while-else循环
+```
+a = 0
+while a < 6:
+    print(a)
+    a += 1
+else:
+    print('done')
+```
+
+```
+a = 0
+while a < 6:
+    if a == 2:
+        break
+    print(a)
+    a += 1
+else:
+    print('done')
+```
+![image](https://user-images.githubusercontent.com/96570699/185850607-18e25fad-7829-49fb-8121-7a4ae88719a2.png)
+
 
