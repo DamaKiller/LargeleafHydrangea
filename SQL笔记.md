@@ -100,4 +100,9 @@
 ### 2.UPPER-转换大写
 ![image](https://user-images.githubusercontent.com/96570699/183868601-08a4d41e-65d7-4987-83f0-cdc86892be1b.png)  
 
+### 3.substr-取子串
+![image](https://user-images.githubusercontent.com/96570699/185858046-9ff45e65-1a15-49f2-9efc-67f387215178.png)
+
+### 4.length-取长度
+![image](https://user-images.githubusercontent.com/96570699/185859252-87e33dbf-a56a-4b5d-bf94-1cb1d8878d52.png)
 
