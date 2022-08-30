@@ -106,3 +106,16 @@
 ### 4.length-取长度
 ![image](https://user-images.githubusercontent.com/96570699/185859252-87e33dbf-a56a-4b5d-bf94-1cb1d8878d52.png)
 
+### 5.rand()-生成随机数
+**默认生成的随机数是小于1的**    
+![image](https://user-images.githubusercontent.com/96570699/186802229-9d95a6cd-1e03-41b3-8953-882b9e30e3c3.png)  
+**生成100以内的随机数**  
+![image](https://user-images.githubusercontent.com/96570699/186803364-3bb5e7b1-88db-4368-ba51-7347347a0f4f.png)  
+
+###  6.ifnull(数据，被当作那个值)-空处理函数
+![image](https://user-images.githubusercontent.com/96570699/186808884-03f1e654-d136-4138-9490-e44776539d3c.png)  
+![image](https://user-images.githubusercontent.com/96570699/186809356-985ff6fe-9d72-4b28-b413-ecd5b0186e34.png)  
+![image](https://user-images.githubusercontent.com/96570699/187110559-bf2f14bd-8700-4960-982e-44c3589be536.png)  
+
+###  7.
+
