@@ -130,7 +130,20 @@ Case函数只返回第一个符合条件的值，剩下的Case部分将会被自
 
 
 # 分组函数-多行处理函数
-![image](https://user-images.githubusercontent.com/96570699/187447259-278edd02-b68c-4b86-9101-2f51c7c2eb95.png)
+![image](https://user-images.githubusercontent.com/96570699/187447259-278edd02-b68c-4b86-9101-2f51c7c2eb95.png)  
+**分组函数注意点**  
+![image](https://user-images.githubusercontent.com/96570699/187449785-32a46c36-8116-48af-85f7-aad6348126da.png)  
+![image](https://user-images.githubusercontent.com/96570699/187453011-fbcf04fa-547e-4fd9-9a64-11e42ed53601.png)  
+![image](https://user-images.githubusercontent.com/96570699/187452753-4d0a38a2-b3e5-4223-b95e-87f6ee9565bd.png)  
+![image](https://user-images.githubusercontent.com/96570699/187457053-1b471b9c-6f26-45a7-a2e3-70a0098646f9.png)  
+![image](https://user-images.githubusercontent.com/96570699/187486508-1a932561-8f34-42d7-b3f5-8f8cf4cdfe39.png)  
+![image](https://user-images.githubusercontent.com/96570699/187457523-97458777-7e5a-4aa5-8bbc-cd9a6c818b50.png)  
+
+### 分组查询
+![image](https://user-images.githubusercontent.com/96570699/187459907-e40db954-2075-481e-b1ef-472a815b1137.png)
+
+
+
 
 
 
