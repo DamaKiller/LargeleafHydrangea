@@ -117,5 +117,20 @@
 ![image](https://user-images.githubusercontent.com/96570699/186809356-985ff6fe-9d72-4b28-b413-ecd5b0186e34.png)  
 ![image](https://user-images.githubusercontent.com/96570699/187110559-bf2f14bd-8700-4960-982e-44c3589be536.png)  
 
-###  7.
+###  7.case...when...then...when...then...else..end-模拟if语句
+不加else条件，会默认返回null。  
+Case函数只返回第一个符合条件的值，剩下的Case部分将会被自动忽略。  
+![image](https://user-images.githubusercontent.com/96570699/187442887-3836db7b-3c3a-4217-9a52-68a9c5f75441.png)  
+**两种写法**  
+**第一种**  
+![image](https://user-images.githubusercontent.com/96570699/187444919-a325a8e5-2085-435e-8821-775159ffb30f.png)  
+**第二种**  
+![image](https://user-images.githubusercontent.com/96570699/187445304-43ff4f77-2277-41a1-85f5-25c1e4925f14.png)
+
+
+
+# 分组函数-多行处理函数
+![image](https://user-images.githubusercontent.com/96570699/187447259-278edd02-b68c-4b86-9101-2f51c7c2eb95.png)
+
+
 
