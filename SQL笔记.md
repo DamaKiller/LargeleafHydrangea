@@ -87,6 +87,7 @@
 先执行FROM,明确数据的来源，它是从哪张表取来的。  
 再执行WHERE,对数据进行筛选。  
 再执行GROUP BY,对数据进行分组分类。  
+在执行HAVING,对分组后的数据进行再筛选。  
 再执行SELECT，对数据进行分组分类。  
 再执行ORDER BY,对最终的结果进行排序。  
 
@@ -141,9 +142,36 @@ Case函数只返回第一个符合条件的值，剩下的Case部分将会被自
 
 ### 分组查询
 ![image](https://user-images.githubusercontent.com/96570699/187459907-e40db954-2075-481e-b1ef-472a815b1137.png)
+![image](https://user-images.githubusercontent.com/96570699/187815969-b136450f-d99e-4f7c-912a-7bdba4a031f3.png)  
+![image](https://user-images.githubusercontent.com/96570699/187816063-81815763-088c-4de6-8024-00f765d94156.png)  
+![image](https://user-images.githubusercontent.com/96570699/187816216-b3394295-ef1c-4596-8c02-5f0a91aee78f.png)  
+![image](https://user-images.githubusercontent.com/96570699/187816872-0be33d85-fecb-4524-802c-636ecfac3900.png)  
+![image](https://user-images.githubusercontent.com/96570699/187817210-76d94025-a923-4530-9b8e-77d81a918d82.png)  
+但是该种写法效率比较低，分组处理过的数据一部分是无效处理，可以先用where过滤出大于3000的数据再进行分组处理。where是先筛选再分组，having是先分组再筛选。    
+![image](https://user-images.githubusercontent.com/96570699/187817595-7316c13a-0c70-4294-84e7-9dd8f7a57ead.png)  
+![image](https://user-images.githubusercontent.com/96570699/187823246-bc5d36e7-e482-4c7e-b124-0c16751e8806.png)  
+![image](https://user-images.githubusercontent.com/96570699/187823301-83dde1b7-1cb6-4d84-ba9d-9005330dc41a.png)  
+![image](https://user-images.githubusercontent.com/96570699/187825267-59fa76f1-6b5f-4c45-be52-2ce916931eca.png)
+
+### distinct-去重
+![image](https://user-images.githubusercontent.com/96570699/187845828-f1ba3933-cffd-4e39-87b3-beb9088d2809.png)  
+![image](https://user-images.githubusercontent.com/96570699/187856111-abd2c552-208f-4d8b-9522-10e2c18f2a93.png)  
+它可以用在分组函数当中，去重后计数。  
+![image](https://user-images.githubusercontent.com/96570699/187856404-3264a3bb-c891-4b38-9586-c6a8867cd05a.png)  
 
 
 
+# 连接查询
+![image](https://user-images.githubusercontent.com/96570699/187857970-2b5966a5-df2b-4142-b484-51c12cbef804.png)  
+![image](https://user-images.githubusercontent.com/96570699/187858241-49ba76ab-d309-4862-9316-a65c247c6193.png)  
+
+### 笛卡尔积现象
+![image](https://user-images.githubusercontent.com/96570699/187863220-3f39921e-c2a5-4156-92c6-228c38f26a81.png)  
+就是不加任何连接条件，直接从两张表中查找数据，就会出现这种情况。  
+![image](https://user-images.githubusercontent.com/96570699/187863359-a572a903-eb34-48eb-aa62-271a49e6dc8b.png)  
+![image](https://user-images.githubusercontent.com/96570699/187864288-be774130-9ab2-465a-9750-4b8933a18188.png)  
+![image](https://user-images.githubusercontent.com/96570699/187867216-cde1abe3-f62e-4310-862d-7c7d6dea07bb.png)
+这种写法效率太低。  
 
 
 
