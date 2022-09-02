@@ -20,19 +20,24 @@
 ### 1.查看表结构 
 `desc 表名;`(describe缩写为desc)  
 
+
 ### 2.查看数据库版本
 `select version();`
 
+
 ### 3.查询一个字段
 ![image](https://user-images.githubusercontent.com/96570699/183606625-49ad12d8-b48a-4318-bab5-a5fc684dc2d4.png)  
+
 
 ### 4.查询多个字段
 ![image](https://user-images.githubusercontent.com/96570699/183607694-8c62913e-a2f4-407d-b9e3-d2e5089f7a23.png)  
 `select 字段名1, 字段名2 from 表名;`
 
+
 ### 5.查询所有字段  
 ![image](https://user-images.githubusercontent.com/96570699/183608944-6a8f01e1-e337-44e1-9301-75c8ebdbb401.png)  
 ![image](https://user-images.githubusercontent.com/96570699/183609397-8c36be80-145a-4f9c-b049-7509d8bf01e1.png)  
+
 
 ### 6.给查询的列起别名
 `select 字段名 from 表名 as 别名`  
@@ -69,19 +74,24 @@
 
 
 
+
 # 排序
 ![image](https://user-images.githubusercontent.com/96570699/183858089-95269b64-bc4a-46af-ab96-e2f4050a9604.png)  
 ### 1.指定降序操作(desc)  
 ![image](https://user-images.githubusercontent.com/96570699/183858455-984f5537-a523-40ca-bb89-a46addd1b37b.png)  
 
+
 ### 2.指定降序操作(asc)  
 ![image](https://user-images.githubusercontent.com/96570699/183859495-10ed55e6-0c67-4053-87b2-7d87a7327206.png)  
+
 
 ### 3.多个字段排序操作
 ![image](https://user-images.githubusercontent.com/96570699/183861024-f388f5cf-29fa-4ee5-9175-9931c80a92b7.png)  
 
+
 ### 4.根据位置进行排序操作
 ![image](https://user-images.githubusercontent.com/96570699/183861721-55817985-0b67-432a-8b24-4ec858d9e14d.png)
+
 
 ### 5.SQL执行优先级
 先执行FROM,明确数据的来源，它是从哪张表取来的。  
@@ -93,19 +103,24 @@
 
 
 
+
 # 数据处理函数（单行处理函数-一行一行处理）
 ### 1.LOWER-转换小写
 ![image](https://user-images.githubusercontent.com/96570699/183868055-86c25789-adf1-4952-b056-88610b897133.png)  
 同样结果的字段名是`Lower（ename）`可以给它起别名。  
 
+
 ### 2.UPPER-转换大写
 ![image](https://user-images.githubusercontent.com/96570699/183868601-08a4d41e-65d7-4987-83f0-cdc86892be1b.png)  
+
 
 ### 3.substr-取子串
 ![image](https://user-images.githubusercontent.com/96570699/185858046-9ff45e65-1a15-49f2-9efc-67f387215178.png)
 
+
 ### 4.length-取长度
 ![image](https://user-images.githubusercontent.com/96570699/185859252-87e33dbf-a56a-4b5d-bf94-1cb1d8878d52.png)
+
 
 ### 5.rand()-生成随机数
 **默认生成的随机数是小于1的**    
@@ -113,10 +128,12 @@
 **生成100以内的随机数**  
 ![image](https://user-images.githubusercontent.com/96570699/186803364-3bb5e7b1-88db-4368-ba51-7347347a0f4f.png)  
 
+
 ###  6.ifnull(数据，被当作那个值)-空处理函数
 ![image](https://user-images.githubusercontent.com/96570699/186808884-03f1e654-d136-4138-9490-e44776539d3c.png)  
 ![image](https://user-images.githubusercontent.com/96570699/186809356-985ff6fe-9d72-4b28-b413-ecd5b0186e34.png)  
 ![image](https://user-images.githubusercontent.com/96570699/187110559-bf2f14bd-8700-4960-982e-44c3589be536.png)  
+
 
 ###  7.case...when...then...when...then...else..end-模拟if语句
 不加else条件，会默认返回null。  
@@ -130,6 +147,7 @@ Case函数只返回第一个符合条件的值，剩下的Case部分将会被自
 
 
 
+
 # 分组函数-多行处理函数
 ![image](https://user-images.githubusercontent.com/96570699/187447259-278edd02-b68c-4b86-9101-2f51c7c2eb95.png)  
 **分组函数注意点**  
@@ -139,6 +157,7 @@ Case函数只返回第一个符合条件的值，剩下的Case部分将会被自
 ![image](https://user-images.githubusercontent.com/96570699/187457053-1b471b9c-6f26-45a7-a2e3-70a0098646f9.png)  
 ![image](https://user-images.githubusercontent.com/96570699/187486508-1a932561-8f34-42d7-b3f5-8f8cf4cdfe39.png)  
 ![image](https://user-images.githubusercontent.com/96570699/187457523-97458777-7e5a-4aa5-8bbc-cd9a6c818b50.png)  
+
 
 ### 分组查询
 ![image](https://user-images.githubusercontent.com/96570699/187459907-e40db954-2075-481e-b1ef-472a815b1137.png)
@@ -153,6 +172,7 @@ Case函数只返回第一个符合条件的值，剩下的Case部分将会被自
 ![image](https://user-images.githubusercontent.com/96570699/187823301-83dde1b7-1cb6-4d84-ba9d-9005330dc41a.png)  
 ![image](https://user-images.githubusercontent.com/96570699/187825267-59fa76f1-6b5f-4c45-be52-2ce916931eca.png)
 
+
 ### distinct-去重
 ![image](https://user-images.githubusercontent.com/96570699/187845828-f1ba3933-cffd-4e39-87b3-beb9088d2809.png)  
 ![image](https://user-images.githubusercontent.com/96570699/187856111-abd2c552-208f-4d8b-9522-10e2c18f2a93.png)  
@@ -161,9 +181,11 @@ Case函数只返回第一个符合条件的值，剩下的Case部分将会被自
 
 
 
+
 # 连接查询
 ![image](https://user-images.githubusercontent.com/96570699/187857970-2b5966a5-df2b-4142-b484-51c12cbef804.png)  
 ![image](https://user-images.githubusercontent.com/96570699/187858241-49ba76ab-d309-4862-9316-a65c247c6193.png)  
+
 
 ### 笛卡尔积现象
 ![image](https://user-images.githubusercontent.com/96570699/187863220-3f39921e-c2a5-4156-92c6-228c38f26a81.png)  
@@ -171,7 +193,28 @@ Case函数只返回第一个符合条件的值，剩下的Case部分将会被自
 ![image](https://user-images.githubusercontent.com/96570699/187863359-a572a903-eb34-48eb-aa62-271a49e6dc8b.png)  
 ![image](https://user-images.githubusercontent.com/96570699/187864288-be774130-9ab2-465a-9750-4b8933a18188.png)  
 ![image](https://user-images.githubusercontent.com/96570699/187867216-cde1abe3-f62e-4310-862d-7c7d6dea07bb.png)
-这种写法效率太低。  
+这种写法会去两个表中分表查找这两个字段，效率太低，现已经不用，为sql92的语法。  
+
+
+### 内连接之等值连接
+条件是等量关系，所以被称作等值连接。  
+![image](https://user-images.githubusercontent.com/96570699/188127064-d95c00f6-8a30-4bf6-b9ae-9fdb811fe882.png)  
+![image](https://user-images.githubusercontent.com/96570699/188128438-412e688c-296b-4cfc-bec5-76b1f1401d6e.png)   
+戴着inner可读性更好，一眼就能看出来是内连接。  
+![image](https://user-images.githubusercontent.com/96570699/188127804-0075ebf0-ba6e-4e30-85e2-3cd50557bd64.png)  
+
+
+### 内连接之非等值连接
+条件不是等量条件。
+![image](https://user-images.githubusercontent.com/96570699/188129526-adf6bcc3-583e-433e-a5f9-8e8e153da2d7.png)  
+该处省略了inner。  
+![image](https://user-images.githubusercontent.com/96570699/188151019-cd83e906-280d-495c-b5bf-f9c94665c9eb.png)
+
+
+### 内连接之自连接
+
+
+
 
 
 
