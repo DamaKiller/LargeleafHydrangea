@@ -212,9 +212,28 @@ Case函数只返回第一个符合条件的值，剩下的Case部分将会被自
 
 
 ### 内连接之自连接
+先查询员工编号，员工名，领导编号  
+![image](https://user-images.githubusercontent.com/96570699/188266030-74dd7097-babf-41a2-80a3-1c2f9fc5ad8b.png)  
+![image](https://user-images.githubusercontent.com/96570699/188266125-7fb0e220-dcbe-45af-9556-21db60f8eb8d.png)  
+![image](https://user-images.githubusercontent.com/96570699/188266133-017356aa-1be8-425c-9e9a-33b62edc866c.png)  
+员工的领导编号等于领导的员工编号，没有KING是因为其没有领导    
+![image](https://user-images.githubusercontent.com/96570699/188266367-4eb458bf-1c41-490e-b369-a15cac6c4044.png)  
+![image](https://user-images.githubusercontent.com/96570699/188266416-3aa1671b-b0e4-4a17-9246-cd04a6050926.png)  
+内连接没有主次关系，能匹配上就查出来，没有匹配的就不显示。  
 
 
+### 外连接
+![image](https://user-images.githubusercontent.com/96570699/188266944-97530c95-e5c0-41a6-8680-ef510459b70c.png)   
+没有匹配的数据则自动填充null  
+![image](https://user-images.githubusercontent.com/96570699/188266985-e23eb558-94ad-4f2d-aeb7-bcaa4debecc1.png)  
+![image](https://user-images.githubusercontent.com/96570699/188267034-997c59d5-cfaf-4e8d-92e7-11df60c75876.png)  
 
 
-
+### 多张表连接
+![image](https://user-images.githubusercontent.com/96570699/188267480-4827e56f-c493-4f61-9ea7-044bc0dafded.png)  
+![image](https://user-images.githubusercontent.com/96570699/188267681-efcfac3a-0e9b-4999-b531-db3555d9e50b.png)  
+![image](https://user-images.githubusercontent.com/96570699/188267839-c3768d03-d0a7-40d7-8369-9d6c6e152aea.png)  
+![image](https://user-images.githubusercontent.com/96570699/188268213-a6f848f8-f254-402b-8998-96e2f6df7606.png)  
+![image](https://user-images.githubusercontent.com/96570699/188268738-8f65039f-1609-41fe-ae2f-549b99a21273.png)    
+![image](https://user-images.githubusercontent.com/96570699/188268718-dfe6c3d0-70a1-496c-aa04-ecc14bb3a101.png)  
 
