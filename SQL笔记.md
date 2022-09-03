@@ -187,7 +187,7 @@ Case函数只返回第一个符合条件的值，剩下的Case部分将会被自
 ![image](https://user-images.githubusercontent.com/96570699/187858241-49ba76ab-d309-4862-9316-a65c247c6193.png)  
 
 
-### 笛卡尔积现象
+### 1.笛卡尔积现象
 ![image](https://user-images.githubusercontent.com/96570699/187863220-3f39921e-c2a5-4156-92c6-228c38f26a81.png)  
 就是不加任何连接条件，直接从两张表中查找数据，就会出现这种情况。  
 ![image](https://user-images.githubusercontent.com/96570699/187863359-a572a903-eb34-48eb-aa62-271a49e6dc8b.png)  
@@ -196,7 +196,7 @@ Case函数只返回第一个符合条件的值，剩下的Case部分将会被自
 这种写法会去两个表中分表查找这两个字段，效率太低，现已经不用，为sql92的语法。  
 
 
-### 内连接之等值连接
+### 2.内连接之等值连接
 条件是等量关系，所以被称作等值连接。  
 ![image](https://user-images.githubusercontent.com/96570699/188127064-d95c00f6-8a30-4bf6-b9ae-9fdb811fe882.png)  
 ![image](https://user-images.githubusercontent.com/96570699/188128438-412e688c-296b-4cfc-bec5-76b1f1401d6e.png)   
@@ -204,14 +204,14 @@ Case函数只返回第一个符合条件的值，剩下的Case部分将会被自
 ![image](https://user-images.githubusercontent.com/96570699/188127804-0075ebf0-ba6e-4e30-85e2-3cd50557bd64.png)  
 
 
-### 内连接之非等值连接
+### 3.内连接之非等值连接
 条件不是等量条件。
 ![image](https://user-images.githubusercontent.com/96570699/188129526-adf6bcc3-583e-433e-a5f9-8e8e153da2d7.png)  
 该处省略了inner。  
 ![image](https://user-images.githubusercontent.com/96570699/188151019-cd83e906-280d-495c-b5bf-f9c94665c9eb.png)
 
 
-### 内连接之自连接
+### 4.内连接之自连接
 先查询员工编号，员工名，领导编号  
 ![image](https://user-images.githubusercontent.com/96570699/188266030-74dd7097-babf-41a2-80a3-1c2f9fc5ad8b.png)  
 ![image](https://user-images.githubusercontent.com/96570699/188266125-7fb0e220-dcbe-45af-9556-21db60f8eb8d.png)  
@@ -222,14 +222,14 @@ Case函数只返回第一个符合条件的值，剩下的Case部分将会被自
 内连接没有主次关系，能匹配上就查出来，没有匹配的就不显示。  
 
 
-### 外连接
+### 5.外连接
 ![image](https://user-images.githubusercontent.com/96570699/188266944-97530c95-e5c0-41a6-8680-ef510459b70c.png)   
 没有匹配的数据则自动填充null  
 ![image](https://user-images.githubusercontent.com/96570699/188266985-e23eb558-94ad-4f2d-aeb7-bcaa4debecc1.png)  
 ![image](https://user-images.githubusercontent.com/96570699/188267034-997c59d5-cfaf-4e8d-92e7-11df60c75876.png)  
 
 
-### 多张表连接
+### 6.多张表连接
 ![image](https://user-images.githubusercontent.com/96570699/188267480-4827e56f-c493-4f61-9ea7-044bc0dafded.png)  
 ![image](https://user-images.githubusercontent.com/96570699/188267681-efcfac3a-0e9b-4999-b531-db3555d9e50b.png)  
 ![image](https://user-images.githubusercontent.com/96570699/188267839-c3768d03-d0a7-40d7-8369-9d6c6e152aea.png)  
