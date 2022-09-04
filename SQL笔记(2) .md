@@ -42,5 +42,18 @@
 
 
 # 创建表及数据类型
+![image](https://user-images.githubusercontent.com/96570699/188318563-899b8008-5a60-4bfe-a6ad-b70f0e5c5890.png)    
+varchar和char最长长度为255，date和datetime为固定长度。    
+![image](https://user-images.githubusercontent.com/96570699/188318580-b3300726-7d21-4954-b3a7-1caf43ffe907.png)  
+![image](https://user-images.githubusercontent.com/96570699/188318619-9a817207-7fea-43b7-ad14-a4112a53a524.png)  
+![image](https://user-images.githubusercontent.com/96570699/188318543-17f3330d-8ce9-47a2-a35e-62c42b6dff4d.png)    
+
+
+
+
+# 删除表
+![image](https://user-images.githubusercontent.com/96570699/188318531-8d512378-8a2b-4d34-927e-d48770de4130.png)  
+
+
 
 
