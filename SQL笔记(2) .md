@@ -12,7 +12,7 @@
 ![image](https://user-images.githubusercontent.com/96570699/188274224-05ae8628-7777-4692-b93b-f9082e533aa4.png)  
 
 
-#### 3.select子句中的子查询
+### 3.select子句中的子查询
 这种查询不需要连接表。  
 ![image](https://user-images.githubusercontent.com/96570699/188314341-c5068cc6-aff5-4a5d-925c-54c1df845416.png)  
 ![image](https://user-images.githubusercontent.com/96570699/188314360-7a70c53d-5f66-4523-ad26-0613c4c14775.png)  
