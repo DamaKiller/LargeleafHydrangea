@@ -57,3 +57,10 @@ varchar和char最长长度为255，date和datetime为固定长度。
 
 
 
+# insert
+![image](https://user-images.githubusercontent.com/96570699/188667042-0826c73e-590a-4f37-ba99-f4b2f1170130.png)  
+![image](https://user-images.githubusercontent.com/96570699/188667228-eea270b4-01b0-491d-8075-946d7dfdc525.png)  
+![image](https://user-images.githubusercontent.com/96570699/188667509-ffb6d9d3-35ad-4371-a880-ba05b6357e5f.png)  
+
+
+
