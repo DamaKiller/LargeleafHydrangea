@@ -61,6 +61,11 @@ varchar和char最长长度为255，date和datetime为固定长度。
 ![image](https://user-images.githubusercontent.com/96570699/188667042-0826c73e-590a-4f37-ba99-f4b2f1170130.png)  
 ![image](https://user-images.githubusercontent.com/96570699/188667228-eea270b4-01b0-491d-8075-946d7dfdc525.png)  
 ![image](https://user-images.githubusercontent.com/96570699/188667509-ffb6d9d3-35ad-4371-a880-ba05b6357e5f.png)  
+可以使用default关键字来指定默认值  
+![image](https://user-images.githubusercontent.com/96570699/188669094-c03b062a-bff4-4175-ac82-a71ce02740f3.png)  
+![image](https://user-images.githubusercontent.com/96570699/188669281-052d99db-8f5a-4f24-ba05-5d3d848fb3ef.png)  
+![image](https://user-images.githubusercontent.com/96570699/188670229-f2ac1c39-315a-4ea0-a6e8-195dc1ce9af5.png)  
+
 
 
 
