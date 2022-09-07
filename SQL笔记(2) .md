@@ -67,5 +67,23 @@ varchar和char最长长度为255，date和datetime为固定长度。
 ![image](https://user-images.githubusercontent.com/96570699/188670229-f2ac1c39-315a-4ea0-a6e8-195dc1ce9af5.png)  
 
 
+### 格式化
+![image](https://user-images.githubusercontent.com/96570699/188877147-d8d83ec9-c5e2-4041-a431-8bc82a5cc325.png)  
+![image](https://user-images.githubusercontent.com/96570699/188877301-4b0d106c-7b55-4058-ba73-692e193ad680.png)  
+![image](https://user-images.githubusercontent.com/96570699/188877504-b0364ace-7ca2-44fa-9f29-4b02817bcb61.png)  
+![image](https://user-images.githubusercontent.com/96570699/188878370-7b15d2e6-0c66-4e59-b237-047a6652a9d7.png)    
+![image](https://user-images.githubusercontent.com/96570699/188879646-faf2231d-0806-4167-9b23-7d28746d222c.png)  
+![image](https://user-images.githubusercontent.com/96570699/188882636-a354a339-409a-433e-b9e9-1da4f6860ffc.png)  
+![image](https://user-images.githubusercontent.com/96570699/188883123-97e94af8-9548-42e1-a871-185575992e90.png)  
+![image](https://user-images.githubusercontent.com/96570699/188883238-1c2e26c7-06e8-44c1-9227-5d842d9fa66c.png)  
+![image](https://user-images.githubusercontent.com/96570699/188883634-c32e447d-4905-4e3b-ade2-e3ee4a874aec.png)  
+![image](https://user-images.githubusercontent.com/96570699/188889233-3bc77fa6-9da3-4c62-abc1-8ad5b43f2a91.png)  
+**date和datetime的区别**  
+![image](https://user-images.githubusercontent.com/96570699/188890379-cd496132-1cf9-498e-9c7b-5907b63740ab.png)  
+![image](https://user-images.githubusercontent.com/96570699/188891630-727d883f-e27c-4041-8f16-27955d0cc468.png)  
+![image](https://user-images.githubusercontent.com/96570699/188892570-b2d83c92-fdfd-4039-8bbb-ce4c3a084bf5.png)       
+
+
+
 
 
