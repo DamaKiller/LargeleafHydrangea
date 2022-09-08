@@ -179,6 +179,9 @@ Case函数只返回第一个符合条件的值，剩下的Case部分将会被自
 ![image](https://user-images.githubusercontent.com/96570699/187856111-abd2c552-208f-4d8b-9522-10e2c18f2a93.png)  
 它可以用在分组函数当中，去重后计数。  
 ![image](https://user-images.githubusercontent.com/96570699/187856404-3264a3bb-c891-4b38-9586-c6a8867cd05a.png)  
+放在第二位，前面的name比后面的job字段数据多，导致出错。  
+![image](https://user-images.githubusercontent.com/96570699/189159619-52acdbcc-074f-44bf-80ab-663018717d63.png)  
+
 
 
 
