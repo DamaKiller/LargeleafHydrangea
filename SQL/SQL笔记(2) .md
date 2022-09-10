@@ -84,6 +84,10 @@ varchar和char最长长度为255，date和datetime为固定长度。
 ![image](https://user-images.githubusercontent.com/96570699/188892570-b2d83c92-fdfd-4039-8bbb-ce4c3a084bf5.png)       
 
 
+### 插入多条语句
+![image](https://user-images.githubusercontent.com/96570699/189480318-8b143910-a906-4a23-9d83-8fb52ca8da8f.png)  
+
+
 
 
 # update
@@ -94,4 +98,25 @@ varchar和char最长长度为255，date和datetime为固定长度。
 
 # delete
 ![image](https://user-images.githubusercontent.com/96570699/188920536-fba6cefe-8a52-4f7a-b5b3-8b6de65f4659.png)  
+![image](https://user-images.githubusercontent.com/96570699/189484267-18981eff-9b2f-422c-b97d-7a7af7090d9f.png)  
+![image](https://user-images.githubusercontent.com/96570699/189484159-c818177f-807c-4f21-b85e-0e38ae0effd1.png)  
+![image](https://user-images.githubusercontent.com/96570699/189484288-3d7aa096-d202-4144-b1d8-5a101f388a84.png)  
+![image](https://user-images.githubusercontent.com/96570699/189484235-7510d329-df0c-472d-b6bf-5bbefad94a41.png)  
+![image](https://user-images.githubusercontent.com/96570699/189484787-00683493-8381-4f7a-9252-147c8f58c663.png)  
+
+
+
+
+
+# 快速复制表
+![image](https://user-images.githubusercontent.com/96570699/189480685-203b0ae7-72dc-449e-8dd0-49d14ce15000.png)  
+![image](https://user-images.githubusercontent.com/96570699/189480695-c9aa035c-ef46-4a1b-ab8c-ebbbcc81b71f.png)  
+将部分查询结果创建成一张表  
+![image](https://user-images.githubusercontent.com/96570699/189480809-6a7df5a0-6905-4695-aba9-6d1a2b1a45de.png)  
+![image](https://user-images.githubusercontent.com/96570699/189480780-586d9c2f-1fbc-4a45-a62f-ab6fdc459502.png)  
+
+
+# 将查询的结果插入到表中
+查询的结果要符合表的结构才能查  
+![image](https://user-images.githubusercontent.com/96570699/189483350-a6422185-7977-4e69-84cb-a45ba219b634.png)
 
