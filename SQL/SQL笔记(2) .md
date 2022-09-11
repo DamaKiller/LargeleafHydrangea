@@ -119,4 +119,3 @@ varchar和char最长长度为255，date和datetime为固定长度。
 # 将查询的结果插入到表中
 查询的结果要符合表的结构才能查  
 ![image](https://user-images.githubusercontent.com/96570699/189483350-a6422185-7977-4e69-84cb-a45ba219b634.png)
-
