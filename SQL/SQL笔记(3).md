@@ -19,4 +19,6 @@
 
 # 主键（primary key， 简称PK）
 ![image](https://user-images.githubusercontent.com/96570699/189516496-48933292-faf9-4dba-962a-23ca08f6993b.png)  
-     
+![image](https://user-images.githubusercontent.com/96570699/189521065-28dd3942-b62f-4647-a3c7-cc121d2ee76c.png)  
+![image](https://user-images.githubusercontent.com/96570699/189521103-074d4104-632c-47f0-a5cd-4e2620ba22ff.png)  
+![image](https://user-images.githubusercontent.com/96570699/189521172-457e7ba8-e8c8-4c7e-8b2d-a41dd38372a8.png)     
