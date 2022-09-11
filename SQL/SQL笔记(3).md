@@ -22,3 +22,19 @@
 ![image](https://user-images.githubusercontent.com/96570699/189521065-28dd3942-b62f-4647-a3c7-cc121d2ee76c.png)  
 ![image](https://user-images.githubusercontent.com/96570699/189521103-074d4104-632c-47f0-a5cd-4e2620ba22ff.png)  
 ![image](https://user-images.githubusercontent.com/96570699/189521172-457e7ba8-e8c8-4c7e-8b2d-a41dd38372a8.png)     
+![image](https://user-images.githubusercontent.com/96570699/189521577-2cfe8188-cadf-40cd-a8b4-02a474a9c572.png)  
+![image](https://user-images.githubusercontent.com/96570699/189521600-8cdce873-eb89-4dec-98f6-5f018c51fcf1.png)  
+
+
+
+
+# 外键（foreign key， 简称FK）
+![image](https://user-images.githubusercontent.com/96570699/189521944-88baa2fe-1fef-4f45-bb57-438a0622e4ce.png)  
+![image](https://user-images.githubusercontent.com/96570699/189522154-8fa6ca7a-33d6-4ae5-9822-5a5078f1d96d.png)  
+![image](https://user-images.githubusercontent.com/96570699/189522408-fecc81eb-ec52-4809-9182-504677ac77f7.png)  
+被引用的表是父表，引用的表是子表。  
+![image](https://user-images.githubusercontent.com/96570699/189522533-6863a575-cbd4-4a60-93e1-7c4ed41c67b2.png)  
+
+
+
+
