@@ -34,7 +34,13 @@
 ![image](https://user-images.githubusercontent.com/96570699/189522408-fecc81eb-ec52-4809-9182-504677ac77f7.png)  
 被引用的表是父表，引用的表是子表。  
 ![image](https://user-images.githubusercontent.com/96570699/189522533-6863a575-cbd4-4a60-93e1-7c4ed41c67b2.png)  
+![image](https://user-images.githubusercontent.com/96570699/189524209-fa1e62cc-2158-46dd-b64e-3689b4bbeb8d.png)  
+![image](https://user-images.githubusercontent.com/96570699/189524777-da053ddd-bead-4e8d-87ac-e0bcb5290b82.png)   
 
 
 
 
+# 存储引擎
+![image](https://user-images.githubusercontent.com/96570699/189527128-90a6debd-599a-40f9-bdc7-72bf55921e8d.png)  
+![image](https://user-images.githubusercontent.com/96570699/189530677-d59dd04c-f9f9-4d0b-a550-a4568b294fb1.png)  
+![image](https://user-images.githubusercontent.com/96570699/189530814-efe85dc3-909f-4cd1-ba83-32b714c056d4.png)  
