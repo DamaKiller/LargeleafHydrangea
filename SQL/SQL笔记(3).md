@@ -54,8 +54,14 @@
 ![image](https://user-images.githubusercontent.com/96570699/189602285-466431ed-345a-4d81-bf09-44a796bafaf2.png)  
 ![image](https://user-images.githubusercontent.com/96570699/189613398-2513f72b-4ebe-4ccd-abf4-088b7b5f3f79.png)  
 ![image](https://user-images.githubusercontent.com/96570699/189614528-ff76c75c-cd0f-4be1-a4b0-f384ef48395a.png)  
-![image](https://user-images.githubusercontent.com/96570699/189694720-ead069f2-a869-483d-9cb2-036d57500d4f.png)  
-
+![image](https://user-images.githubusercontent.com/96570699/189694720-ead069f2-a869-483d-9cb2-036d57500d4f.png)
+**回滚事务**  
+![image](https://user-images.githubusercontent.com/96570699/189696278-6b6291c7-b9a7-4173-9fb8-0b8754281050.png)  
+![image](https://user-images.githubusercontent.com/96570699/189696376-9f94dc8c-ab18-4418-bb2e-75b2886621af.png)  
+**提交事务**  
+![image](https://user-images.githubusercontent.com/96570699/189696558-7267fcb1-6655-46bd-956d-38fd2e6421e3.png)  
+![image](https://user-images.githubusercontent.com/96570699/189696646-aa5c4e7a-522c-4896-91c9-0e072f8d986b.png)  
+回滚也只会回滚到上次提交的位置。  
 
 
 
