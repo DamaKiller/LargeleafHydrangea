@@ -61,7 +61,13 @@
 **提交事务**  
 ![image](https://user-images.githubusercontent.com/96570699/189696558-7267fcb1-6655-46bd-956d-38fd2e6421e3.png)  
 ![image](https://user-images.githubusercontent.com/96570699/189696646-aa5c4e7a-522c-4896-91c9-0e072f8d986b.png)  
-回滚也只会回滚到上次提交的位置。  
+回滚也只会回滚到上次提交的位置。
+![image](https://user-images.githubusercontent.com/96570699/189705311-58e1bb50-572a-4670-90ca-64e1c973d361.png)  
+![image](https://user-images.githubusercontent.com/96570699/189708030-4de801c1-3c11-45cd-b2d5-95ed85cc8e42.png)    
+![image](https://user-images.githubusercontent.com/96570699/189708189-19812178-d1e3-4018-9b6b-c5e033972e5f.png)  
+![image](https://user-images.githubusercontent.com/96570699/189711020-196c692c-afaa-4fac-8316-389c71f720c7.png)  
+![image](https://user-images.githubusercontent.com/96570699/189712063-ae180a1e-d254-472b-80a5-35ecc1d8028e.png)  
+
 
 
 
