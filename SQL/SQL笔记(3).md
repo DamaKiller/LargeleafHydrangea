@@ -50,4 +50,12 @@
 
 
 # 事务
+![image](https://user-images.githubusercontent.com/96570699/189601734-231947a6-e675-472e-bbab-3ab16d5228ed.png)  
+![image](https://user-images.githubusercontent.com/96570699/189602285-466431ed-345a-4d81-bf09-44a796bafaf2.png)  
+![image](https://user-images.githubusercontent.com/96570699/189613398-2513f72b-4ebe-4ccd-abf4-088b7b5f3f79.png)  
+![image](https://user-images.githubusercontent.com/96570699/189614528-ff76c75c-cd0f-4be1-a4b0-f384ef48395a.png)  
+![image](https://user-images.githubusercontent.com/96570699/189694720-ead069f2-a869-483d-9cb2-036d57500d4f.png)  
+
+
+
 
