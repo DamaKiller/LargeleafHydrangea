@@ -104,4 +104,14 @@
 
 
 
-# 索引
+# 索引(index)
+![image](https://user-images.githubusercontent.com/96570699/189950864-226a0966-d2f5-45b3-8fa7-9c23147c13a9.png)    
+![image](https://user-images.githubusercontent.com/96570699/189951497-9e0ecbef-03f4-4568-aa8b-ef7344ca74d5.png)  
+![image](https://user-images.githubusercontent.com/96570699/189953593-e4105116-50e6-4334-addd-96b4729fdd91.png)   
+
+
+### 实现原理
+![image](https://user-images.githubusercontent.com/96570699/189954593-bd21cab8-d3f6-4816-9341-8e947113b8c7.png)  
+![image](https://user-images.githubusercontent.com/96570699/189958190-0c3ee48a-36e9-4f54-8312-b49f7f587883.png)  
+索引是实现原理就是缩小查找范围，避免全表扫描。  
+![image](https://user-images.githubusercontent.com/96570699/189961306-986759f5-a21a-4911-8eae-e8f48688e9eb.png)   
