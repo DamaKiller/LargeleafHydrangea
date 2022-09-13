@@ -94,7 +94,14 @@
 提交后查询还是一条数据，这就是幻想。    
 
 **序列化**  
+![image](https://user-images.githubusercontent.com/96570699/189858815-33ba5de1-16f1-4c15-97e5-bf611663bcd2.png)  
+![image](https://user-images.githubusercontent.com/96570699/189858896-e8a2b5a2-6e42-456b-bbae-fee318b76590.png)  
+两个事务同时操作t_user这张表，只要另一个事务没有结束另一个事务就无法向下进行。   
+![image](https://user-images.githubusercontent.com/96570699/189859264-a0d062aa-3643-4227-a6ec-d836e721572a.png)  
+![image](https://user-images.githubusercontent.com/96570699/189859306-adafcd86-a249-4dcf-84c2-56cfd8f5f1cd.png)  
+只要一边提交了，另一边立马可以查出来。  
 
 
 
 
+# 索引
