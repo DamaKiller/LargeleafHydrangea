@@ -67,6 +67,33 @@
 ![image](https://user-images.githubusercontent.com/96570699/189708189-19812178-d1e3-4018-9b6b-c5e033972e5f.png)  
 ![image](https://user-images.githubusercontent.com/96570699/189711020-196c692c-afaa-4fac-8316-389c71f720c7.png)  
 ![image](https://user-images.githubusercontent.com/96570699/189712063-ae180a1e-d254-472b-80a5-35ecc1d8028e.png)  
+![image](https://user-images.githubusercontent.com/96570699/189795478-ea38dc84-4a0a-40f5-affe-0c31aa962d75.png)  
+![image](https://user-images.githubusercontent.com/96570699/189795552-44493b85-b7ee-493f-a6f7-82d9110ec84a.png)  
+更改事务隔离等级  
+![image](https://user-images.githubusercontent.com/96570699/189796629-1d67a7a7-e590-4c6e-9cb4-d60590615fbf.png)  
+
+
+### 隔离级别演示
+**读未提交**  
+![image](https://user-images.githubusercontent.com/96570699/189796988-20c8bf20-d6a9-4fd4-9c9f-21added031be.png) ![image](https://user-images.githubusercontent.com/96570699/189797017-1ef2b8f5-4d6e-4cd1-937e-9f7f1393fa2f.png)  
+这是两个并行的数据库，一个插入了数据，但是另一个没插入数据的数据库查到了该数据，发生了脏读。    
+
+**读已提交**  
+![image](https://user-images.githubusercontent.com/96570699/189799167-08494eba-1f86-4c45-9870-cd4b61aaaf29.png)
+![image](https://user-images.githubusercontent.com/96570699/189799125-78dd0e29-5830-4795-847e-7460a6a646c3.png)   
+不提交查询不到。  
+![image](https://user-images.githubusercontent.com/96570699/189799228-940d260e-08db-4f22-a207-25346f4df449.png)
+![image](https://user-images.githubusercontent.com/96570699/189799212-6d21d48e-5075-498e-a329-4a66e82cc007.png)   
+只有提交了之后才能查到。    
+
+**可重复读**  
+![image](https://user-images.githubusercontent.com/96570699/189854608-7eb71710-452f-49b6-bc43-fe45f099c85c.png)  
+读到一条数据  
+![image](https://user-images.githubusercontent.com/96570699/189854852-16b809cd-053e-483a-a809-955742261e50.png)  
+![image](https://user-images.githubusercontent.com/96570699/189854974-5a13642c-ab5e-47cc-be9b-ea50393f265c.png)  
+提交后查询还是一条数据，这就是幻想。    
+
+**序列化**  
 
 
 
