@@ -115,3 +115,11 @@
 ![image](https://user-images.githubusercontent.com/96570699/189958190-0c3ee48a-36e9-4f54-8312-b49f7f587883.png)  
 索引是实现原理就是缩小查找范围，避免全表扫描。  
 ![image](https://user-images.githubusercontent.com/96570699/189961306-986759f5-a21a-4911-8eae-e8f48688e9eb.png)   
+![image](https://user-images.githubusercontent.com/96570699/190189309-a3a823ae-637d-49d3-8613-76d52c5bff2e.png)  
+
+
+### 索引的创建与删除
+![image](https://user-images.githubusercontent.com/96570699/190190924-bdea9143-f4b5-4afc-8661-25be7c68398d.png)  
+![image](https://user-images.githubusercontent.com/96570699/190192047-2f3f3d0d-31f7-472b-a1ff-6f7b86d89abe.png)  
+并且后面14行也说明了没有用索引扫面。  
+   
