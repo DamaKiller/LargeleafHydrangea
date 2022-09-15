@@ -121,5 +121,21 @@
 ### 索引的创建与删除
 ![image](https://user-images.githubusercontent.com/96570699/190190924-bdea9143-f4b5-4afc-8661-25be7c68398d.png)  
 ![image](https://user-images.githubusercontent.com/96570699/190192047-2f3f3d0d-31f7-472b-a1ff-6f7b86d89abe.png)  
-并且后面14行也说明了没有用索引扫面。  
-   
+并且后面14行也说明了没有用索引扫描。    
+![image](https://user-images.githubusercontent.com/96570699/190372372-77adc76f-83a7-4d17-978b-53ce278309f3.png)    
+类型是ref，并且后面是1行说明使用了索引查找。  
+
+
+### 索引的失效
+**第一种情况**  
+![image](https://user-images.githubusercontent.com/96570699/190373413-398cf21f-0f2f-455a-95d7-36589147ad4c.png)  
+![image](https://user-images.githubusercontent.com/96570699/190375352-0a22b055-4fcd-4413-8566-5cfbf1b7efb3.png)  
+它不知道第一个字母是什么，只能一个个去查找。  
+
+**第二种情况**  
+![image](https://user-images.githubusercontent.com/96570699/190376055-51e5aeab-1f04-4874-9f28-19e894b52231.png)   
+
+**第三种情况**  
+
+
+
