@@ -152,6 +152,13 @@
 
 # 视图
 ![image](https://user-images.githubusercontent.com/96570699/190396618-0cd3f272-2478-428c-aa1c-24cac6267852.png)  
+![image](https://user-images.githubusercontent.com/96570699/190429398-5d6dd082-61f9-434d-a773-7d30017d29e4.png)  
+![image](https://user-images.githubusercontent.com/96570699/190429595-e2416900-9431-4257-a344-83ff3a4dc686.png)  
+![image](https://user-images.githubusercontent.com/96570699/190430477-8e3cde6e-933d-4351-8ef0-69bf20026818.png)  
+![image](https://user-images.githubusercontent.com/96570699/190430625-f9e6581a-8bae-43d9-acfe-03714b6d9f93.png)  
+![image](https://user-images.githubusercontent.com/96570699/190431084-44d41e64-b640-49d9-bacb-28b3335d29e6.png)  
+![image](https://user-images.githubusercontent.com/96570699/190432996-b2527c14-f1c4-400a-b2fb-380cfb4121c2.png)  
+![image](https://user-images.githubusercontent.com/96570699/190434307-040de314-0b1e-4d17-b0c1-689cdb5d5b06.png)  
 
 
 
