@@ -189,10 +189,5 @@
 ![image](https://user-images.githubusercontent.com/96570699/190472023-018fbfc9-fb6e-4fb8-b5fd-393c6f495a11.png)  
 ![image](https://user-images.githubusercontent.com/96570699/190472149-bf62fba5-a5ff-421b-a2f1-d658d3cacba1.png)  
 最后一个字段使用外键约束和唯一约束。  
-
-
-
-
-
-
+![image](https://user-images.githubusercontent.com/96570699/190473879-0998bc0d-f4a2-45e1-93c9-3359a71500ae.png)  
 
