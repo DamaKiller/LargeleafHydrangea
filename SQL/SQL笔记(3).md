@@ -136,6 +136,22 @@
 ![image](https://user-images.githubusercontent.com/96570699/190376055-51e5aeab-1f04-4874-9f28-19e894b52231.png)   
 
 **第三种情况**  
+![image](https://user-images.githubusercontent.com/96570699/190392786-3b814f13-41bf-4f25-885f-6c0aa7de40b3.png)  
+![image](https://user-images.githubusercontent.com/96570699/190392942-c0fcacea-217e-49c0-8ffa-c9ba8e857e0e.png)  
+
+**第四种情况**  
+![image](https://user-images.githubusercontent.com/96570699/190394094-683f1a2e-5064-4a6d-955a-20decba92cdc.png)  
+
+**第五种情况**  
+![image](https://user-images.githubusercontent.com/96570699/190394445-79144e15-cf22-443e-9cc6-8dbbd205732d.png)  
+
+![image](https://user-images.githubusercontent.com/96570699/190395597-c3441dc0-3a9f-4e3b-babc-6fab6e2c6ab5.png)  
+
+
+
+
+# 视图
+![image](https://user-images.githubusercontent.com/96570699/190396618-0cd3f272-2478-428c-aa1c-24cac6267852.png)  
 
 
 
