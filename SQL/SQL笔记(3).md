@@ -162,3 +162,32 @@
 
 
 
+
+
+# 数据库三范式
+![image](https://user-images.githubusercontent.com/96570699/190471110-c5aaad3e-915f-41c8-9132-2135fbf75ccd.png)  
+
+
+### 第一范式
+![image](https://user-images.githubusercontent.com/96570699/190471264-6d4d0b6c-f460-4567-9142-3ce994389c2c.png)  
+
+
+### 第二范式
+![image](https://user-images.githubusercontent.com/96570699/190471347-fd19bc1b-3548-46b4-9eb7-417866518299.png)  
+![image](https://user-images.githubusercontent.com/96570699/190471451-b22205d7-1350-43f4-ba4c-7c3524b8f535.png)  
+![image](https://user-images.githubusercontent.com/96570699/190471539-06e5c4ad-93fc-42f4-bd7e-e7a749101c04.png)  
+![image](https://user-images.githubusercontent.com/96570699/190471575-29d4d166-9918-411f-a70b-3d083ee10a74.png)  
+
+
+### 第三范式
+![image](https://user-images.githubusercontent.com/96570699/190471731-68eb5ed4-0266-4543-9adb-ba8dbce21fda.png)  
+![image](https://user-images.githubusercontent.com/96570699/190471819-e9d0bb8a-2d7a-4972-8e89-3208b11bfcfb.png)  
+![image](https://user-images.githubusercontent.com/96570699/190471849-67057d40-6b91-45b5-a118-3f5e33b30b2b.png)  
+
+
+
+
+
+
+
+
