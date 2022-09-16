@@ -196,7 +196,7 @@ Case函数只返回第一个符合条件的值，剩下的Case部分将会被自
 就是不加任何连接条件，直接从两张表中查找数据，就会出现这种情况。  
 ![image](https://user-images.githubusercontent.com/96570699/187863359-a572a903-eb34-48eb-aa62-271a49e6dc8b.png)  
 ![image](https://user-images.githubusercontent.com/96570699/187864288-be774130-9ab2-465a-9750-4b8933a18188.png)  
-![image](https://user-images.githubusercontent.com/96570699/187867216-cde1abe3-f62e-4310-862d-7c7d6dea07bb.png)
+![image](https://user-images.githubusercontent.com/96570699/187867216-cde1abe3-f62e-4310-862d-7c7d6dea07bb.png)  
 这种写法会去两个表中分表查找这两个字段，效率太低，现已经不用，为sql92的语法。  
 
 
