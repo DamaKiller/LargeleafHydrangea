@@ -91,7 +91,7 @@
 读到一条数据  
 ![image](https://user-images.githubusercontent.com/96570699/189854852-16b809cd-053e-483a-a809-955742261e50.png)  
 ![image](https://user-images.githubusercontent.com/96570699/189854974-5a13642c-ab5e-47cc-be9b-ea50393f265c.png)  
-提交后查询还是一条数据，这就是幻想。    
+提交后查询还是一条数据，这就是幻象。    
 
 **序列化**  
 ![image](https://user-images.githubusercontent.com/96570699/189858815-33ba5de1-16f1-4c15-97e5-bf611663bcd2.png)  
