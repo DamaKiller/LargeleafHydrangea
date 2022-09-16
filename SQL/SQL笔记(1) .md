@@ -81,7 +81,7 @@
 ![image](https://user-images.githubusercontent.com/96570699/183858455-984f5537-a523-40ca-bb89-a46addd1b37b.png)  
 
 
-### 2.指定降序操作(asc)  
+### 2.指定升序操作(asc)  
 ![image](https://user-images.githubusercontent.com/96570699/183859495-10ed55e6-0c67-4053-87b2-7d87a7327206.png)  
 
 
