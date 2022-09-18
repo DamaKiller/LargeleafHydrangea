@@ -63,4 +63,36 @@ unlink并不是立刻删掉，而是会在后续慢慢删掉（异步操作）
 
 
 
+
+
 # 三.Redis数据类型
+## string
+### String简绍
+![image](https://user-images.githubusercontent.com/96570699/190895802-1874e334-c856-4b34-a088-800ea93a0b78.png)  
+
+
+### String常用命令
+#### set和get命令
+![image](https://user-images.githubusercontent.com/96570699/190897482-b12c500c-0567-44f5-9438-abcdf848ee91.png)  
+![image](https://user-images.githubusercontent.com/96570699/190897943-16a4fe31-6b1b-4bc9-a5d0-283dcb993d36.png)  
+![image](https://user-images.githubusercontent.com/96570699/190897449-8452e83d-7586-49bb-a26d-b3ffe559975d.png)  
+![image](https://user-images.githubusercontent.com/96570699/190897509-40f0eb82-321d-4865-9d72-391e8289004e.png)  
+![image](https://user-images.githubusercontent.com/96570699/190897546-d1fd2104-d912-4a52-be2c-c2e0975feb18.png)  
+重复设置值，会将原有的key-value更新。  
+![image](https://user-images.githubusercontent.com/96570699/190898039-5255deca-1424-43ba-8996-9b2f43ae9ad5.png)  
+![image](https://user-images.githubusercontent.com/96570699/190898024-23777100-8a5b-4c22-ba26-d9e757888853.png)    
+
+
+#### append命令
+![image](https://user-images.githubusercontent.com/96570699/190897931-be1f4807-86a2-4e12-bfea-9f0e99e002c8.png)  
+![image](https://user-images.githubusercontent.com/96570699/190897885-4e3e92b7-6c6b-4c17-a6f6-08130a5f86f3.png)  
+
+
+#### strlen命令
+![image](https://user-images.githubusercontent.com/96570699/190897982-951b3278-35a9-49da-aed9-e42eb7a92563.png)  
+![image](https://user-images.githubusercontent.com/96570699/190897955-26b42240-a76d-4185-8450-04084c3559e2.png)  
+
+
+#### incr和decr命令
+  
+
