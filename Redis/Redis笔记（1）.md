@@ -102,5 +102,34 @@ unlink并不是立刻删掉，而是会在后续慢慢删掉（异步操作）
 ![image](https://user-images.githubusercontent.com/96570699/190898808-4c8a0e0a-5318-43fa-a2a4-f87a9a7a7de7.png)  
 **特性**  
 ![image](https://user-images.githubusercontent.com/96570699/190901142-512e3f30-f9a4-4f15-a98a-a364e46131bf.png)  
+就是在一个操作中对其加一，另一个操作中对其减一，他们之间不会互相影响。不会因为另外一个操作导致另外一个操作的值被更改。  
 
- 
+
+#### mset和mget命令
+![image](https://user-images.githubusercontent.com/96570699/190910528-b7cec5ca-edb3-47d3-9887-30beffe4f9c8.png)  
+![image](https://user-images.githubusercontent.com/96570699/190907128-0bb75e79-6cd5-4067-bfc3-8f42050c3c00.png)  
+
+
+#### msetnx命令
+![image](https://user-images.githubusercontent.com/96570699/190910567-e586f2d5-2970-4513-b203-513f2eab65c8.png)  
+![image](https://user-images.githubusercontent.com/96570699/190910138-ab5b206b-00f0-4596-8b68-fa355a062d48.png)  
+这条命令只要有一个存在就不会执行。只有全部存在才会执行。    
+![image](https://user-images.githubusercontent.com/96570699/190910512-11fa6c48-9186-4e56-83c9-dc6c74e81345.png)  
+
+
+#### getrange和setrange命令
+![image](https://user-images.githubusercontent.com/96570699/190910787-367ca706-1dbf-491d-b6ab-6100cb4bfcd0.png)  
+![image](https://user-images.githubusercontent.com/96570699/190910666-49458047-d94e-4891-9552-5ede75a9bf35.png)  
+![image](https://user-images.githubusercontent.com/96570699/190910757-94185a52-1931-49bd-a1da-7c460f6c1de8.png)  
+
+  
+#### setex和getset命令
+![image](https://user-images.githubusercontent.com/96570699/190910969-01a86349-9623-47d6-b858-20cf150b8905.png)  
+![image](https://user-images.githubusercontent.com/96570699/190910844-afee912f-0051-4ada-824d-ad4213becb6a.png)  
+![image](https://user-images.githubusercontent.com/96570699/190910935-df62dbf5-44a8-4b06-a20a-4414be88f1a0.png)  
+
+
+### string数据结构
+string的数据结构是简单的动态字符串，它采用预分配的冗余空间的方式来减少内存的频繁分配。  
+![image](https://user-images.githubusercontent.com/96570699/190911072-b425aaea-d11b-44d9-b77f-9108eb07a21f.png)  
+
