@@ -94,5 +94,13 @@ unlink并不是立刻删掉，而是会在后续慢慢删掉（异步操作）
 
 
 #### incr和decr命令
-  
+![image](https://user-images.githubusercontent.com/96570699/190898180-d434508b-1365-4e8a-8555-84bbae86136d.png)  
+![image](https://user-images.githubusercontent.com/96570699/190898867-706f1573-91be-46fb-b5a8-d97f8df7aef0.png)  
+![image](https://user-images.githubusercontent.com/96570699/190898232-cbbc0369-fc5e-4957-bce5-cfbf92ba10a2.png)  
+![image](https://user-images.githubusercontent.com/96570699/190898168-8e8f7fcb-2044-451b-b12b-49d4c1b31732.png)  
+![image](https://user-images.githubusercontent.com/96570699/190898198-549ca340-e41d-492e-b265-33dbee120e60.png)  
+![image](https://user-images.githubusercontent.com/96570699/190898808-4c8a0e0a-5318-43fa-a2a4-f87a9a7a7de7.png)  
+**特性**  
+![image](https://user-images.githubusercontent.com/96570699/190901142-512e3f30-f9a4-4f15-a98a-a364e46131bf.png)  
 
+ 
