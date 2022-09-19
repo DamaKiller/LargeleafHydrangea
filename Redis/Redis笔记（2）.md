@@ -42,4 +42,5 @@ rpush跟lpush一样。
 
 
 ### 数据结构
-
+![image](https://user-images.githubusercontent.com/96570699/191034793-9d3fcc98-39ff-4b7b-9d07-ab1f812d9a50.png)  
+![image](https://user-images.githubusercontent.com/96570699/191034586-c8827215-2f66-4a2c-ad0c-ac00c3e8a79e.png)  
