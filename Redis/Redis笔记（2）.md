@@ -44,3 +44,51 @@ rpush跟lpush一样。
 ### 数据结构
 ![image](https://user-images.githubusercontent.com/96570699/191034793-9d3fcc98-39ff-4b7b-9d07-ab1f812d9a50.png)  
 ![image](https://user-images.githubusercontent.com/96570699/191034586-c8827215-2f66-4a2c-ad0c-ac00c3e8a79e.png)  
+
+
+
+
+# 集合
+### 简绍
+![image](https://user-images.githubusercontent.com/96570699/191059411-84ab24e1-33e3-44da-8ea9-e7dbb317e147.png)  
+![image](https://user-images.githubusercontent.com/96570699/191059517-06d157e1-a573-423c-983a-16987d5c49fc.png)  
+
+
+### 集合常用命令
+#### sadd和smembers命令
+![image](https://user-images.githubusercontent.com/96570699/191060533-cc644138-557c-4288-af11-7ef137212847.png)  
+![image](https://user-images.githubusercontent.com/96570699/191060406-b6f63374-8dd7-4fe4-9a9c-fb96300f757b.png)  
+
+
+#### sismember命令
+![image](https://user-images.githubusercontent.com/96570699/191060969-e9f15ec5-7033-44c7-b003-91e0bfe9a8d0.png)  
+![image](https://user-images.githubusercontent.com/96570699/191060827-f602fca9-13a2-4acb-8ea9-21b44865bcb1.png)  
+
+
+#### scard命令
+![image](https://user-images.githubusercontent.com/96570699/191061153-d1ad6e3c-08fc-4b22-9a69-8a0e6ec4d24b.png)  
+![image](https://user-images.githubusercontent.com/96570699/191061099-fa87b4fd-3704-4eec-a3db-de8d236c1c99.png)  
+
+
+#### srem和spop命令
+![image](https://user-images.githubusercontent.com/96570699/191061522-09cf616c-d3ab-40d3-8a82-92e64e49af9e.png)  
+![image](https://user-images.githubusercontent.com/96570699/191061289-981640fa-4855-44dd-8f45-4a6d29dcba52.png)  
+![image](https://user-images.githubusercontent.com/96570699/191061474-915d4bd0-b953-45b5-ba7d-720104a0db54.png)  
+
+
+#### srandmember和smove命令
+![image](https://user-images.githubusercontent.com/96570699/191063888-abbc10a1-aabd-4e87-ac01-bcf5acb5f55a.png)  
+![image](https://user-images.githubusercontent.com/96570699/191061818-8a84b483-d86b-48f2-ac5a-5273f646d776.png)  
+![image](https://user-images.githubusercontent.com/96570699/191061728-613d26f9-6513-4a6b-8358-5f009025da2f.png)  
+![image](https://user-images.githubusercontent.com/96570699/191063822-73bad633-76b0-4078-8a66-0ee9b572179c.png)  
+
+
+#### sinter，sunion，sdiff命令
+![image](https://user-images.githubusercontent.com/96570699/191064232-b348e398-776f-4389-a672-77a78a646ce4.png)  
+![image](https://user-images.githubusercontent.com/96570699/191064282-ea12e0f4-6901-41c9-93ae-bac032d0c8c8.png)  
+![image](https://user-images.githubusercontent.com/96570699/191064344-fdeb3f4c-6701-409d-8445-ca8faf1e19a0.png)  
+
+
+### 数据结构
+![image](https://user-images.githubusercontent.com/96570699/191064446-ffd9765a-199a-44a3-a280-19a6a4004e76.png)  
+
