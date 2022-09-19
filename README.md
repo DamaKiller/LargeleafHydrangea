@@ -1,4 +1,4 @@
-# 平日生活工作中学到的小知识小技巧。:sunny:
+# 好好学习，天天向上。:sunny:
 ##  1. [Coding](coding)
 ### [coding_technique](./coding/coding_technique)
 - [合并两个字典](./coding/coding_technique/合并两个字典.py)  
@@ -56,5 +56,13 @@
 
  ## 5.[Redis](./Redis)
  - [redis.Redis与redis.StrictRedis类的区别](./Redis/redis.Redis与redis.StrictRedis类的区别.md)
+ - [Redis笔记（1）](./Redis/Redis笔记（1）.md)
+ - [Redis笔记（2）](./Redis/Redis笔记（2）.md)
  - [redis注意事项](./Redis/redis注意事项.md)
  
+ ## 6.[SQL](./SQL)
+ - [SQL笔记(1)](./SQL/SQL笔记(1) .md)
+ - [SQL笔记(2)](./SQL/SQL笔记(2) .md)
+ - [SQL笔记(3)](./SQL/SQL笔记(3) .md)
+ - [将查询结果合并成一行](./SQL/将查询结果合并成一行.md)
+ - [查找不在表里的数据](./SQL/查找不在表里的数据.md)
