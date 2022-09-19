@@ -1,8 +1,45 @@
 # 列表
 ### 简绍
-单键多值的意思的key为一个，但可以有多个值。  
+单键多值的意思的key为一个，但可以有多个值。即key为name但value为jack，lucy，sam等。    
 redis中的列表数据结构其实就是个双向链表，
 ![image](https://user-images.githubusercontent.com/96570699/190911535-896c97cd-395c-45b4-9e57-0407d5a2d1ea.png)  
 
 
 ### 列表常用命令
+#### lpush和rpush，lrange命令
+![image](https://user-images.githubusercontent.com/96570699/191027519-aaa51e88-25cb-4a02-9df0-80a708eba6b9.png)  
+![image](https://user-images.githubusercontent.com/96570699/191027557-c03f1fba-9c5b-4164-a275-fbcbdbf8b246.png)  
+![image](https://user-images.githubusercontent.com/96570699/191024620-8645ec1b-caff-4397-9a36-fe5f1c31b9d5.png)  
+注意存放方式类似于栈，后进先出。  
+![image](https://user-images.githubusercontent.com/96570699/191027178-c851cdb2-9227-4204-b263-4a716c4149be.png)  
+rpush跟lpush一样。  
+![image](https://user-images.githubusercontent.com/96570699/191027745-44f9cdb8-680e-442a-a029-6ca69105cdd4.png)  
+![image](https://user-images.githubusercontent.com/96570699/191028002-ad3fbf75-4b15-428f-aa94-474a297df8f7.png)  
+
+
+#### lpop和rpop，rpoplpush命令
+![image](https://user-images.githubusercontent.com/96570699/191028104-73050b97-1470-4c17-99f9-ec3c6f4da861.png)  
+值在键在，值光键亡的意思是当值都被取出时该键就不存在了。  
+![image](https://user-images.githubusercontent.com/96570699/191028197-14743c12-2798-417a-8185-abfd9a22da93.png)  
+![image](https://user-images.githubusercontent.com/96570699/191029307-e6c2dd80-bb9a-471c-a40d-0cb658aa59e1.png)  
+![image](https://user-images.githubusercontent.com/96570699/191030007-242cefc4-33cb-4c93-b3a7-db5423f4b104.png)  
+![image](https://user-images.githubusercontent.com/96570699/191030178-ad99b84a-6e29-4844-b9cc-3e2c42abb190.png)  
+
+
+#### index和llen命令
+![image](https://user-images.githubusercontent.com/96570699/191030416-785d1275-5eca-4dbb-90d8-9269303ebf10.png)  
+![image](https://user-images.githubusercontent.com/96570699/191030641-5d93c812-9dc9-4d77-9466-4ffc467f7259.png)  
+![image](https://user-images.githubusercontent.com/96570699/191030339-ffa9c71b-6517-4052-b272-888fb71d07a2.png)  
+![image](https://user-images.githubusercontent.com/96570699/191030546-4fb1a838-5bd0-4467-b9ca-127a3c042427.png)  
+![image](https://user-images.githubusercontent.com/96570699/191030580-d8b90ebd-e8af-440a-afa8-523aa640f54d.png)  
+
+
+#### linsert..after/before和lrem，lset命令
+![image](https://user-images.githubusercontent.com/96570699/191030871-f937dfa7-f1a5-4140-8cb1-fe34f8f9b906.png)  
+![image](https://user-images.githubusercontent.com/96570699/191031670-6260a247-3c98-41a6-858e-1feceb3383c7.png)  
+![image](https://user-images.githubusercontent.com/96570699/191032028-ccb5717b-d841-4bcb-8eee-53ff53e5e579.png)  
+![image](https://user-images.githubusercontent.com/96570699/191032251-8b48f0cf-a120-4468-8260-c4b11fe7f6e5.png)  
+
+
+### 数据结构
+
