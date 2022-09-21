@@ -92,3 +92,43 @@ rpush跟lpush一样。
 ### 数据结构
 ![image](https://user-images.githubusercontent.com/96570699/191064446-ffd9765a-199a-44a3-a280-19a6a4004e76.png)  
 
+
+# 哈希
+![image](https://user-images.githubusercontent.com/96570699/191544602-454e289e-c1bf-42b5-a855-5d418558ec4d.png)  
+![image](https://user-images.githubusercontent.com/96570699/191544279-7b02defd-e0da-4ac3-9d67-aa872efee630.png)  
+![image](https://user-images.githubusercontent.com/96570699/191544745-a5536c84-454a-4990-b693-e36fd3d2744c.png)  
+![image](https://user-images.githubusercontent.com/96570699/191545086-e16f9c4d-32be-49a9-a2ce-c4088d106318.png)  
+![image](https://user-images.githubusercontent.com/96570699/191546438-b40f1141-e56a-4a49-9301-0d30c62bc247.png)  
+只不过value是一段映射关系。  
+
+
+
+
+### 常用命令
+*** 
+#### hset和hget命令
+![image](https://user-images.githubusercontent.com/96570699/191548312-e63f905d-91ca-4fe5-8d6d-8de31d100530.png)  
+![image](https://user-images.githubusercontent.com/96570699/191548273-48ed9200-966b-4b7a-b1bc-dbace531f0ae.png)  
+
+
+#### hmset命令
+*** 
+![image](https://user-images.githubusercontent.com/96570699/191548977-5d16e5cc-1213-439d-a297-7b90ee608b57.png)  
+![image](https://user-images.githubusercontent.com/96570699/191549088-b1d2cde2-bc18-4f10-976c-4dd940622d85.png)  
+
+
+#### hexists命令
+*** 
+![image](https://user-images.githubusercontent.com/96570699/191549561-b9b4285f-1730-4bae-84f0-aba668f2b76b.png)  
+![image](https://user-images.githubusercontent.com/96570699/191549242-7240a890-0325-4218-a784-2a21090ebb33.png)   
+0表示不存在，1表示存在。   
+
+
+#### hkeys和hvals命令
+*** 
+![image](https://user-images.githubusercontent.com/96570699/191550291-d363988a-d3c0-40fc-b399-6804d3bdc2b2.png)  
+![image](https://user-images.githubusercontent.com/96570699/191550225-5ff72292-57ee-461d-9003-d32932b6d335.png)  
+
+
+#### hsetnx命令
+*** 
