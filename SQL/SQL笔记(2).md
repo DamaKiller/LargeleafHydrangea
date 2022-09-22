@@ -104,7 +104,8 @@ varchar和char最长长度为255，date和datetime为固定长度。
 ![image](https://user-images.githubusercontent.com/96570699/189484235-7510d329-df0c-472d-b6bf-5bbefad94a41.png)  
 ![image](https://user-images.githubusercontent.com/96570699/189484787-00683493-8381-4f7a-9252-147c8f58c663.png)  
 **注**  
-delete操作多张表时，`delete from table1, table2 where table1.字段 = table2.字段`，要这么写。
+delete操作多张表时，`delete from table1, table2 where table1.字段 = table2.字段`，要这么写。  
+它的执行方法是从table1中取第一条数据然后到table2中进行比对，发现有满足条件的就删掉，接下来再去除第二条，第三条，依次类推。  
 
 
 
