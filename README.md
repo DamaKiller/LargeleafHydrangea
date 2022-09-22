@@ -56,8 +56,9 @@
 
  ## 5.[Redis](./Redis)
  - [redis.Redis与redis.StrictRedis类的区别](./Redis/redis.Redis与redis.StrictRedis类的区别.md)
- - [Redis笔记（1）](./Redis/Redis笔记（1）.md)
- - [Redis笔记（2）](./Redis/Redis笔记（2）.md)
+ - [Redis笔记(1)](./Redis/Redis笔记(1).md)
+ - [Redis笔记(2)](./Redis/Redis笔记(2).md)
+ - [Redis笔记(3)](./Redis/Redis笔记(3).md)
  - [redis注意事项](./Redis/redis注意事项.md)
  
  ## 6.[SQL](./SQL)
