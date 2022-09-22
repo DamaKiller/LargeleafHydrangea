@@ -177,6 +177,8 @@ Case函数只返回第一个符合条件的值，剩下的Case部分将会被自
 expr1 的值为TRUE，则返回值为 expr2。  
 expr1 的值为FALSE，则返回值为 expr3。  
 其中，expr1是判断条件，expr2和expr3是符合expr1的自定义的返回结果。  
+互换性别案列。  
+![image](https://user-images.githubusercontent.com/96570699/191675095-547ab406-444c-4ced-9e9c-8e85b06e511a.png)  
 
 
 
