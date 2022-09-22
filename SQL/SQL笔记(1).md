@@ -4,6 +4,7 @@
 
 
 **端口号**  
+***  
 端口号的主要作用是表示一台计算机中的特定进程所提供的服务。网络中的计算机是通过IP地址来代表其身份的，它只能表示某台特定的计算机，
 但是一台计算机上可以同时提供很多个服务，如数据库服务、FTP服务、Web服务等，我们就通过端口号来区别相同计算机所提供的这些不同的服务。
 在同一台计算机上端口号不能重复，否则，就会产生端口号冲突。端口是通过端口号来标记的，端口号只有整数，范围是从0 到65535。
@@ -18,28 +19,34 @@
 
 # 简单查询
 ### 1.查看表结构 
+***  
 `desc 表名;`(describe缩写为desc)  
 
 
 ### 2.查看数据库版本
+***  
 `select version();`
 
 
 ### 3.查询一个字段
+***  
 ![image](https://user-images.githubusercontent.com/96570699/183606625-49ad12d8-b48a-4318-bab5-a5fc684dc2d4.png)  
 
 
 ### 4.查询多个字段
+***  
 ![image](https://user-images.githubusercontent.com/96570699/183607694-8c62913e-a2f4-407d-b9e3-d2e5089f7a23.png)  
 `select 字段名1, 字段名2 from 表名;`
 
 
 ### 5.查询所有字段  
+***  
 ![image](https://user-images.githubusercontent.com/96570699/183608944-6a8f01e1-e337-44e1-9301-75c8ebdbb401.png)  
 ![image](https://user-images.githubusercontent.com/96570699/183609397-8c36be80-145a-4f9c-b049-7509d8bf01e1.png)  
 
 
 ### 6.给查询的列起别名
+***  
 `select 字段名 from 表名 as 别名`  
 `select 字段名 别名 from 表名`  
 `select 字段名 '别 名' from 表名`  
@@ -52,6 +59,7 @@
 
 
 # 条件查询
+***  
 ![image](https://user-images.githubusercontent.com/96570699/183618911-cacb7d48-604c-438d-9cb0-89a13e8834ce.png)  
 ![image](https://user-images.githubusercontent.com/96570699/183795898-e16c6775-3db6-47be-bd68-4ec024312fa0.png)  
 **注**   
@@ -67,6 +75,7 @@
 
 
 # 模糊查询
+***  
 ![image](https://user-images.githubusercontent.com/96570699/183853344-8b7d13be-fd58-4f6b-bf4a-1243a102c735.png)  
 ![image](https://user-images.githubusercontent.com/96570699/183853578-13fa2cca-c4c6-4bd0-a42a-b703693a1a6b.png)  
 ![image](https://user-images.githubusercontent.com/96570699/183854134-8b6b822c-ebcb-4da1-a610-0e7726e94e4b.png)  
@@ -78,22 +87,27 @@
 # 排序
 ![image](https://user-images.githubusercontent.com/96570699/183858089-95269b64-bc4a-46af-ab96-e2f4050a9604.png)  
 ### 1.指定降序操作(desc)  
+***  
 ![image](https://user-images.githubusercontent.com/96570699/183858455-984f5537-a523-40ca-bb89-a46addd1b37b.png)  
 
 
 ### 2.指定升序操作(asc)  
+***  
 ![image](https://user-images.githubusercontent.com/96570699/183859495-10ed55e6-0c67-4053-87b2-7d87a7327206.png)  
 
 
 ### 3.多个字段排序操作
+***  
 ![image](https://user-images.githubusercontent.com/96570699/183861024-f388f5cf-29fa-4ee5-9175-9931c80a92b7.png)  
 
 
 ### 4.根据位置进行排序操作
+***  
 ![image](https://user-images.githubusercontent.com/96570699/183861721-55817985-0b67-432a-8b24-4ec858d9e14d.png)
 
 
 ### 5.SQL执行优先级
+***  
 先执行FROM,明确数据的来源，它是从哪张表取来的。  
 再执行WHERE,对数据进行筛选。  
 再执行GROUP BY,对数据进行分组分类。  
@@ -107,36 +121,43 @@
 
 # 数据处理函数（单行处理函数-一行一行处理）
 ### 1.LOWER-转换小写
+***  
 ![image](https://user-images.githubusercontent.com/96570699/183868055-86c25789-adf1-4952-b056-88610b897133.png)  
 同样结果的字段名是`Lower（ename）`可以给它起别名。  
 
 
 ### 2.UPPER-转换大写
+***  
 ![image](https://user-images.githubusercontent.com/96570699/183868601-08a4d41e-65d7-4987-83f0-cdc86892be1b.png)  
 
 
 ### 3.substr-取子串
+***  
 ![image](https://user-images.githubusercontent.com/96570699/185858046-9ff45e65-1a15-49f2-9efc-67f387215178.png)
 
 
 ### 4.length-取长度
+***  
 ![image](https://user-images.githubusercontent.com/96570699/185859252-87e33dbf-a56a-4b5d-bf94-1cb1d8878d52.png)
 
 
 ### 5.rand()-生成随机数
-**默认生成的随机数是小于1的**    
+**默认生成的随机数是小于1的**   
+***  
 ![image](https://user-images.githubusercontent.com/96570699/186802229-9d95a6cd-1e03-41b3-8953-882b9e30e3c3.png)  
 **生成100以内的随机数**  
 ![image](https://user-images.githubusercontent.com/96570699/186803364-3bb5e7b1-88db-4368-ba51-7347347a0f4f.png)  
 
 
 ###  6.ifnull(数据，被当作那个值)-空处理函数
+***  
 ![image](https://user-images.githubusercontent.com/96570699/186808884-03f1e654-d136-4138-9490-e44776539d3c.png)  
 ![image](https://user-images.githubusercontent.com/96570699/186809356-985ff6fe-9d72-4b28-b413-ecd5b0186e34.png)  
 ![image](https://user-images.githubusercontent.com/96570699/187110559-bf2f14bd-8700-4960-982e-44c3589be536.png)  
 
 
 ###  7.case...when...then...when...then...else..end-模拟if语句
+***  
 不加else条件，会默认返回null。  
 Case函数只返回第一个符合条件的值，剩下的Case部分将会被自动忽略。  
 ![image](https://user-images.githubusercontent.com/96570699/187442887-3836db7b-3c3a-4217-9a52-68a9c5f75441.png)  
@@ -145,11 +166,23 @@ Case函数只返回第一个符合条件的值，剩下的Case部分将会被自
 ![image](https://user-images.githubusercontent.com/96570699/187444919-a325a8e5-2085-435e-8821-775159ffb30f.png)  
 **第二种**  
 ![image](https://user-images.githubusercontent.com/96570699/187445304-43ff4f77-2277-41a1-85f5-25c1e4925f14.png)
+![image](https://user-images.githubusercontent.com/96570699/191673942-eb50ad25-0f78-4601-8f02-0982c490a4e6.png)  
+![image](https://user-images.githubusercontent.com/96570699/191674075-df43a6cd-1a9f-4546-a5b7-fd2ee3030414.png)  
+![image](https://user-images.githubusercontent.com/96570699/191674254-2234f73d-9146-40b6-84a4-638cabcc5212.png)  
+![image](https://user-images.githubusercontent.com/96570699/191674208-0de820e7-ccb1-4f9e-8f7f-a82895b8dbdd.png)  
+
+
+### 8.IF(expr1,expr2,expr3)
+***  
+expr1 的值为TRUE，则返回值为 expr2。  
+expr1 的值为FALSE，则返回值为 expr3。  
+其中，expr1是判断条件，expr2和expr3是符合expr1的自定义的返回结果。  
 
 
 
 
 # 分组函数-多行处理函数
+***  
 ![image](https://user-images.githubusercontent.com/96570699/187447259-278edd02-b68c-4b86-9101-2f51c7c2eb95.png)  
 **分组函数注意点**  
 ![image](https://user-images.githubusercontent.com/96570699/187449785-32a46c36-8116-48af-85f7-aad6348126da.png)  
@@ -161,6 +194,7 @@ Case函数只返回第一个符合条件的值，剩下的Case部分将会被自
 
 
 ### 分组查询
+***  
 ![image](https://user-images.githubusercontent.com/96570699/187459907-e40db954-2075-481e-b1ef-472a815b1137.png)
 ![image](https://user-images.githubusercontent.com/96570699/187815969-b136450f-d99e-4f7c-912a-7bdba4a031f3.png)  
 ![image](https://user-images.githubusercontent.com/96570699/187816063-81815763-088c-4de6-8024-00f765d94156.png)  
@@ -175,6 +209,7 @@ Case函数只返回第一个符合条件的值，剩下的Case部分将会被自
 
 
 ### distinct-去重
+***  
 ![image](https://user-images.githubusercontent.com/96570699/187845828-f1ba3933-cffd-4e39-87b3-beb9088d2809.png)  
 ![image](https://user-images.githubusercontent.com/96570699/187856111-abd2c552-208f-4d8b-9522-10e2c18f2a93.png)  
 它可以用在分组函数当中，去重后计数。  
@@ -187,11 +222,13 @@ Case函数只返回第一个符合条件的值，剩下的Case部分将会被自
 
 
 # 连接查询
+***  
 ![image](https://user-images.githubusercontent.com/96570699/187857970-2b5966a5-df2b-4142-b484-51c12cbef804.png)  
 ![image](https://user-images.githubusercontent.com/96570699/187858241-49ba76ab-d309-4862-9316-a65c247c6193.png)  
 
 
 ### 1.笛卡尔积现象
+***  
 ![image](https://user-images.githubusercontent.com/96570699/187863220-3f39921e-c2a5-4156-92c6-228c38f26a81.png)  
 就是不加任何连接条件，直接从两张表中查找数据，就会出现这种情况。  
 ![image](https://user-images.githubusercontent.com/96570699/187863359-a572a903-eb34-48eb-aa62-271a49e6dc8b.png)  
@@ -201,6 +238,7 @@ Case函数只返回第一个符合条件的值，剩下的Case部分将会被自
 
 
 ### 2.内连接之等值连接
+***  
 条件是等量关系，所以被称作等值连接。  
 ![image](https://user-images.githubusercontent.com/96570699/188127064-d95c00f6-8a30-4bf6-b9ae-9fdb811fe882.png)  
 ![image](https://user-images.githubusercontent.com/96570699/188128438-412e688c-296b-4cfc-bec5-76b1f1401d6e.png)   
@@ -209,6 +247,7 @@ Case函数只返回第一个符合条件的值，剩下的Case部分将会被自
 
 
 ### 3.内连接之非等值连接
+***  
 条件不是等量条件。
 ![image](https://user-images.githubusercontent.com/96570699/188129526-adf6bcc3-583e-433e-a5f9-8e8e153da2d7.png)  
 该处省略了inner。  
@@ -216,6 +255,7 @@ Case函数只返回第一个符合条件的值，剩下的Case部分将会被自
 
 
 ### 4.内连接之自连接
+***  
 先查询员工编号，员工名，领导编号  
 ![image](https://user-images.githubusercontent.com/96570699/188266030-74dd7097-babf-41a2-80a3-1c2f9fc5ad8b.png)  
 ![image](https://user-images.githubusercontent.com/96570699/188266125-7fb0e220-dcbe-45af-9556-21db60f8eb8d.png)  
@@ -227,6 +267,7 @@ Case函数只返回第一个符合条件的值，剩下的Case部分将会被自
 
 
 ### 5.外连接
+***  
 ![image](https://user-images.githubusercontent.com/96570699/188266944-97530c95-e5c0-41a6-8680-ef510459b70c.png)   
 没有匹配的数据则自动填充null  
 ![image](https://user-images.githubusercontent.com/96570699/188266985-e23eb558-94ad-4f2d-aeb7-bcaa4debecc1.png)  
@@ -234,6 +275,7 @@ Case函数只返回第一个符合条件的值，剩下的Case部分将会被自
 
 
 ### 6.多张表连接
+***  
 ![image](https://user-images.githubusercontent.com/96570699/188267480-4827e56f-c493-4f61-9ea7-044bc0dafded.png)  
 ![image](https://user-images.githubusercontent.com/96570699/188267681-efcfac3a-0e9b-4999-b531-db3555d9e50b.png)  
 ![image](https://user-images.githubusercontent.com/96570699/188267839-c3768d03-d0a7-40d7-8369-9d6c6e152aea.png)  
