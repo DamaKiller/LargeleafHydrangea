@@ -85,8 +85,18 @@
 
 
 
+
 # 发布和订阅
 ### 简绍
 ***  
 ![image](https://user-images.githubusercontent.com/96570699/191917036-9d8eab32-7dad-4af0-b414-f30772ca7caf.png)   
+![image](https://user-images.githubusercontent.com/96570699/191918328-adb037e2-70c2-4786-9146-74141887ab64.png)  
+一个发布者可以有多个频道，可以通过不同的频道发布不同的信息。  
+![image](https://user-images.githubusercontent.com/96570699/191920669-666b07e7-ceed-4a9f-bc18-77a13ccc41a6.png)  
+
+### 实现
+![image](https://user-images.githubusercontent.com/96570699/191925934-d2c961bc-9f8f-4158-9adb-b6081791367d.png)  
+**得到的信息：**   
+![image](https://user-images.githubusercontent.com/96570699/191926631-39063804-b749-41e8-9984-e8c8e276cb40.png)  
+
 
