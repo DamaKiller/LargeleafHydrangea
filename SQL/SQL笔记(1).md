@@ -64,6 +64,7 @@
 ![image](https://user-images.githubusercontent.com/96570699/183795898-e16c6775-3db6-47be-bd68-4ec024312fa0.png)  
 **注**   
 使用`between and`必须遵顼左小右大的原则，即and左为小的数，右为大的数。并且是闭区间。  
+between...and...可以用来判断时间间隙，即between '2022-01-01' and '2023-01-01'，判断的是在22年的时间，右边要用下一年的一月一日。  
 ![image](https://user-images.githubusercontent.com/96570699/183840559-f2df2a20-bd5e-4787-ac0e-6e04bf071a8e.png)  
 ![image](https://user-images.githubusercontent.com/96570699/183848801-ab4e8360-0bde-4a08-bee6-9a58f0fca2c2.png)  
 **正确写法**  
