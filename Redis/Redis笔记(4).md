@@ -62,17 +62,24 @@ discard表明放弃组队。
 
 
 ### 事务的三个特性
-![image](https://user-images.githubusercontent.com/96570699/192147724-acff5b00-3ecf-4587-b448-4d864e273928.png)  
-
-
+***  
+![image](https://user-images.githubusercontent.com/96570699/192147724-acff5b00-3ecf-4587-b448-4d864e273928.png)   
 
 
 # 持久化
 ### RDB方式
+***  
 ![image](https://user-images.githubusercontent.com/96570699/192149793-96ec031a-836f-479e-ade7-3028d7bcb865.png)  
+![image](https://user-images.githubusercontent.com/96570699/192322069-db6637af-ff04-4852-95c3-4bffb6304445.png)   
+![image](https://user-images.githubusercontent.com/96570699/192322167-308156ac-25ce-475e-9270-52d245ebfdbd.png)  
+![image](https://user-images.githubusercontent.com/96570699/192322271-d9117ca6-24ee-48bd-bb82-c59630e2b19b.png) 
+
 
 ### 设置
 ***  
+![image](https://user-images.githubusercontent.com/96570699/192322646-42d1d0af-5c74-4ca7-9df8-26bff3fc692d.png)  
+![image](https://user-images.githubusercontent.com/96570699/192322980-f6e14cca-c897-44ae-a306-e39d73ec15e4.png)  
+![image](https://user-images.githubusercontent.com/96570699/192322732-cc7a936e-358e-4e16-b3d1-43f3b10a8ddd.png)  
 ![image](https://user-images.githubusercontent.com/96570699/192299286-91e132f0-c473-4d44-9a83-c057ba7f03b8.png)  
 ![image](https://user-images.githubusercontent.com/96570699/192299389-26b9e3a8-0d45-4d4f-8223-e16024a7ee84.png)  
 当硬盘满了的时候，无法写入，就会关闭redis。  
@@ -91,12 +98,14 @@ bgsave会自动保存。
 
 
 ### 特点
+***  
 ![image](https://user-images.githubusercontent.com/96570699/192314752-092c9ab0-309d-490d-a62d-c2a8020c5f1a.png)  
 数据可能会丢失是因为在还没到持久化的时间时服务器挂掉了，此时还没有备份，则哪些数据就会丢失。  
 ![image](https://user-images.githubusercontent.com/96570699/192314821-9f3b89d7-508b-4d5b-9ea0-d9452f723ab2.png)  
 
 
 ### rdb备份过程
+***  
 将备份的文件备份好，当redis挂掉之后重启就会在备份位置找该文件进行恢复操作。  
 ![image](https://user-images.githubusercontent.com/96570699/192320417-23e3e5d4-5771-4a89-84c7-94b059c61f0f.png)  
 
