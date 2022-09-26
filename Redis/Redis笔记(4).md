@@ -71,7 +71,33 @@ discard表明放弃组队。
 ### RDB方式
 ![image](https://user-images.githubusercontent.com/96570699/192149793-96ec031a-836f-479e-ade7-3028d7bcb865.png)  
 
+### 设置
+***  
+![image](https://user-images.githubusercontent.com/96570699/192299286-91e132f0-c473-4d44-9a83-c057ba7f03b8.png)  
+![image](https://user-images.githubusercontent.com/96570699/192299389-26b9e3a8-0d45-4d4f-8223-e16024a7ee84.png)  
+当硬盘满了的时候，无法写入，就会关闭redis。  
+![image](https://user-images.githubusercontent.com/96570699/192299707-d72eafbc-9bdb-45ff-8bcc-a3ef6406e23f.png)  
+![image](https://user-images.githubusercontent.com/96570699/192299765-b915e7a9-e0fb-4999-919b-527fba37b363.png)  
+![image](https://user-images.githubusercontent.com/96570699/192300260-da08857d-95dd-412f-8983-8925fef27f91.png)  
+![image](https://user-images.githubusercontent.com/96570699/192300367-f674622b-b6bd-48ed-9d65-65e91f312d05.png)  
+检查是否有损坏，因为有损坏的数据进行持久化是没有意义的。   
+![image](https://user-images.githubusercontent.com/96570699/192302556-e66fe1bd-4554-48d5-8341-a5bdc4a362d4.png)  
+![image](https://user-images.githubusercontent.com/96570699/192303100-633f6433-fbcb-44cb-bced-f143db425351.png)  
+bgsave会自动保存。  
+当设置30秒更新三个key进行持久化操作，当在第20秒时就更新了三个key，此时就会进行持久化操作，并重新开始计时。  
+设置在20秒内更新3个key就会进行持久化操作，当在20秒内更新了超过这个值的数量key后，就会将这5个值进行持久化操作，并重新开始计时。 
+![image](https://user-images.githubusercontent.com/96570699/192309177-1c4bdba8-f629-41aa-92e5-167170958c1a.png)  
+![image](https://user-images.githubusercontent.com/96570699/192308439-da9ef50b-a0df-47fa-930d-f5cdbeb3f1f2.png)  
 
 
+### 特点
+![image](https://user-images.githubusercontent.com/96570699/192314752-092c9ab0-309d-490d-a62d-c2a8020c5f1a.png)  
+数据可能会丢失是因为在还没到持久化的时间时服务器挂掉了，此时还没有备份，则哪些数据就会丢失。  
+![image](https://user-images.githubusercontent.com/96570699/192314821-9f3b89d7-508b-4d5b-9ea0-d9452f723ab2.png)  
+
+
+### rdb备份过程
+将备份的文件备份好，当redis挂掉之后重启就会在备份位置找该文件进行恢复操作。  
+![image](https://user-images.githubusercontent.com/96570699/192320417-23e3e5d4-5771-4a89-84c7-94b059c61f0f.png)  
 
 
