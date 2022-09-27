@@ -55,11 +55,13 @@
  - [滑动窗口算法](./algorithm/滑动窗口算法.md)
 
  ## 5.[Redis](./Redis)
- - [redis.Redis与redis.StrictRedis类的区别](./Redis/redis.Redis与redis.StrictRedis类的区别.md)
  - [Redis笔记(1)](./Redis/Redis笔记(1).md)
  - [Redis笔记(2)](./Redis/Redis笔记(2).md)
  - [Redis笔记(3)](./Redis/Redis笔记(3).md)
+ - [Redis笔记(4)](./Redis/Redis笔记(4).md)
+ - [Redis笔记(5)](./Redis/Redis笔记(5).md)
  - [redis注意事项](./Redis/redis注意事项.md)
+ - [redis.Redis与redis.StrictRedis类的区别](./Redis/redis.Redis与redis.StrictRedis类的区别.md)
  
  ## 6.[SQL](./SQL)
  - [SQL笔记(1)](./SQL/SQL笔记(1).md)
