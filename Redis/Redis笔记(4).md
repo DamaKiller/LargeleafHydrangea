@@ -110,3 +110,63 @@ bgsave会自动保存。
 ![image](https://user-images.githubusercontent.com/96570699/192320417-23e3e5d4-5771-4a89-84c7-94b059c61f0f.png)  
 
 
+
+
+### AOF方式
+***  
+![image](https://user-images.githubusercontent.com/96570699/192441664-4a73685e-eb33-47b7-a2a4-4de422b42be8.png)  
+所有的增删改操作。  
+![image](https://user-images.githubusercontent.com/96570699/192447755-d8701a58-a7bd-4604-9a2b-7ea669cf4381.png)  
+![image](https://user-images.githubusercontent.com/96570699/192451220-35677031-0629-4f47-8e00-a77ef927a9d3.png)  
+![image](https://user-images.githubusercontent.com/96570699/192447916-dc38f92b-1eb1-4cbe-9381-16e50deaea2f.png)  
+![image](https://user-images.githubusercontent.com/96570699/192451360-4b14659f-f328-4ce5-8b32-3621119f11c3.png)  
+文件的生成位置和rdb文件的生成位置一致。  
+
+
+### AOF备份过程
+***  
+![image](https://user-images.githubusercontent.com/96570699/192452592-9ea3d7d6-a0ce-4be3-8db3-12cb3335a502.png)  
+![image](https://user-images.githubusercontent.com/96570699/192453482-cfee76f7-8819-4ec5-bfa9-1ddbb72892f9.png)   
+跟RDB方式一样，都是备份好文件然后重启就会在备份位置找该文件进行恢复操作。  
+![image](https://user-images.githubusercontent.com/96570699/192453762-cb70a94f-4ee8-4958-ae79-6aaf31b92498.png)  
+![image](https://user-images.githubusercontent.com/96570699/192455059-e951c629-9a79-415d-86a8-21bd71ee01c3.png)  
+当备份文件里面有错误的时候，连接就会拒绝。  
+![image](https://user-images.githubusercontent.com/96570699/192455331-414f2f1e-e98e-4f8d-9e95-5d3bc71739ce.png)  
+执行修复文件后，就会将比对结果在命令行上显示出来，输入y就会进行修复。  
+
+
+### 设置
+***  
+![image](https://user-images.githubusercontent.com/96570699/192456626-8800ef37-4d83-42be-9804-02aa332f8994.png)  
+![image](https://user-images.githubusercontent.com/96570699/192457243-f9442b51-2c0d-4315-aaf6-b50d87ed1448.png)  
+![image](https://user-images.githubusercontent.com/96570699/192457321-8a70d240-2745-420e-bf1f-0a4b69ce4bd3.png)  
+![image](https://user-images.githubusercontent.com/96570699/192457588-e92cce67-1710-474c-bdb4-f4294a691c4c.png)     
+![image](https://user-images.githubusercontent.com/96570699/192458096-b824d835-f5ea-4c5b-9da0-ce238ece98b3.png)   
+重写是将之前的各种操作压缩成一条语句，中间的其他查找查询都忽略。
+![image](https://user-images.githubusercontent.com/96570699/192458208-3d3c68fd-1dc0-4c34-b5f9-99a388b96da8.png)  
+![image](https://user-images.githubusercontent.com/96570699/192458305-25f6fcda-a409-4931-ab00-8509ec4a338a.png)  
+意思是大于64m的一倍，就是128m。  
+![image](https://user-images.githubusercontent.com/96570699/192458626-77f14792-4ccf-4778-899e-c302283c2f28.png)  
+**重写流程**  
+![image](https://user-images.githubusercontent.com/96570699/192458958-53168e10-f11d-4849-8f38-403346a99177.png)  
+
+
+### 流程
+***  
+![image](https://user-images.githubusercontent.com/96570699/192459243-4ca89d63-f76d-4384-9ec9-13a1e7ecefe9.png)  
+![image](https://user-images.githubusercontent.com/96570699/192459873-7c10f018-6165-4a0c-9d2d-9a6bd27e7abc.png)  
+
+
+### 特点
+***  
+![image](https://user-images.githubusercontent.com/96570699/192460023-9c4084fa-90e1-431d-b364-77f4e4dabfaa.png)  
+![image](https://user-images.githubusercontent.com/96570699/192460063-90745c7b-5051-4a60-a68d-998bf1ba6f0d.png)  
+因为它记录的是你的操作，不是数据，所以需要更多的空间，并且记录东西多，恢复速度比较慢。  
+![image](https://user-images.githubusercontent.com/96570699/192460452-df01e82d-fcb1-46cc-8307-37cb473e1074.png)  
+
+
+### 总结
+***  
+![image](https://user-images.githubusercontent.com/96570699/192460676-38298342-024d-4beb-810b-2b2b87e1738b.png)  
+![image](https://user-images.githubusercontent.com/96570699/192460894-fab6a446-a570-4fc6-b593-17225cc471de.png)  
+
