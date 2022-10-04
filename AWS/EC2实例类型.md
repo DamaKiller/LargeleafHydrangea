@@ -4,7 +4,7 @@ T类型是突发性的实例，cpu不是满性能的，他有一个基准性能�
 来提高性能，当积分用完，就会降到低性能来运行，比较适合小的项目，对性能没啥要求的。   
 M就是标准型的实例。   
 ![image](https://user-images.githubusercontent.com/96570699/192722811-f28d012b-11cf-41fb-8b1a-f6560185131d.png)  
-C代表计算优化型，5表示第五代（适用于其他实例，比如t2就表示第二代突发型），d表示加的格外功能（d是格外的ssd），'.'后面是是实例的大小18xlarge就是实例的大小。  
+C代表计算优化型，5表示第五代（适用于其他实例，比如t2就表示第二代突发型），d表示加的格外功能（d是格外的ssd），'.'后面是是实例的大小18xlarge就是实例的大小,micro是最小的。  
 ![image](https://user-images.githubusercontent.com/96570699/192729143-44a5e86e-4469-49e4-8cee-123a2e59095b.png)  
 R代表内存优化型，很多种系统需要分享它的内存，需要一个超大的内存，就需要该类型。  
 ![image](https://user-images.githubusercontent.com/96570699/192729351-a522840b-cf41-450d-ad17-05cf57d05a4f.png)  
