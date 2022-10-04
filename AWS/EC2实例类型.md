@@ -11,3 +11,6 @@ R代表内存优化型，很多种系统需要分享它的内存，需要一个�
 存储优化型，是为了存储大量的数据，就需要该类型，越往后性能越强。  
 ![image](https://user-images.githubusercontent.com/96570699/192729388-a0335b03-a17c-4cbf-99a9-83681682eab9.png)  
 该类型是为了需要机器学习，深度计算准备的，FEGA是给半导体用的。  
+
+**注**    
+amazon linux使用的是redhat的linux，要使用yum命令。  
