@@ -208,7 +208,10 @@ expr1 的值为FALSE，则返回值为 expr3。
 ![image](https://user-images.githubusercontent.com/96570699/187817595-7316c13a-0c70-4294-84e7-9dd8f7a57ead.png)  
 ![image](https://user-images.githubusercontent.com/96570699/187823246-bc5d36e7-e482-4c7e-b124-0c16751e8806.png)  
 ![image](https://user-images.githubusercontent.com/96570699/187823301-83dde1b7-1cb6-4d84-ba9d-9005330dc41a.png)  
-![image](https://user-images.githubusercontent.com/96570699/187825267-59fa76f1-6b5f-4c45-be52-2ce916931eca.png)
+![image](https://user-images.githubusercontent.com/96570699/187825267-59fa76f1-6b5f-4c45-be52-2ce916931eca.png)  
+**注**  
+使用group by之后，SELECT子句只能存在（常数, 聚合函数, GROUP BY子句中指定的列名）三种元素。  
+GROUP BY子句中使用列的别名会引发错误，其原因就是SQL语句在DBMS内部的执行顺序造成的：SELECT子句在GROUP BY子句之后执行。  
 
 
 ### distinct-去重
@@ -219,7 +222,9 @@ expr1 的值为FALSE，则返回值为 expr3。
 ![image](https://user-images.githubusercontent.com/96570699/187856404-3264a3bb-c891-4b38-9586-c6a8867cd05a.png)  
 放在第二位，前面的name比后面的job字段数据多，导致出错。  
 ![image](https://user-images.githubusercontent.com/96570699/189159619-52acdbcc-074f-44bf-80ab-663018717d63.png)  
-
+**注**  
+distinct之后若是多个字段，它会作用于多个字段，即多个字段必须相同才算重复。  
+只能在SELECT 语句中使⽤，不能在 INSERT, DELETE, UPDATE 中使⽤。   
 
 
 
