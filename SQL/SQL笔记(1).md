@@ -222,8 +222,7 @@ GROUP BY子句中使用列的别名会引发错误，其原因就是SQL语句在
 ![image](https://user-images.githubusercontent.com/96570699/187856404-3264a3bb-c891-4b38-9586-c6a8867cd05a.png)  
 放在第二位，前面的name比后面的job字段数据多，导致出错。  
 ![image](https://user-images.githubusercontent.com/96570699/189159619-52acdbcc-074f-44bf-80ab-663018717d63.png)  
-**注**  
-distinct之后若是多个字段，它会作用于多个字段，即多个字段必须相同才算重复。  
+**注**   
 只能在SELECT 语句中使⽤，不能在 INSERT, DELETE, UPDATE 中使⽤。   
 
 
