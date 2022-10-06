@@ -139,5 +139,5 @@ delete操作多张表时，`delete from table1, table2 where table1.字段 = tab
 
 # 将查询的结果插入到表中
 *** 
-查询的结果要符合表的结构才能查  
+查询的结果要符合表的结构才能插。  
 ![image](https://user-images.githubusercontent.com/96570699/189483350-a6422185-7977-4e69-84cb-a45ba219b634.png)
