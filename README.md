@@ -44,7 +44,7 @@
  - [Github中相对链接问题](./Github/Github中相对链接问题.md)
 
 ## 3. [Operating_System](./Operating_System)
- - [进程与线程](./Operating_System/进程与线程.md)
+ - [进程与线程,并行与并发](./Operating_System/进程与线程,并行与并发.md)
 
 ## 4.[AWS](./AWS)
  - [S3_bucket的一些操作](./AWS/S3_bucket的一些操作.md)
