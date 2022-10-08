@@ -50,6 +50,7 @@
 
 
 # 事务
+事务是DBMS的基本单位，它是用户定义的一组逻辑一致的程序序列。  
 ![image](https://user-images.githubusercontent.com/96570699/189601734-231947a6-e675-472e-bbab-3ab16d5228ed.png)  
 ![image](https://user-images.githubusercontent.com/96570699/189602285-466431ed-345a-4d81-bf09-44a796bafaf2.png)  
 ![image](https://user-images.githubusercontent.com/96570699/189613398-2513f72b-4ebe-4ccd-abf4-088b7b5f3f79.png)  
@@ -159,7 +160,8 @@
 ![image](https://user-images.githubusercontent.com/96570699/190431084-44d41e64-b640-49d9-bacb-28b3335d29e6.png)  
 ![image](https://user-images.githubusercontent.com/96570699/190432996-b2527c14-f1c4-400a-b2fb-380cfb4121c2.png)  
 ![image](https://user-images.githubusercontent.com/96570699/190434307-040de314-0b1e-4d17-b0c1-689cdb5d5b06.png)  
-
+**注**  
+视图是虚拟表，是一个依赖于别的表上的寄生表，其本身不存储数据，对视图的操作最终都会转化为对基本表的操作。  
 
 
 
