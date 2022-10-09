@@ -61,6 +61,7 @@
  - [Redis笔记(3)](./Redis/Redis笔记(3).md)
  - [Redis笔记(4)](./Redis/Redis笔记(4).md)
  - [Redis笔记(5)](./Redis/Redis笔记(5).md)
+ - [Redis笔记(6)](./Redis/Redis笔记(6).md)
  - [redis注意事项](./Redis/redis注意事项.md)
  - [redis.Redis与redis.StrictRedis类的区别](./Redis/redis.Redis与redis.StrictRedis类的区别.md)
  
