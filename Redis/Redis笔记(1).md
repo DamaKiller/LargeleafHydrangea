@@ -37,12 +37,12 @@ unlink并不是立刻删掉，而是会在后续慢慢删掉（异步操作）
 
 
 
-### key*
+### keys *
 ***
 ![image](https://user-images.githubusercontent.com/96570699/190895023-cf096d6d-4e40-4736-acc3-319cdb8afb3e.png)  
 
 
-### exist key（key为想查找的key的名字）
+### exists key（key为想查找的key的名字）
 ***
 ![image](https://user-images.githubusercontent.com/96570699/190895084-4a1fd459-1587-416e-89a4-90f4952821e0.png)  
 
@@ -92,6 +92,7 @@ unlink并不是立刻删掉，而是会在后续慢慢删掉（异步操作）
 ![image](https://user-images.githubusercontent.com/96570699/190897449-8452e83d-7586-49bb-a26d-b3ffe559975d.png)  
 ![image](https://user-images.githubusercontent.com/96570699/190897509-40f0eb82-321d-4865-9d72-391e8289004e.png)  
 ![image](https://user-images.githubusercontent.com/96570699/190897546-d1fd2104-d912-4a52-be2c-c2e0975feb18.png)  
+`set k1 v1 EX 60 NX`想要变更参数时这么写。  
 重复设置值，会将原有的key-value更新。  
 ![image](https://user-images.githubusercontent.com/96570699/190898039-5255deca-1424-43ba-8996-9b2f43ae9ad5.png)  
 ![image](https://user-images.githubusercontent.com/96570699/190898024-23777100-8a5b-4c22-ba26-d9e757888853.png)    
