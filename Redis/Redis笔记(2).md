@@ -29,7 +29,7 @@ rpush跟lpush一样。
 ![image](https://user-images.githubusercontent.com/96570699/191030178-ad99b84a-6e29-4844-b9cc-3e2c42abb190.png)  
 
 
-#### index和llen命令
+#### lindex和llen命令
 ***
 ![image](https://user-images.githubusercontent.com/96570699/191030416-785d1275-5eca-4dbb-90d8-9269303ebf10.png)  
 ![image](https://user-images.githubusercontent.com/96570699/191030641-5d93c812-9dc9-4d77-9466-4ffc467f7259.png)  
@@ -90,7 +90,6 @@ rpush跟lpush一样。
 #### srandmember和smove命令
 ***
 ![image](https://user-images.githubusercontent.com/96570699/191063888-abbc10a1-aabd-4e87-ac01-bcf5acb5f55a.png)  
-![image](https://user-images.githubusercontent.com/96570699/191061818-8a84b483-d86b-48f2-ac5a-5273f646d776.png)  
 ![image](https://user-images.githubusercontent.com/96570699/191061728-613d26f9-6513-4a6b-8358-5f009025da2f.png)  
 ![image](https://user-images.githubusercontent.com/96570699/191063822-73bad633-76b0-4078-8a66-0ee9b572179c.png)  
 
