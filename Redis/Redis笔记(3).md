@@ -44,10 +44,19 @@
 这部分是redis中一些单位的设置方式。   
 ***  
 ![image](https://user-images.githubusercontent.com/96570699/191702668-fab7177e-b35e-4da5-be31-c52b26595c5c.png)  
-如果不改，则只能通过本地进行访问。想要进行远程连接只要将其注释掉就可以了，然后重启服务。    
+**注**  
+如果不改，则只能通过本地进行访问。想要进行远程连接只要将其注释就可以了，然后重启服务。    
+bind绑定的是本机的网卡对应的IP地址，（每一个网卡都有一个IP地址），而不是redis允许来自其他计算机的IP地址。
+举个例子：如果redis服务器（本机）上有两个网卡，每一个网卡对应一个IP地址，例如IP1和IP2。（注意这个IP1和IP2都是本机的IP地址）。
+我们的配置文件：bind IP1。 只有我们通过IP1来访问redis服务器，才允许连接Redis服务器，如果我们通过IP2来访问Redis服务器，就会连不上Redis。  
+如果指定了bind，则说明只允许来自指定网卡的Redis请求。如果没有指定，就说明可以接受来自任意一个网卡的Redis请求。   
 ***  
 ![image](https://user-images.githubusercontent.com/96570699/191704393-a5451dcb-dede-4d70-8448-6b07a9820cef.png)   
 这个设置需要结合blind设置一块设置，设置完之后就可进行远程访问。  
+protected-mode是redis本身的一个安全层，这个安全层的作用：就是只有【本机】可以访问redis，其他任何都不可以访问redis。这个安全层开启必须满足三个条件，不然安全层处于关闭状态：  
+（1）protected-mode yes（处于开启）  
+（2）没有bind指令。原文：The server is not binding explicitly to a set of addresses using the "bind" directive.  
+（3）没有设置密码。原文：No password is configured。  
 ***  
 ![image](https://user-images.githubusercontent.com/96570699/191705341-16ac3bcf-ef84-480a-8e98-b45ed533e9ba.png)  
 ***  
