@@ -31,6 +31,19 @@
 ![image](https://user-images.githubusercontent.com/96570699/192572667-bdb48725-21e1-4272-97e0-66f274cb795d.png)  
 
 
-
+### 常用场景
+#### 一主两从
+当从服务器挂掉重启之后它就会变成主服务器，并不会接着是以前的从服务器。  
+![image](https://user-images.githubusercontent.com/96570699/194907129-99ab71fa-a83e-4b9e-8050-9113d0252b6a.png)  
+需要将它重新关联到之前的主服务器上，之前主服务上写入的数据也会从头开始复制，不会出现挂掉之后主服务器上写入数据重新关联之后就没有的情况。  
+![image](https://user-images.githubusercontent.com/96570699/194907323-45c1648b-be94-49d8-9627-a2c10141f50c.png)  
+![image](https://user-images.githubusercontent.com/96570699/194907621-f0185f99-0d12-4c03-8bcf-124c57d28f60.png)  
+当主服务器挂掉之后，从服务器还是从服务器，不会变成主服务器，只是主服务器状态哪里变成down。  
+![image](https://user-images.githubusercontent.com/96570699/194908159-9f9a6f93-595e-403e-9fb6-96b139b9e30f.png)  
+主服务器重启之后它还是会回到主服务器的状态，并且和从服务器的关联也没有断。  
+![image](https://user-images.githubusercontent.com/96570699/194908652-d2737969-0bcb-4ee0-9dad-71d6ec9e2748.png)  
+**原理**  
+![image](https://user-images.githubusercontent.com/96570699/194913232-79d9cdd1-7cb2-49ad-9dd6-45b6df34fa34.png)  
+之后都是主服务器主动去和从服务器同步。  
 
 
