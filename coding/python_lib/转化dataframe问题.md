@@ -16,7 +16,9 @@ print(df_a)
 #4  5
 ```
 **注**  
-在输出dataframe时，若列数，行数太多中间会默认省略变成省略号，可以使用`pandas.set_option('display.width', None)  #输出列数无限制  pandas.set_option('display.max_rows', None) #输出行数无限制  `
+在输出dataframe时，若列数，行数太多中间会默认省略变成省略号，可以使用   
+`pandas.set_option('display.width', None)  #输出列数无限制`  
+`pandas.set_option('display.max_rows', None) #输出行数无限制`   
 
 ## 二维列表转化为dataframe会成为一行数据
 二维列表是将其他列表当做列表的元素放在一个列表当中，也就是列表的嵌套。通过该方法可以将一个列表转化为一行数据。可以在后边加上`columns=column_index, index=index_index`来设置列，行索引的名。
