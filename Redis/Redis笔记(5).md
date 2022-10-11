@@ -47,3 +47,40 @@
 之后都是主服务器主动去和从服务器同步。  
 
 
+
+### 薪火相传
+打个比方，就是一个经理管理20来个人，但是他肯定没有这么多精力，所以他可以指派小组长，让小组长来帮他管理。就是他管理两个小组长，然后这两个小组长来管理剩下的组长，这样经理直接管理的人就
+两个。在redis中就是主服务器管理两个从服务器，这两个从服务器再去管理其他的服务器，来减轻最开始那个主服务器的压力。但是这也带来了当主服务器挂掉之后剩下服务器瘫痪的问题，但是只要主服务器重启成功，之后就会正常。  
+**如何实施：** 一个从服务器下再接一个从服务器。  
+
+
+### 反客为主
+就是主服务器挂掉之后，从服务器升为主服务器，但是必须在主服务器挂掉之后，才能用该方法。  
+![image](https://user-images.githubusercontent.com/96570699/195120932-730a1b4d-6564-4861-9a16-e81e13acf8ab.png)  
+![image](https://user-images.githubusercontent.com/96570699/195121310-6cdb2a72-0e33-40eb-b477-5f3beab5525d.png)  
+
+
+### 哨兵模式
+![image](https://user-images.githubusercontent.com/96570699/195125695-f371f3ac-0613-42f4-a31b-d11df2b6d66f.png)  
+  
+**如何配置**  
+先搭建完主从服务器。  
+![image](https://user-images.githubusercontent.com/96570699/195130710-dc172cc0-8449-4d3e-b335-9a3da81f3807.png)  
+1表示有多少个哨兵同意才会切换成主服务器，2就是两个哨兵都同意才会切换。  
+![image](https://user-images.githubusercontent.com/96570699/195131710-8b0d6262-fb30-42d2-8f0d-60dcd6324765.png)  
+用这个命令启动新建的哨兵文件。  
+![image](https://user-images.githubusercontent.com/96570699/195131883-5952ff90-50c1-42ce-926e-b9e10d24f013.png)  
+底下为监控的服务器信息，包括它的主机和从机信息。  
+![image](https://user-images.githubusercontent.com/96570699/195132553-e07336d8-bf0c-47e0-b9aa-72fc2554db98.png)  
+![image](https://user-images.githubusercontent.com/96570699/195133072-9da37907-f448-4103-a516-a2cd7663789a.png)  
+当主服务挂掉之后，哨兵就会选出新的主机首先是主机挂掉的信息，之后就会有新主机的信息。  
+![image](https://user-images.githubusercontent.com/96570699/195133594-e2b71f5e-ff28-4b5d-8f5c-d7c7e443f830.png)  
+![image](https://user-images.githubusercontent.com/96570699/195133837-c77a10d0-f70c-4ff7-9723-8de4b20e0648.png)  
+当主服务器重启之后它会变成从服务器，不会变成主服务器。  
+![image](https://user-images.githubusercontent.com/96570699/195137711-08501b82-82da-4fb3-8108-bc4d6aefbb81.png)  
+![image](https://user-images.githubusercontent.com/96570699/195138105-577e9f21-9fa5-48a2-8b5d-870da78850a3.png)  
+![image](https://user-images.githubusercontent.com/96570699/195139337-056d5631-ddb1-49fd-ba39-6f167e68b31f.png)  
+6.0版本中改成下面这个。  
+![image](https://user-images.githubusercontent.com/96570699/195139543-f6c23c16-326b-469b-9943-a18d3f4d7db2.png)  
+
+
