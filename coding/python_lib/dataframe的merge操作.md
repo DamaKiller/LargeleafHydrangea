@@ -52,5 +52,11 @@ merge是按照两个dataframe共有的column进行连接，两个dataframe必须
   print(df3)
   ```
   ![image](https://user-images.githubusercontent.com/96570699/182083056-22d6b133-1032-42ac-9687-e4996a1bfe66.png)
+# 3.merge三个以上dateframe
+```
+df = reduce(lambda x, y: pandas.merge(x, y, on=[column_index], how=连接方式,), dfs)   #dfs为dataframe列表
+```
 
-
+**reduce函数**
+`reduce(function, iterable)`
+reduce函数会将可迭代数据中的第一个和第二个运算，然后将结果和第三个运算，以此类推。
