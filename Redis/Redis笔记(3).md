@@ -19,7 +19,7 @@
 ![image](https://user-images.githubusercontent.com/96570699/191679480-e11bf807-8b4b-41a0-b3a0-ff939fb0b6a2.png)  
 
 
-#### zrem，zcount，zank命令
+#### zrem，zcount，zrank命令
 ***  
 ![image](https://user-images.githubusercontent.com/96570699/191683301-462c866b-715f-40bd-9b8d-36db61611d9a.png)  
 ![image](https://user-images.githubusercontent.com/96570699/191682974-398062fb-5b87-49fc-991e-e0cde0ff1bb0.png)  
