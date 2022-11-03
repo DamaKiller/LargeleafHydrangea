@@ -31,6 +31,27 @@
 ![image](https://user-images.githubusercontent.com/96570699/198337171-27d76f4e-7f3b-4d52-82b9-fabf16d1808f.png)  
 
 
+# 类的应用
+***  
+以键盘录入为例。  
+![image](https://user-images.githubusercontent.com/96570699/199657892-8f690a6c-2463-4c54-a5eb-239510851ba0.png)   
+
+
+# 隐式转换和强制转换
+### 隐式转换
+***  
+![image](https://user-images.githubusercontent.com/96570699/199689571-fe174fda-9f21-4707-914e-84b37da2b7e3.png)  
+![image](https://user-images.githubusercontent.com/96570699/199690029-c174b3cb-fd05-4329-a1d4-c476f09c1aab.png)  
+![image](https://user-images.githubusercontent.com/96570699/199690332-092550bd-776b-43de-b41f-f529fcc9b505.png)  
+![image](https://user-images.githubusercontent.com/96570699/199690965-1ea7ae88-1bad-44ce-9dbe-fe2c165cea5e.png)  
+
+### 强制转换
+***  
+![image](https://user-images.githubusercontent.com/96570699/199692441-4756a323-c20e-484e-9eef-66fb3c337a60.png)  
+数据过大进行强转会发生错误。   
+
+
+
 
 
 
