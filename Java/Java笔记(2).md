@@ -16,7 +16,7 @@
 ![image](https://user-images.githubusercontent.com/96570699/199924819-fd812e5a-ceb0-456c-8c12-3ff1490a4961.png)  
 ![image](https://user-images.githubusercontent.com/96570699/199926437-5b417f72-c285-4fd0-b968-6aa7caa9ef4b.png)  
 该种switch写法适用于jdk12之后，并且是执行一句代码时才可以这么写，多条语句依然需要写大括号。  
-![image](https://user-images.githubusercontent.com/96570699/199927720-f27d00e3-c492-4678-816d-604144f300b0.png)  
+![image](https://user-images.githubusercontent.com/96570699/199943331-6fe92d75-e688-44d1-8552-2434ddf09486.png)   
 ![image](https://user-images.githubusercontent.com/96570699/199928079-70b9a8fb-2e0e-4ca1-a756-60fb516dec74.png)  
 代码穿透应用。  
 
