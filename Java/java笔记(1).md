@@ -48,12 +48,25 @@
 ### 强制转换
 ***  
 ![image](https://user-images.githubusercontent.com/96570699/199692441-4756a323-c20e-484e-9eef-66fb3c337a60.png)  
-数据过大进行强转会发生错误。   
+数据过大进行强转会发生错误。  
 
 
-
-
-
-
-
+# 运算符
+***  
+![image](https://user-images.githubusercontent.com/96570699/199869816-764e7c7f-6a20-4aa8-9609-8f5e5a8989a6.png)  
+Java中整数和字符串相加会将整数转换成字符串然后再相加，布尔也是。 
+![image](https://user-images.githubusercontent.com/96570699/199870147-aaae3f5b-08c7-41b5-aa1f-031291a87f93.png)  
+![image](https://user-images.githubusercontent.com/96570699/199871614-54e44c87-aafb-4853-8367-8fde68536025.png)  
+![image](https://user-images.githubusercontent.com/96570699/199872244-bf076485-ea92-43f4-aa14-d953ee7e91c6.png)  
+![image](https://user-images.githubusercontent.com/96570699/199872548-395b2eaf-6e60-486c-8841-fc5b075ad64a.png)   
+![image](https://user-images.githubusercontent.com/96570699/199872725-38458b07-4a89-406a-a80f-ed55402f8c47.png)  
+![image](https://user-images.githubusercontent.com/96570699/199873458-cc454f7b-41d3-4a27-88c4-cbb84cd5ded8.png)  
+![image](https://user-images.githubusercontent.com/96570699/199873889-7771d588-7e9f-42c1-a8c2-4a44b02d30cd.png)  
+![image](https://user-images.githubusercontent.com/96570699/199874547-c1c3d1bb-2d4c-440c-9c4b-a0b9a7c82856.png)  
+强转成什么类型取决于左边是什么类型。  
+![image](https://user-images.githubusercontent.com/96570699/199875045-e121fe90-6715-47d3-9043-63438354250c.png)  
+![image](https://user-images.githubusercontent.com/96570699/199875578-d805705f-b434-4173-b390-78d4f03aaa33.png)  
+![image](https://user-images.githubusercontent.com/96570699/199877137-3aca967a-8f08-423f-85db-73ef2e078e7d.png)  
+![image](https://user-images.githubusercontent.com/96570699/199898543-b6f35a8b-0b37-45fd-ba7b-979a8b73b7e3.png)  
+![image](https://user-images.githubusercontent.com/96570699/199899618-45aac1f3-9e29-4470-9d76-e3321f3dfd37.png)  
 
