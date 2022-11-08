@@ -26,4 +26,11 @@
 ![image](https://user-images.githubusercontent.com/96570699/199931358-c73d0deb-78be-4324-a170-4a1aaf51f0a1.png)  
 ![image](https://user-images.githubusercontent.com/96570699/199931641-ac53688f-6027-4220-b62e-7e8395af78e5.png)  
 循环打印10次。  
+![image](https://user-images.githubusercontent.com/96570699/200513259-14b6a575-fa1e-4a5c-8896-57f0336fa738.png)  
+for 循环可以将初始化条件写在外面。  
+
+
+### while循环
+***  
+![image](https://user-images.githubusercontent.com/96570699/200512464-01e102a6-74d4-4afe-9fe6-38953259f337.png)  
 
