@@ -79,5 +79,5 @@
  - [建表时设置问题](./SQL/建表时设置问题.md)
 
 ## 7.[Java](./Java)
- - [SQL笔记(1)](./Java/Java笔记(1).md)
- - [SQL笔记(2)](./Java/Java笔记(2).md)
+ - [Java笔记(1)](./Java/Java笔记(1).md)
+ - [Java笔记(2)](./Java/Java笔记(2).md)
