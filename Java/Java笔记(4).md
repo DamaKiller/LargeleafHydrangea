@@ -27,6 +27,19 @@
 ***  
 ![image](https://user-images.githubusercontent.com/96570699/200785584-9aab5d08-310a-4158-94a7-7287ad666890.png)   
 Java当不加this时，当成员和局部属性名字一样时，会采用就近原则，哪一个近输出哪一个，加上this后就会输出成员属性当中的值。  
+![image](https://user-images.githubusercontent.com/96570699/200790037-92f7455f-81df-4bc3-aca7-1e0e68369d5e.png)   
+
+
+### 构造方法
+***  
+![image](https://user-images.githubusercontent.com/96570699/200791013-48fcd0d4-7cf0-4812-a4a1-9e541b758180.png)  
+![image](https://user-images.githubusercontent.com/96570699/200792797-42b2c7ba-7d4f-49c1-a18d-343c341a09ef.png)  
+![image](https://user-images.githubusercontent.com/96570699/200793595-8d853892-4f0e-4df4-8e29-afc15d343390.png)  
+传入参数就会调用带参构造，给成员属性赋值，不传入参数就会调用空参构造，一般两种构造方法都要写。  
+![image](https://user-images.githubusercontent.com/96570699/200794360-6476cd24-61d6-4601-8898-0af6bf027a0e.png)   
+![image](https://user-images.githubusercontent.com/96570699/200795117-7fb62e98-27e7-455a-891f-9524abd22ab5.png)  
+![image](https://user-images.githubusercontent.com/96570699/200795430-be3b1cbc-87a6-45fd-942b-7c3cfefa3cf9.png)   
+
 
 
 
