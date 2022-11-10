@@ -41,6 +41,12 @@ Java当不加this时，当成员和局部属性名字一样时，会采用就近
 ![image](https://user-images.githubusercontent.com/96570699/200795430-be3b1cbc-87a6-45fd-942b-7c3cfefa3cf9.png)   
 
 
+### 标准的JavaBean类
+![image](https://user-images.githubusercontent.com/96570699/200987811-41604f1c-aab1-4354-8ece-4e8ac749ea7e.png)  
+![image](https://user-images.githubusercontent.com/96570699/200991176-7444f487-5903-42aa-a28b-06aaa279e7a5.png)  
+
+
+
 
 
 
