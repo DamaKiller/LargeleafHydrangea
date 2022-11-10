@@ -48,6 +48,9 @@ Java当不加this时，当成员和局部属性名字一样时，会采用就近
 
 
 
+# 字符串
+![image](https://user-images.githubusercontent.com/96570699/201052705-d9eca90e-48b8-4790-99ce-14db9e45f7e9.png)  
+
 
 
 
