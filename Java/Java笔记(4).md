@@ -42,6 +42,7 @@ Java当不加this时，当成员和局部属性名字一样时，会采用就近
 
 
 ### 标准的JavaBean类
+***  
 ![image](https://user-images.githubusercontent.com/96570699/200987811-41604f1c-aab1-4354-8ece-4e8ac749ea7e.png)  
 ![image](https://user-images.githubusercontent.com/96570699/200991176-7444f487-5903-42aa-a28b-06aaa279e7a5.png)  
 
@@ -49,8 +50,32 @@ Java当不加this时，当成员和局部属性名字一样时，会采用就近
 
 
 # 字符串
+***  
 ![image](https://user-images.githubusercontent.com/96570699/201052705-d9eca90e-48b8-4790-99ce-14db9e45f7e9.png)   
 ![image](https://user-images.githubusercontent.com/96570699/201247879-0c54fd77-1cb5-4668-8b1a-04e29ab5ca59.png)  
+
+
+### StringBuilder
+***  
+![image](https://user-images.githubusercontent.com/96570699/202139445-646ca01c-4679-4bf1-b113-45055d390904.png)  
+![image](https://user-images.githubusercontent.com/96570699/202140039-957bf5dc-9e25-40f3-901b-522d193b8b91.png)  
+![image](https://user-images.githubusercontent.com/96570699/202140266-56ae50a2-b13f-4e8a-b685-068b5a888a96.png)  
+![image](https://user-images.githubusercontent.com/96570699/202140752-a19e3218-ee70-4343-ab62-c86c5f3e81c1.png)   
+再往容器中添加字符串就会添加再'ABC'的后面。  
+![image](https://user-images.githubusercontent.com/96570699/202141545-fc81cc4f-53b6-4de0-906d-8d363990acc1.png)  
+![image](https://user-images.githubusercontent.com/96570699/202144046-acd8c395-75e7-42d0-8769-6c4d6a0e5093.png)    
+![image](https://user-images.githubusercontent.com/96570699/202144140-b8bec5ab-a954-4a4b-8916-c6105ee93c9a.png)  
+**结果**  
+![image](https://user-images.githubusercontent.com/96570699/202144293-07885dac-0c27-4979-9f13-d302724431c3.png)  
+**结果**  
+![image](https://user-images.githubusercontent.com/96570699/202144345-9fbb4e36-a8ae-4c42-a873-67fbf700dc4e.png)  
+![image](https://user-images.githubusercontent.com/96570699/202144677-a5fe5035-b684-4be3-81b5-a3f71f0fdafe.png)  
+ **注**  
+ 使用完之后要将他变回字符串类型。  
+![image](https://user-images.githubusercontent.com/96570699/202145663-4a86dec0-bee2-4521-89a5-83baa0e469c1.png)   
+
+
+
 
 
 
