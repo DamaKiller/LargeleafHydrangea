@@ -48,6 +48,9 @@ union all则只是简单地将两个结果集合并后就返回结果。因此�
 ![image](https://user-images.githubusercontent.com/96570699/188315879-4e5b77aa-44de-483d-b5f6-07e8c4d76bcc.png)  
 ![image](https://user-images.githubusercontent.com/96570699/188316360-1c4a7d91-f2ad-4571-af89-523e74e178c5.png)  
 ![image](https://user-images.githubusercontent.com/96570699/188316517-92792994-6f07-425d-8f08-89252e914b16.png)  
+**注**   
+`offset`该关键字可以让SQL跳过几条数据。例如`limit 1 offset 2`就是跳过两条数据之后查找一条。   
+MySQL、MariaDB和 SQLite可以把 LIMIT 4 OFFSET 3 语句简化为 LIMIT 3,4。使用这个语法，逗号之前的值对应 OFFSET，逗号之后的值对应LIMIT（反着的，要小心）。  
 
 
 
