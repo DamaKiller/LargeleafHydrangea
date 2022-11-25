@@ -1,5 +1,7 @@
 # 子查询
 ![image](https://user-images.githubusercontent.com/96570699/188269723-cf6f0566-6f1d-4fa9-ae2f-7c81153d855a.png)  
+在 SELECT 语句中，子查询总是从内向外处理。即先把子查询的select的语句执行完再执行外围的select语句。  
+作为子查询的 SELECT 语句只能查询单个列。企图检索多个列将返回错误。  
 ### 1.where子句中的子查询
 *** 
 ![image](https://user-images.githubusercontent.com/96570699/188273472-769e5f73-8a7c-43d1-9d01-2d79caece8b3.png)  
