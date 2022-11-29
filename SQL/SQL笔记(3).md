@@ -36,6 +36,9 @@
 ![image](https://user-images.githubusercontent.com/96570699/189522533-6863a575-cbd4-4a60-93e1-7c4ed41c67b2.png)  
 ![image](https://user-images.githubusercontent.com/96570699/189524209-fa1e62cc-2158-46dd-b64e-3689b4bbeb8d.png)  
 ![image](https://user-images.githubusercontent.com/96570699/189524777-da053ddd-bead-4e8d-87ac-e0bcb5290b82.png)   
+**注**  
+有的 DBMS 支持称为级联删除（cascading delete）的特性。如果启用，该特性在从一个表中删除行时删除所有相关的数据。例如，
+如果启用级联删除并且从 Customers 表中删除某个顾客，则任何关联的订单行也会被自动删除。  
 
 
 
@@ -161,7 +164,7 @@
 ![image](https://user-images.githubusercontent.com/96570699/190432996-b2527c14-f1c4-400a-b2fb-380cfb4121c2.png)  
 ![image](https://user-images.githubusercontent.com/96570699/190434307-040de314-0b1e-4d17-b0c1-689cdb5d5b06.png)  
 **注**  
-视图是虚拟表，是一个依赖于别的表上的寄生表，其本身不存储数据，对视图的操作最终都会转化为对基本表的操作。  
+视图是虚拟表，是一个依赖于别的表上的寄生表，其本身不存储数据，对视图的操作最终都会转化为对基本表的操作，它只包含使用时动态检索数据的查询。  
 
 
 
