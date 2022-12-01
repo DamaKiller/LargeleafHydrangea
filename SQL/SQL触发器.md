@@ -24,6 +24,7 @@
 
 ### 创建触发器
 ***  
+```
 delimiter $
 create trigger 触发器名称
 before|after insert|update|delete
@@ -33,6 +34,8 @@ begin
 触发器要执行的功能;
 end$
 delimiter ;
+```
+
 
 
 ### 查看和删除触发器
