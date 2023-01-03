@@ -276,7 +276,8 @@ GROUP BY子句中使用列的别名会引发错误，其原因就是SQL语句在
 ### 5.外连接
 ***  
 ![image](https://user-images.githubusercontent.com/96570699/188266944-97530c95-e5c0-41a6-8680-ef510459b70c.png)   
-没有匹配的数据则自动填充null  
+没有匹配的数据则自动填充null。  
+会将主表的所有select字段全部查询出来，即使不满足on条件也会查询出来。  
 ![image](https://user-images.githubusercontent.com/96570699/188266985-e23eb558-94ad-4f2d-aeb7-bcaa4debecc1.png)  
 ![image](https://user-images.githubusercontent.com/96570699/188267034-997c59d5-cfaf-4e8d-92e7-11df60c75876.png)  
 
