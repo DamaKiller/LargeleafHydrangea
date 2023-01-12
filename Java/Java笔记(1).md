@@ -77,6 +77,7 @@ char会转换成对应的asc码参与计算。
 Java中整数和字符串相加会将整数转换成字符串然后再相加，布尔也是。 
 ![image](https://user-images.githubusercontent.com/96570699/199870147-aaae3f5b-08c7-41b5-aa1f-031291a87f93.png)  
 ![image](https://user-images.githubusercontent.com/96570699/199871614-54e44c87-aafb-4853-8367-8fde68536025.png)  
+自增自减运算符只能对变量使用，不能对常量使用，例如` 30++ `就是错误写法。  
 ![image](https://user-images.githubusercontent.com/96570699/199872244-bf076485-ea92-43f4-aa14-d953ee7e91c6.png)  
 ![image](https://user-images.githubusercontent.com/96570699/199872548-395b2eaf-6e60-486c-8841-fc5b075ad64a.png)   
 ![image](https://user-images.githubusercontent.com/96570699/199872725-38458b07-4a89-406a-a80f-ed55402f8c47.png)  
@@ -88,5 +89,6 @@ Java中整数和字符串相加会将整数转换成字符串然后再相加，�
 ![image](https://user-images.githubusercontent.com/96570699/199875578-d805705f-b434-4173-b390-78d4f03aaa33.png)  
 ![image](https://user-images.githubusercontent.com/96570699/199877137-3aca967a-8f08-423f-85db-73ef2e078e7d.png)  
 ![image](https://user-images.githubusercontent.com/96570699/199898543-b6f35a8b-0b37-45fd-ba7b-979a8b73b7e3.png)  
+![image](https://user-images.githubusercontent.com/96570699/212027275-79526bf4-629e-4f23-adbb-9c2eabfb419f.png)  
 ![image](https://user-images.githubusercontent.com/96570699/199899618-45aac1f3-9e29-4470-9d76-e3321f3dfd37.png)  
 当一个取值范围小的数和一个取值范围大的数相加时，结果为取值范围大的数。  
