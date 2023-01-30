@@ -34,3 +34,13 @@ for 循环可以将初始化条件写在外面。
 ***  
 ![image](https://user-images.githubusercontent.com/96570699/200512464-01e102a6-74d4-4afe-9fe6-38953259f337.png)  
 
+
+### do-while循环
+![image](https://user-images.githubusercontent.com/96570699/215429679-8aa54930-c5d2-4883-a694-b8d1234eac7a.png)  
+do-while循环至少会执行一次，这是和while循环的最大差别。   
+
+
+
+
+
+
