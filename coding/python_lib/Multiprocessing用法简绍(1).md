@@ -1,3 +1,12 @@
+# python全局解释器锁(GIL)
+    全局解释器锁
+它是在实现Python解析器（CPython）时所引入的一个概念。GIL只在CPython中才有,在其他的python解释器中是没有的，例如：PyPy， Jython等。   
+    Python设计之初，为了数据安全。某个线程想要执行，必须先拿到GIL，我们可以把GIL看作是“通行证”，并且在一个Python进程中，
+GIL只有一个。拿不到通行证的线程，就不允许进入CPU执行。由于GIL锁存在，Python里一个进程永远只能同时执行一个线程(拿到GIL的线程才能执行)，
+这就是为什么在多核CPU上，Python 的多线程效率并不高的根本原因。如果想要充分地使用多核CPU的资源，大部分情况需要使用多进程。    
+    
+    
+
 # 一.multiprocessing常用组件及功能
 ## 管理进程模块：
 Process（用于创建进程模块）  
@@ -8,11 +17,11 @@ Pipe（用于管道通信）
 Manager（用于资源共享）  
 
 ## 同步子进程模块：
-Condition  
-Event  
-Lock  
-RLock  
-Semaphore  
+Condition（条件变量）
+Event（事件）
+Lock（互斥锁）
+RLock（可重入的互斥锁(同一个进程可以多次获得它，同时不会造成阻塞)
+Semaphore（信号量）
 
 # 二.Process模块
 **Process语法结构如下：**` Process(group=None, target=None, name=None, args=(), kwargs={}) `  
@@ -80,8 +89,7 @@ if __name__ == "__main__":
 **获取进程pid方法：**  
 有两种方法可以获取    
 1）multiprocessing.current_process().pid  
-2）使用import os模块的getpid()  
-
+2）使用import os模块的getpid()   
 *注意：进程间不共享全局变量*
 ```
 import multiprocessing
