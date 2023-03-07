@@ -30,6 +30,7 @@
 - [转化dataframe问题](./coding/python_lib/转化dataframe问题.md) 
 - [dataframe的merge操作](./coding/python_lib/dataframe的merge操作.md)
 - [loc和at函数](./coding/python_lib/loc和at函数.py)
+- [pandas效率提升问题](./coding/python_lib/pandas效率提升问题.md)
 
 > virtualenv
 - [virtualenv创建环境一些列问题](./coding/python_lib/virtualenv创建环境一些列问题.md)
