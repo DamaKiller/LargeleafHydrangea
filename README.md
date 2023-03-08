@@ -31,7 +31,7 @@
 - [dataframe的merge操作](./Python/python_lib/dataframe的merge操作.md)
 - [loc和at函数](./Python/python_lib/loc和at函数.py)
 - [pandas效率提升问题](./Python/python_lib/pandas效率提升问题.md)
-- [pandas设置某列为index](./Python/Python_technique/pandas设置某列为index.md)
+- [pandas设置某列为index](./Python/python_lib/pandas设置某列为index.md)
 
 > virtualenv
 - [virtualenv创建环境一些列问题](./Python/python_lib/virtualenv创建环境一些列问题.md)
