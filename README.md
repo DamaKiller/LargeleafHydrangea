@@ -1,5 +1,5 @@
 # 好好学习，天天向上。:sunny:
-##  1. [Coding](coding)
+##  1. [Python](Python)
 ### [coding_technique](./coding/coding_technique)
 - [合并两个字典](./coding/coding_technique/合并两个字典.py)  
 - [如何取数各个位上的数](./coding/coding_technique/如何取数各个位上的数.py)  
