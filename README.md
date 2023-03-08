@@ -17,7 +17,6 @@
 - [Python闭包](./Python/Python_technique/Python闭包.md)
 - [for,while-else用法](./Python/Python_technique/for,while-else用法.md)
 - [python缓存重用规则](./Python/Python_technique/python缓存重用规则.md)
-- [pandas设置某列为index](./Python/Python_technique/pandas设置某列为index.md)
 
 ### [python_lib](./Python/python_lib)  
 > Multiprocessing
@@ -32,6 +31,7 @@
 - [dataframe的merge操作](./Python/python_lib/dataframe的merge操作.md)
 - [loc和at函数](./Python/python_lib/loc和at函数.py)
 - [pandas效率提升问题](./Python/python_lib/pandas效率提升问题.md)
+- [pandas设置某列为index](./Python/Python_technique/pandas设置某列为index.md)
 
 > virtualenv
 - [virtualenv创建环境一些列问题](./Python/python_lib/virtualenv创建环境一些列问题.md)
