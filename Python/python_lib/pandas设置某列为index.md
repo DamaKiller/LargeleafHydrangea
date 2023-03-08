@@ -54,6 +54,16 @@ print(df_new)
 2 Tianjin  2002  3.6
 3 Wuhan    2003  2.4
 
+## 层级索引
+df_new = dataframe.set_index(['state', 'year'],drop=True, append=False, inplace=False, verify_integrity=False)
+print(df_new)
+# 结果
+              pop
+state   year     
+Dalian  2000  1.5
+Beijing 2001  4.7
+Tianjin 2002  3.6
+Wuhan   2003  2.4
 ```
 
 # reset_index()
