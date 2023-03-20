@@ -12,3 +12,8 @@
 気味 ぎみ：（觉得）有点……，稍微……；
 
 
+import re
+pattern = '.*'+'\w' + '\d\d\d\d' +'\w' + '.*'+'5min.parquet'
+check_value_list = [i for i in check_value if re.findall(pattern, i)]
+max_value = sorted(check_value_list, key = lambda x : x[9:13])
+print(max_value[-1])
