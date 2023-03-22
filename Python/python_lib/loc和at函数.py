@@ -13,7 +13,7 @@ df.loc [row selection] = ***                                                    
 # 进阶用法
 df.loc[df[column selection]>value, column selection]                                        #可以写表达式，查找大于某个值并且是某列的所有行,
                                                                                             #不写后面的column selection就是满足条件的所有数据                                         
-      df.loc[df[column selection]==value, column selection]                                 #查找等于某个值并且是某列的所有行，不写后面的column selection就是满足条件的所有数据 
+df.loc[df[column selection]==value, column selection]                                       #查找等于某个值并且是某列的所有行，不写后面的column selection就是满足条件的所有数据 
 df.loc[df[(column selection]==value) & (column selection]==value),
       [column selection, column selection, column selection]]                               #查找符合多个条件的指定列
 df.loc[column selection, [column selection, column selection, ...]] = [value, value, ...]   #可以通过这种方法将对指定列赋值
