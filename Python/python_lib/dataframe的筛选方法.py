@@ -87,5 +87,4 @@ dataframe[~(dataframe['state'].isin(['Beijing']))|~(dataframe['pop']==dataframe[
 dataframe[dataframe['state'].str.contains('jing')]
      state  year  pop
 1  Beijing  2001  1.1       
-          
      
