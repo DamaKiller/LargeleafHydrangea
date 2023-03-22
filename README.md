@@ -29,7 +29,7 @@
 - [pandas按行按列遍历Dataframe方法](./Python/python_lib/pandas按行按列遍历Dataframe方法.py)
 - [转化dataframe问题](./Python/python_lib/转化dataframe问题.md) 
 - [dataframe的merge操作](./Python/python_lib/dataframe的merge操作.md)
-- [loc和at函数](./Python/python_lib/loc和at函数.py)
+- [dataframe的筛选方法](./Python/python_lib/dataframe的筛选方法.py)
 - [pandas效率提升问题](./Python/python_lib/pandas效率提升问题.md)
 - [pandas设置某列为index](./Python/python_lib/pandas设置某列为index.md)
 
