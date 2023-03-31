@@ -38,3 +38,17 @@ s3 = boto3.client('s3')
 s3_client.upload_file(Filename = file_path, Bucket=bucket, Key = (dir_path + file) )
 #file_path:本地文件的地址  bucket：想要上传到的bucket名    Key：为上传到s3的地址，为bucket后的地址，例：abc/ABC,ABC为上传到s3上后想要的文件名。
 ```
+
+**获取s3桶或文件夹下所有的文件地址**
+```
+list_file_name = [] # 文件地址列表
+s3 = boto3.client('s3')
+prefix_str = *** + '/' + *** + '/' + *** + '/'
+lst_obj = s3.list_objects(Bucket=bucket_name, Prefix=prefix_str) # Prefix为想要获取文件名的文件夹名 该方法最多返回1000个文件名 超过了注意拆分
+for i in lst_obj['Contents']:
+    list_file_name.append(i['Key'])
+```
+
+
+
+
