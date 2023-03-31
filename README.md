@@ -17,6 +17,8 @@
 - [Python闭包](./Python/Python_technique/Python闭包.md)
 - [for,while-else用法](./Python/Python_technique/for,while-else用法.md)
 - [python缓存重用规则](./Python/Python_technique/python缓存重用规则.md)
+- [datetime的一些操作](./Python/Python_technique/datetime的一些操作.md)
+
 
 ### [python_lib](./Python/python_lib)  
 > Multiprocessing
