@@ -11,7 +11,7 @@
 超链接标签的链接是网页地址就跳转到网页，本地的html文件地址就是打开该文件页面，`<a href="#">空页面</a>`就是空连接。    
 **表格标签完整写法：**  
 ```
-<table border="1">
+<table border="1" width="***" height="***">
   <caption>表格大标题</caption>
   <!--表格头-->
   <thead>   
