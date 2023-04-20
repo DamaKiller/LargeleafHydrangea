@@ -35,7 +35,7 @@ print(type(test_datetime))      # <class 'datetime.datetime'>
 ```
 
 
-### 对datetime进行增减
+### 对datetime进行增减(只能到days)
 ```
 year = 2023
 month = 4
@@ -63,5 +63,23 @@ print(type(timestr))            # <class 'str'>
 ```
 
 
+# 时间年月加减
+datetime.timedelta不能进行年，月方面时间的计算。   
+要进行该方面的计算需要用到`from dateutil.relativedelta import relativedelta`该方法。（该方法不需要你再去考虑是30天还是31天，是2月还是其他，是闰年还是平年。）    
+```
+from dateutil.relativedelta import relativedelta
+
+year = 2023
+month = 2
+day = 1
+hour = 0
+minute = 0
+second = 0
+
+test_datetime_1 = datetime.datetime(year, month, day, hour, minute, second)
+print(test_datetime_1)      #2023-02-01 00:00:00
+test_datetime_2 = test_datetime_1 + relativedelta(years=2, months=2)
+print(test_datetime_2)      #2025-04-01 00:00:00
+```
 
 
