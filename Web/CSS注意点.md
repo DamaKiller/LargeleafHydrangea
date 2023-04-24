@@ -4,7 +4,7 @@
 
 
 # CSS的引入方式
-![image](https://user-images.githubusercontent.com/96570699/233335095-f89b5b44-0042-4d72-ba12-4c87c84f67cb.png)
+![image](https://user-images.githubusercontent.com/96570699/233890054-d217a95d-d194-4612-a4d2-33a336866024.png)  
 
 
 **内嵌式写法：**    
