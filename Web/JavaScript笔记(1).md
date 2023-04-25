@@ -65,4 +65,44 @@ let age = 18, uname = 'USER'
 常量不允许`const a`这样声明，声明的时候必须进行赋值初始化。   
 
 
+# JS的数据类型
+![image](https://user-images.githubusercontent.com/96570699/234214582-e22512f3-b866-4952-9a83-13f013c34aae.png)  
+### 数字类型（Number）
+![image](https://user-images.githubusercontent.com/96570699/234215108-a6cdd92a-8925-4f97-ab39-4e1815a39e6c.png)  
+![image](https://user-images.githubusercontent.com/96570699/234217948-e2c951c0-748b-4163-bcfc-e9a365cb9bf8.png)  
+
+
+### 字符串类型（string）
+![image](https://user-images.githubusercontent.com/96570699/234221864-4978f834-8ca9-4305-8ccc-d32c74804d04.png)   
+JS的字符串也能通过+号进行拼接（只要其中一边是字符串都会按照字符串来拼接，EX：`'string' + 1`结果是string1）。   
+**JS的`f'{}'`方法：**  `'今年我${变量}岁了'`  在python中用f和{}，JS中用$和{}来使用。  
+
+
+### 布尔类型（boolean）
+![image](https://user-images.githubusercontent.com/96570699/234226763-bfe1c828-303e-4a05-9c4a-3098efcb1565.png)  
+
+
+### 未定义类型(undefined)
+![image](https://user-images.githubusercontent.com/96570699/234228705-f4ff6333-674a-4c11-a105-baca75ef5c9f.png)  
+
+
+### 空类型(null)
+![image](https://user-images.githubusercontent.com/96570699/234229315-6488248c-74a6-4390-9b5b-f51f40a51851.png)  
+用`typeof(obj)`来查看它是object类型。  
+**检测数据类型方法:**   
+![image](https://user-images.githubusercontent.com/96570699/234231523-595c2e2c-ebe4-4d58-bc0d-bca1ccf2f746.png)  
+
+
+### 隐式转换和显示转换
+**由`prompt`和表单取过来的值默认都是字符串类型**  
+**隐式转换**   
+![image](https://user-images.githubusercontent.com/96570699/234244474-7f34c61b-b80b-4211-af07-8e1430d8200c.png)    
+在隐式转换中 '2'+2 是22， '2'-2是0, +'123'是正的123的意思。    
+
+
+**显示转换**  
+![image](https://user-images.githubusercontent.com/96570699/234245753-403f2d66-10c9-47ef-8ee6-edfdf8625090.png)  
+
+
+
 
