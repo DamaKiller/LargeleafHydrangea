@@ -29,5 +29,22 @@ JS中运算的运算符跟其他语言别无二致，只有在比较运算符方
 忘了加`break`就会将下面的代码全部执行，这就是穿透，只有在default当中可以省略。   
 
 
+# 循环语句
+### while循环
+![image](https://user-images.githubusercontent.com/96570699/234483968-a8394c39-d93f-4677-9a13-cede8591b052.png)  
+![image](https://user-images.githubusercontent.com/96570699/234486472-3f7b4782-25d2-404f-9dd2-871841802729.png)  
+
+
+### for循环
+![image](https://user-images.githubusercontent.com/96570699/234498297-a29ad2ad-7d1e-4b65-a776-13e7742d83e9.png)　　
+for(;;){}可以构造一个for的死循环。   
+
+
+# 数组
+![image](https://user-images.githubusercontent.com/96570699/234544451-e61ac548-6c14-43bc-b199-5a75d0a9c8c9.png)  
+访问数组也是通过索引来查看。  
+
+
+
 
 
