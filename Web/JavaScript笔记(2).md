@@ -42,7 +42,12 @@ for(;;){}可以构造一个for的死循环。
 
 # 数组
 ![image](https://user-images.githubusercontent.com/96570699/234544451-e61ac548-6c14-43bc-b199-5a75d0a9c8c9.png)  
-访问数组也是通过索引来查看。  
+访问数组也是通过索引来查看、修改数组对应元素也能通过`数组名[索引号] = 修改值`来修改。    　
+![image](https://user-images.githubusercontent.com/96570699/234738704-415d413f-13f9-4bdc-b4ea-015eb0e5b6e7.png)  
+![image](https://user-images.githubusercontent.com/96570699/234738780-3c8d6768-970b-4fb8-8840-09791371c6e4.png)  
+![image](https://user-images.githubusercontent.com/96570699/234750437-4fc37c08-4084-4c20-a1cf-060b93527efb.png)  
+![image](https://user-images.githubusercontent.com/96570699/234750562-72e3bff6-af87-475a-8584-7fabde903394.png)  
+![image](https://user-images.githubusercontent.com/96570699/234750851-66bf55eb-7af0-4309-942e-a13055487058.png)  
 
 
 
