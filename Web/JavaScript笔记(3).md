@@ -27,8 +27,26 @@ JS不传参调用会发生上面这种情况，为了避免发生上面这种情
 
 
 ### 逻辑中断
-![image](https://user-images.githubusercontent.com/96570699/234797264-1e5be529-946e-46ba-b225-2b14d0f844b7.png)  
-![image](https://user-images.githubusercontent.com/96570699/234797577-a77c2e01-25dd-4c33-a7a4-faa01978a42f.png)  
+![image](https://user-images.githubusercontent.com/96570699/234797264-1e5be529-946e-46ba-b225-2b14d0f844b7.png)   
+![image](https://user-images.githubusercontent.com/96570699/234797577-a77c2e01-25dd-4c33-a7a4-faa01978a42f.png)     
+就是利用短路来赋值。    
+![image](https://user-images.githubusercontent.com/96570699/235106102-8f6c2802-7b2f-41d3-9989-723e9c2b9204.png)  
+![image](https://user-images.githubusercontent.com/96570699/235108238-895675a4-342e-49a9-a523-7c0765bd9b8f.png)  
+
+
+# 对象
+![image](https://user-images.githubusercontent.com/96570699/235109719-ad2ff15c-6647-41d0-a9ab-81fcffbfb8ba.png)  
+![image](https://user-images.githubusercontent.com/96570699/235110277-b39a7701-58a7-42c0-95f4-cf0c0c6adb01.png)  
+![image](https://user-images.githubusercontent.com/96570699/235110996-8591e999-faf8-4a21-b38e-98e6f3aa41ea.png)　　
+![image](https://user-images.githubusercontent.com/96570699/235111310-3fcc1c86-833d-48b1-8ff0-fd35a6f8ac0e.png)　　
+![image](https://user-images.githubusercontent.com/96570699/235112697-604d69ca-810a-4eb5-9c79-7357565828ac.png)　　
+![image](https://user-images.githubusercontent.com/96570699/235113471-e7661505-ce7a-45c8-8020-3b4dc1b8ac87.png)　　
+![image](https://user-images.githubusercontent.com/96570699/235113947-ae6cebda-0465-421d-84ad-3179e48e17c1.png)　
+![image](https://user-images.githubusercontent.com/96570699/235114558-48b28b5a-c9ba-4a7e-ac2f-8b272a601bd8.png)　　
+![image](https://user-images.githubusercontent.com/96570699/235114698-263eef2d-1e68-493a-8bf3-6a6c10574e1f.png)　　
+![image](https://user-images.githubusercontent.com/96570699/235117164-a73b2e6b-13ed-43d4-95ec-5b7c5699569e.png)　　
+![image](https://user-images.githubusercontent.com/96570699/235118294-c4f4a843-58be-4b5f-b978-5b894440cdd5.png)　　
+![image](https://user-images.githubusercontent.com/96570699/235120560-3c044be6-1dd4-46d0-8daa-2f9a0344d54e.png)　　
 
 
 
