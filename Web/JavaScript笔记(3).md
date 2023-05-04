@@ -56,7 +56,7 @@ JS不传参调用会发生上面这种情况，为了避免发生上面这种情
 
 # 基本数据类型和引用数据类型
 ![image](https://user-images.githubusercontent.com/96570699/236101278-c8c301c1-cf6d-44bd-a507-fd9d620b23d1.png)  
-
+const创建的引用数据变量是可以往里面增加或删减值的，其实是const创建的对象的地址不可变。   
 
 
 
