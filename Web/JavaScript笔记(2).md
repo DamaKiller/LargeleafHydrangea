@@ -36,10 +36,10 @@ JS中运算的运算符跟其他语言别无二致，只有在比较运算符方
 
 
 ### for循环
-![image](https://user-images.githubusercontent.com/96570699/234498297-a29ad2ad-7d1e-4b65-a776-13e7742d83e9.png)　　
-for(;;){}可以构造一个for的死循环。   
-
-
+![image](https://user-images.githubusercontent.com/96570699/234498297-a29ad2ad-7d1e-4b65-a776-13e7742d83e9.png)　　　　
+for(;;){}可以构造一个for的死循环。　　   
+　　
+　　
 # 数组
 ![image](https://user-images.githubusercontent.com/96570699/234544451-e61ac548-6c14-43bc-b199-5a75d0a9c8c9.png)  
 访问数组也是通过索引来查看、修改数组对应元素也能通过`数组名[索引号] = 修改值`来修改。    　
