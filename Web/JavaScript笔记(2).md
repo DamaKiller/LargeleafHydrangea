@@ -36,7 +36,8 @@ JS中运算的运算符跟其他语言别无二致，只有在比较运算符方
 
 
 ### for循环
-![image](https://user-images.githubusercontent.com/96570699/234498297-a29ad2ad-7d1e-4b65-a776-13e7742d83e9.png)　　　　
+![image](https://user-images.githubusercontent.com/96570699/234498297-a29ad2ad-7d1e-4b65-a776-13e7742d83e9.png)　
+
 for(;;){}可以构造一个for的死循环。　　   
 　　
 　　
