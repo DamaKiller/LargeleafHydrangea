@@ -19,7 +19,7 @@
 ### innerText和innerHTML属性
 ![image](https://user-images.githubusercontent.com/96570699/236132123-6902e155-ac6d-465b-a679-70d949ef9808.png)   
 ![image](https://user-images.githubusercontent.com/96570699/236133467-01767b5f-28fd-4149-9e58-c1ab0f623cf0.png)   
-它们俩的区别就是是否解析标签。  
+它们俩的区别就是是否解析标签，这两个属性的功能就是将内容添加到标签里面。    
 
 
 ### 更改增加标签属性值
