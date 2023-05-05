@@ -47,7 +47,8 @@ JS不传参调用会发生上面这种情况，为了避免发生上面这种情
 ![image](https://user-images.githubusercontent.com/96570699/235117164-a73b2e6b-13ed-43d4-95ec-5b7c5699569e.png)　　
 ![image](https://user-images.githubusercontent.com/96570699/235118294-c4f4a843-58be-4b5f-b978-5b894440cdd5.png)　　
 ![image](https://user-images.githubusercontent.com/96570699/235120560-3c044be6-1dd4-46d0-8daa-2f9a0344d54e.png)　　
-![image](https://user-images.githubusercontent.com/96570699/236091347-ea7b9797-6bba-4168-aec9-3193c3f1765d.png)　　
+![image](https://user-images.githubusercontent.com/96570699/236091347-ea7b9797-6bba-4168-aec9-3193c3f1765d.png)　　　
+
 ![image](https://user-images.githubusercontent.com/96570699/236096099-cfbe694b-896f-4787-ba09-9ae75fa20ac8.png)　　
 ![image](https://user-images.githubusercontent.com/96570699/236096388-11269a9e-5049-4a76-8e11-21318a0f88cc.png)　　
 ![image](https://user-images.githubusercontent.com/96570699/236097982-7dc14181-877e-4794-95e1-5e046e4f9cc2.png)　　
