@@ -53,9 +53,17 @@
 
 ### 事件冒泡
 ![image](https://user-images.githubusercontent.com/96570699/237042827-e60c3bee-0f47-473a-86ac-bd2d645f8ef2.png)  
-注意是同名时间，就是点击事件和经过事件不能同时触发。   
+注意是同名时间，就是点击事件和经过事件不能同时触发。    
 
 
+### 阻止冒泡和传播
+![image](https://github.com/DamaKiller/LargeleafHydrangea/assets/96570699/52d4df75-dca5-45cc-920f-1ebf368f9ec8)  
+![image](https://github.com/DamaKiller/LargeleafHydrangea/assets/96570699/7b62288c-48a0-419b-82b4-3c9f667e8e4a)  
+
+
+### 解绑事件
+![image](https://github.com/DamaKiller/LargeleafHydrangea/assets/96570699/03925c18-c4ab-41f7-ae3b-4a08159998c8)    
+![image](https://github.com/DamaKiller/LargeleafHydrangea/assets/96570699/9000ccdd-3256-472f-8ea1-5e398076c70e)   
 
 
 
