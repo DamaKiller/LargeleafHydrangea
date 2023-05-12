@@ -67,6 +67,13 @@
 ![image](https://github.com/DamaKiller/LargeleafHydrangea/assets/96570699/654ec3c1-1c71-4b9b-9c02-181f4f4aa5e4)  
 
 
+### 事件委托
+![image](https://github.com/DamaKiller/LargeleafHydrangea/assets/96570699/7c6d044f-2578-44b3-b797-b83b99c23f78)   
+![image](https://github.com/DamaKiller/LargeleafHydrangea/assets/96570699/eb5ca2c2-9cf4-45da-bde2-ee174e81d8ff)  
+只要触发子元素的事件就能通过冒泡触发父元素的事件，减少代码的使用量。    
+![image](https://github.com/DamaKiller/LargeleafHydrangea/assets/96570699/054c3232-f72b-455f-8edc-9e51fdae4e0a)   
+
+
 
 
 
