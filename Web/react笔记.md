@@ -44,5 +44,58 @@ export default App
 export default App
 ```  
   
-  
+ # 组件的嵌套
+ ```
+import React, { Component } from 'react'
+
+function Function_1(){
+    return <div>function_1</div>
+}
+
+const Function_2 = () => {
+    return <div>Function_2</div>
+}
+
+class Class_2 extends Component {
+    render(){
+        return <div>Class_2</div>
+    }
+}
+
+class Class_1 extends Component {
+    render(){
+        return <div>
+                Class_1
+                # 子组件中还可以定义子组件
+                <Class_2></Class_2>
+            </div>
+    }
+}
+
+export default class App extends Component {
+  render() {
+    return (
+      <div className='active'>
+       # 将定义好的组件当作标签写入即可
+            <Function_1></Function_1>
+            <Function_2></Function_2>
+            <Class_1></Class_1>
+            标签当中可以加上大括号放入表达式，但是不能放入if，while等语句。
+            {10 + 20}
+      </div>
+    )
+  }
+}
+ ```
+ 
+ 
+ # 引入样式
+ 在外部定义好样式内容。  
+ ![image](https://github.com/DamaKiller/LargeleafHydrangea/assets/96570699/4fd816c6-1ed3-49e3-a873-ab1e3b4d9da0)   
+在想要引入样式的地方加上对应的类名。    
+ ![image](https://github.com/DamaKiller/LargeleafHydrangea/assets/96570699/722f2486-49a5-4405-8844-9422b5a7ffab)   
+然后引入对应的样式文件并渲染即可。    
+ ![image](https://github.com/DamaKiller/LargeleafHydrangea/assets/96570699/1f2d5229-c5ab-4336-8a84-38dcbd840f5a)    
+
+ 
   
