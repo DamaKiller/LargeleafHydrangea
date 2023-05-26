@@ -98,4 +98,38 @@ export default class App extends Component {
  ![image](https://github.com/DamaKiller/LargeleafHydrangea/assets/96570699/1f2d5229-c5ab-4336-8a84-38dcbd840f5a)    
 
  
-  
+# 事件绑定
+react是声明式的，不用像js那样捕获节点，添加处理函数。  
+把事件的js文件写好，并向之前那样在index.js当中被引入渲染即可。 
+react当中事件都是on + 事件名的形式，后面等号就是要触发的函数
+```
+import React, { Component } from 'react'
+
+export default class Event extends Component {
+  render() {
+    return (
+      <div>
+        event
+        <input/>
+        <button onClick={() => {
+            console.log('onClick')
+        }}>onClick_1</button>
+
+        <button onClick={() => {
+            this.handleClick()
+        }}>onClick_2</button>
+
+      </div>
+    )
+  }
+
+  handleClick(){
+    console.log('handleClick')
+  }
+
+}
+```  
+ 
+ 
+ 
+ 
