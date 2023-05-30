@@ -30,7 +30,40 @@
 # 用export来将这个组件导出
 export default App
 ```
-  
+ 
+ 
+### export 和 export default 的区别 
+#### export
+ 一个模块就是一个独立的文件。该文件内部的所有变量，外部无法获取。如果你希望外部能够读取模块内部的某个变量，就必须使用export关键字输出该变量。    
+ 例子：  
+ ```
+profile.js
+let first = '1'
+let second = '2'
+let third = '3'
+export {first, second, third}
+ ```
+export命令除了输出变量，还可以输出函数或类（class）。   
+import命令接受一对大括号，里面指定要从其他模块导入的变量名。大括号里面的变量名，必须在被导入模块（profile.js）中export出的变量当中。如果想为输入的变量重新取一个名字，import命令要使用as关键字，将输入的变量重命名。   
+
+ #### export default
+ export default命令，为模块指定默认输出。使用import命令的时候，用户需要知道所要加载的变量名或函数名，否则无法加载。但是，用户肯定希望快速上手，未必愿意阅读文档，去了解模块有哪些属性和方法。为了给用户提供方便，让他们不用阅读文档就能加载模块，就要用到export default命令，为模块指定默认输出。   
+ 例子：   
+ ```
+// export-default.js 
+ export default function () {
+  console.log('foo')
+}
+ ```
+ 与export命令的区别：其他模块加载该模块时，import命令可以为该匿名函数指定任意名字。   
+ ```
+ // import-default.js
+import customName from './export-default'; //默认输出的函数
+customName(); // 'foo'
+ ```
+上面代码的import命令，可以用任意名称指向export-default.js输出的方法，这时就不需要知道原模块输出的函数名。需要注意的是，这时import命令后面，不使用大括号。   
+本质上，export default就是输出一个叫做default的变量或方法，然后系统允许你为它取任意名字。    一个模块只能有一个默认输出，因此export default命令只能使用一次。
+ 
   
 # 函数组件  
 要求跟类组件一样，只是不用继承React.Component了。  
