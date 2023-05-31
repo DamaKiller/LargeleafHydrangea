@@ -10,7 +10,7 @@
 自定义的 React 类名必须以大写字母开头。  
 `ReactDOM.render` 是 React 的最基本方法用于将模板转为 HTML 语言，并插入指定的 DOM 节点。  
 `ReactDOM.render(template,targetDOM)`方法接收两个参数：  
- 第一个是创建的模板，多个 dom 元素外层需使用一个标签进行包裹，如 <div>，并且标签中间不能有空行断开；  
+ 第一个是创建的模板，多个 dom 元素外层需使用一个标签进行包裹，如 `<div>`，并且标签中间不能有空行断开；  
  第二个参数是插入该模板的目标位置。  
 若要为创建的某个元素增加 class 属性，不能直接定义 class 而要用 className，因为 class 是 javascript 中的保留字,同样可以定义行内样式，将所有的样式包裹在一个对象中，以类似变量的形式给 style 属性赋值，注意样式属性要用驼峰命名法表示，如: backgroundColor 而不是 background-color，fontSize 而不是 font-size。      
 ```
