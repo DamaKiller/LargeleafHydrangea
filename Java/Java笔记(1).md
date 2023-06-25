@@ -18,7 +18,7 @@
 ![image](https://user-images.githubusercontent.com/96570699/198250192-5624bbc3-1554-4ce2-9e05-643500be9349.png)  
 ![image](https://user-images.githubusercontent.com/96570699/198250563-bd3b32a7-08d3-4934-91e1-f6da0128ca06.png)  
 ![image](https://user-images.githubusercontent.com/96570699/198251315-0256b770-0271-43fe-9e17-6117cfcd6dca.png)  
-一个编译单元（java文件）可以存在多个类，在编译时产生多个不同的.class文件，.class文件便是程序运行的数据来源。java将public类作为每个编译单元的数据接口，只能有一个，  
+一个编译单元（java文件）可以存在多个类，在编译时产生多个不同的.class文件，.class文件便是程序运行的数据来源。java将public类作为每个编译单元的数据接口，只能有一个， 
 并且public的类名必须与文件名相一致。不然不能处理存在多个类的java文件。当一个编译单元（java文件）有多个非public类时，此类可以跟文件名不同，运行时需要对数据来源进行选择。   
 
 
@@ -44,15 +44,14 @@
 ![image](https://user-images.githubusercontent.com/96570699/210718596-41061230-4db7-4e85-882a-272246541506.png)  
 ![image](https://user-images.githubusercontent.com/96570699/210718870-8654651e-be98-4d6d-8150-2d97e63b156d.png)  
 ![image](https://user-images.githubusercontent.com/96570699/210719978-59225d34-d838-4a75-be60-5a3c52a19223.png)  
-
+在定义long和float等类型时，因为java默认时int类型，所以在int的取值范围内不加L或F，java会自动转换成long或float类型，当超过了int的取值范围就必须要加L或F了。    
 
 
 # 类的应用
 ***  
 以键盘录入为例。  
 ![image](https://user-images.githubusercontent.com/96570699/199657892-8f690a6c-2463-4c54-a5eb-239510851ba0.png)   
-**注：**  
-创建的java类名要和文件名一摸一样。  
+**注：**   
 main方法代表程序运行的起点。  
 
 
@@ -70,7 +69,7 @@ char会转换成对应的asc码参与计算。
 ***  
 ![image](https://user-images.githubusercontent.com/96570699/199692441-4756a323-c20e-484e-9eef-66fb3c337a60.png)  
 数据过大进行强转会发生错误(比如long类型转换成int类型，float转换成double类型等)。  
-
+强转时会损失精度，比如12.4转换成int型时会变成12.  
 
 
 # 运算符
