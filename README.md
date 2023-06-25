@@ -89,6 +89,8 @@
  - [Java笔记(2)](./Java/Java笔记(2).md)
  - [Java笔记(3)](./Java/Java笔记(3).md)
  - [Java笔记(4)](./Java/Java笔记(4).md)
+ - [Java笔记(5)](./Java/Java笔记(5).md)
+ - [往string数组中添加元素](./Java/往string数组中添加元素.md)
  
  ## 8.[Web](./Web)
  - [HTML注意点](./Web/HTML注意点.md)
