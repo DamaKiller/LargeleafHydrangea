@@ -18,6 +18,8 @@
 ![image](https://user-images.githubusercontent.com/96570699/198250192-5624bbc3-1554-4ce2-9e05-643500be9349.png)  
 ![image](https://user-images.githubusercontent.com/96570699/198250563-bd3b32a7-08d3-4934-91e1-f6da0128ca06.png)  
 ![image](https://user-images.githubusercontent.com/96570699/198251315-0256b770-0271-43fe-9e17-6117cfcd6dca.png)  
+一个编译单元（java文件）可以存在多个类，在编译时产生多个不同的.class文件，.class文件便是程序运行的数据来源。java将public类作为每个编译单元的数据接口，只能有一个，  
+并且public的类名必须与文件名相一致。不然不能处理存在多个类的java文件。当一个编译单元（java文件）有多个非public类时，此类可以跟文件名不同，运行时需要对数据来源进行选择。   
 
 
 # 标识符
