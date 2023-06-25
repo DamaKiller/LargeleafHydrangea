@@ -38,7 +38,7 @@ for 循环可以将初始化条件写在外面。
 ### do-while循环
 ![image](https://user-images.githubusercontent.com/96570699/215429679-8aa54930-c5d2-4883-a694-b8d1234eac7a.png)  
 **do-while循环至少会执行一次，这是和while循环的最大差别。**     
-
+do-while循环总是先执行循环体，然后再计算条件表达式。如果表达式为真，则循环继续。否则，循环结束。   
 
 
 
