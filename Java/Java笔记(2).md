@@ -4,7 +4,6 @@
 ![image](https://user-images.githubusercontent.com/96570699/199902823-3ebb765a-e565-4f9d-8932-5727c1fa28dd.png)  
 ![image](https://user-images.githubusercontent.com/96570699/199904968-0f03606b-a479-4e7a-8713-0de4b72ab54a.png)  
 ![image](https://user-images.githubusercontent.com/96570699/199909774-40cad00a-3211-4ddd-a969-22a5b9ee92fa.png)  
-![image](https://user-images.githubusercontent.com/96570699/199909862-ab5b5ec5-9d21-4ef8-bb88-a18194ba1304.png)  
 
 
 ### switch语句
