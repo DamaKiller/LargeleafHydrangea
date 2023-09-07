@@ -1,7 +1,16 @@
 # 集合
 ![image](https://user-images.githubusercontent.com/96570699/204971656-1a425cb6-700f-4ae7-8f5c-6060f6c332d3.png)  
 ![image](https://user-images.githubusercontent.com/96570699/204972782-8adf965a-8730-467d-869a-0217c0fbcf6e.png)  
-![image](https://user-images.githubusercontent.com/96570699/204972567-d6506fa5-0698-4b59-84a2-d4447b22abf1.png)  
+![image](https://user-images.githubusercontent.com/96570699/204972567-d6506fa5-0698-4b59-84a2-d4447b22abf1.png)   
+**创建二维数组：**    
+格式1： 数组类型[][] 数组名 = new 数组类型[一维数组的个数][每一个一维数组中元素的个数];  Ex：int[][] arr=new int[3][2];  
+格式2： 数据类型[][] 数组名 = new 数据类型[一维数组的个数][];这一次没有直接给出一维数组的元素个数，可以动态的给出.    
+Ex：int[][] arr=new int[3][];  arr[0] = new int[2]; arr[1]= new int[3]; arr[2]=new int[1];    
+格式3： 数据类型[][] 变量名=new 数据类型[][]{{元素...},{元素...},{元素...}};  数据类型[][] 变量名={{元素...},{元素...},{元素...}};  
+Ex：int[][] arr={{1,2,3},{4,6},{6}};     
+**注**  
+数组长度是固定的，length属性只能获取数组定义的长度，不是实际存储元素的多少，数组创建完后就不能修改其长度。    
+
 
 
 
