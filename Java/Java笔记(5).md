@@ -3,7 +3,7 @@
 ![image](https://github.com/DamaKiller/LargeleafHydrangea/assets/96570699/ea014019-743e-4699-b327-d37edf69e69a)  
 ![image](https://user-images.githubusercontent.com/96570699/204972782-8adf965a-8730-467d-869a-0217c0fbcf6e.png)   
 **注**  
-直接打印数组变量会将数组的地址值打印出来，直接打印集合变量会打出一个空集合。   
+直接打印数组变量会将数组的地址值打印出来，用`Arrays.toString(数组名)`，多维数组用`Arrays.deepToString()`可以输出带元素的数组, 直接打印集合变量会打出一个空集合。   
 ![image](https://user-images.githubusercontent.com/96570699/204972567-d6506fa5-0698-4b59-84a2-d4447b22abf1.png)   
 **创建二维数组：**    
 格式1： 数组类型[][] 数组名 = new 数组类型[一维数组的个数][每一个一维数组中元素的个数];  Ex：int[][] arr=new int[3][2];  
