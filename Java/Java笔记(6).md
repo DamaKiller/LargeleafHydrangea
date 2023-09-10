@@ -27,7 +27,11 @@
 # 多态
 ![image](https://github.com/DamaKiller/LargeleafHydrangea/assets/96570699/227f32aa-20fe-4630-b9e4-eb4ec8d6acba)  
 ![image](https://github.com/DamaKiller/LargeleafHydrangea/assets/96570699/86f62a9a-0b66-4bb8-a79b-256e03420b7b)  
-
+![image](https://github.com/DamaKiller/LargeleafHydrangea/assets/96570699/450ba345-be9e-4abc-b6a4-e843fb34ba96)　　
+![image](https://github.com/DamaKiller/LargeleafHydrangea/assets/96570699/c655bdbe-ea61-4a3d-b8c5-fb1f2dae8529)　　
+**运行结果**  
+![image](https://github.com/DamaKiller/LargeleafHydrangea/assets/96570699/09ad311c-89b1-4207-9604-ea39cc76a7e3)  
+![Uploading image.png…]()  
 
 
 
