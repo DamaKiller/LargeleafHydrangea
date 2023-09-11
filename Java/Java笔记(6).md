@@ -33,10 +33,16 @@
 ![image](https://github.com/DamaKiller/LargeleafHydrangea/assets/96570699/09ad311c-89b1-4207-9604-ea39cc76a7e3)    
 变量用左边的父类中的变量，而方法用的是右边中的子类方法。      
 ![image](https://github.com/DamaKiller/LargeleafHydrangea/assets/96570699/ecf9bcbb-c702-4adb-8de0-b8c2adc11cea)    
-![image](https://github.com/DamaKiller/LargeleafHydrangea/assets/96570699/5d8602bc-479e-47c7-b150-12db9e3dab61)　　　　
+![image](https://github.com/DamaKiller/LargeleafHydrangea/assets/96570699/5d8602bc-479e-47c7-b150-12db9e3dab61)  
+
 调用子类特有功能会报错。  
 自动类型转换为子类型转到父类型，强制类型转换是父类型转到子类型。    
 
+# 包
+![image](https://github.com/DamaKiller/LargeleafHydrangea/assets/96570699/9d8bd63d-0153-4d00-aa19-a9cbe2510eee)  
+![image](https://github.com/DamaKiller/LargeleafHydrangea/assets/96570699/6b46ef56-ef14-4792-b3a4-d01f4f7ad7c2)  
+![image](https://github.com/DamaKiller/LargeleafHydrangea/assets/96570699/5dd4e8a3-2344-45d0-906b-04b996f6925a)  
+![Uploading image.png…]()  
 
 
 
