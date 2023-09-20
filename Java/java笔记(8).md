@@ -25,16 +25,40 @@
 ### 成员内部类
 ![image](https://github.com/DamaKiller/LargeleafHydrangea/assets/96570699/266f40b4-0e96-4795-b2d2-5fc930f750e6)    
 ![image](https://github.com/DamaKiller/LargeleafHydrangea/assets/96570699/09153c91-4d5f-4f0a-868a-46efcad8174a)   
-![image](https://github.com/DamaKiller/LargeleafHydrangea/assets/96570699/3718e1ac-12f1-4116-9738-4d7c7dc9e033)　　
-第二种定义一个方法返回内部类对象，然后调用这个方法就可以了，该方法一般用在内部类是protect类型的时候。   
-![image](https://github.com/DamaKiller/LargeleafHydrangea/assets/96570699/7ec6dc04-c692-4847-8a26-912e96ef0b03)　　 
+![image](https://github.com/DamaKiller/LargeleafHydrangea/assets/96570699/3718e1ac-12f1-4116-9738-4d7c7dc9e033)　　　
+
+第二种定义一个方法返回内部类对象，然后调用这个方法就可以了，该方法一般用在内部类是protect类型的时候。   　　
+![image](https://github.com/DamaKiller/LargeleafHydrangea/assets/96570699/7ec6dc04-c692-4847-8a26-912e96ef0b03)　　 　　
 输出内部类中的变量值的方法。  
 ![image](https://github.com/DamaKiller/LargeleafHydrangea/assets/96570699/2d5aa210-9c1e-44e7-8916-0d7f12ede570)   
 外部类名.this.变量名可以获取外部变量名。   
 
 
 ### 静态内部类
-![image](https://github.com/DamaKiller/LargeleafHydrangea/assets/96570699/3750bad5-a9c4-4d04-8436-74848e6ff389)   
+![image](https://github.com/DamaKiller/LargeleafHydrangea/assets/96570699/3750bad5-a9c4-4d04-8436-74848e6ff389)   　　
+![image](https://github.com/DamaKiller/LargeleafHydrangea/assets/96570699/10318c25-df04-482d-a812-c11fae82cd27)　　　　
+直接NEW一个内部类对象。  
+![image](https://github.com/DamaKiller/LargeleafHydrangea/assets/96570699/65b0a325-dbe2-4bff-921e-751180ff65d7)   
+
+
+### 局部内部类
+![image](https://github.com/DamaKiller/LargeleafHydrangea/assets/96570699/1ddfa4de-9d16-4189-a913-a6959c918d92)  
+![image](https://github.com/DamaKiller/LargeleafHydrangea/assets/96570699/3e09aa9f-d668-465b-a279-ec303cfa8dc5)  
+
+
+### 匿名内部类
+![image](https://github.com/DamaKiller/LargeleafHydrangea/assets/96570699/9f2792c7-c5aa-4667-9a51-682f6843bc4f)   
+![image](https://github.com/DamaKiller/LargeleafHydrangea/assets/96570699/fd55f0ca-3a5f-408f-a7c7-665c68efb628)  
+那个用紫色框起来的类才是真正的内部类，他其实实现了接口，所以需要重写接口中的方法、new创建了后面的匿名对象，空的括号表示用了空参构造创建了后面的对象，这其实是创建了一个对象。     
+
+
+
+
+
+
+
+
+
 
 
 
