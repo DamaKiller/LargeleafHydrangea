@@ -42,6 +42,16 @@
 ![image](https://github.com/DamaKiller/LargeleafHydrangea/assets/96570699/9d8bd63d-0153-4d00-aa19-a9cbe2510eee)  
 ![image](https://github.com/DamaKiller/LargeleafHydrangea/assets/96570699/6b46ef56-ef14-4792-b3a4-d01f4f7ad7c2)  
 ![image](https://github.com/DamaKiller/LargeleafHydrangea/assets/96570699/5dd4e8a3-2344-45d0-906b-04b996f6925a)  
+包声明应该在源文件的第一行，每个源文件只能有一个包声明.  
+如果一个源文件中没有使用包声明，那么其中的类，函数，枚举，注释等将被放在一个无名的包中。  
+如果几个类存放不同的包中，则在使用类的时候就必须通过import语句导入。   
+```
+import 包名称.子包名称.类名称     // 手动导入所需要的类 
+import 包名称.子包名称.*;  // 由JVM自动加载所需要的类 
+```  
+
+
+# Final
 ![image](https://github.com/DamaKiller/LargeleafHydrangea/assets/96570699/0542ce2c-c59b-4513-b907-aea61448d2dd)  　
 ![image](https://github.com/DamaKiller/LargeleafHydrangea/assets/96570699/8fa2d46c-c1d8-4e7e-bbe1-b714170d2548)　　　
 ![image](https://github.com/DamaKiller/LargeleafHydrangea/assets/96570699/39a8493d-e1af-442c-b794-2ae16eadf79f)　　
