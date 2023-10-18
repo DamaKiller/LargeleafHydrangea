@@ -94,6 +94,8 @@
  - [Java笔记(6)](./Java/Java笔记(6).md)
  - [Java笔记(7)](./Java/Java笔记(7).md)
  - [Java笔记(8)](./Java/Java笔记(8).md)
+ - [Java笔记(8)](./Java/Java笔记(9).md)
+ - [Spring MVC目录结构配置](./Java/Spring MVC目录结构配置.md)
  - [往string数组中添加元素](./Java/往string数组中添加元素.md)
  
  ## 8.[Web](./Web)
