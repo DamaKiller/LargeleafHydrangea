@@ -41,6 +41,9 @@
 > sys
 - [python命令行参数问题](./Python/python_lib/python命令行参数问题.md)
 
+> Cerberus
+> -  [Cerberus校验库指南](./Python/python_lib/Cerberus校验库指南.md)
+
 ### [python_knowledge](./Python/python_knowledge)  
 - [元组的相对不可变性](./Python/python_knowledge/元组的相对不可变性.py) 
 - [赋值浅拷贝深拷贝问题](./Python/python_knowledge/赋值浅拷贝深拷贝问题.md) 
