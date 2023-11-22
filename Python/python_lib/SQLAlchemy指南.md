@@ -51,6 +51,83 @@ session = scoped_session(
     )
 )
 ```
+Session其实就是一个会话,可以和数据库打交道的一个会话。主要给用户提供操作数据库的接口, 用来进行增删改查操作。  
+给用户提供比较高级的API,来操作数据库, 并且并且 同一个session只能操作一个对象。  
+```
+s1 =session_factory()
+s2 =session_factory()
+
+p = Person(name='frank111',mobile='4444444444',id_card_number='123456789')
+
+# 有两个session分别为s1,s2 , s1.add(person),之后s2是不能操作person 的。
+
+s1.add(p)
+s1.commit()
+s2.add(p)
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+  File "/Users/frank/.local/share/virtualenvs/mysqlalchemy-demo-0htClb7e/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1947, in add
+    self._save_or_update_state(state)
+  File "/Users/frank/.local/share/virtualenvs/mysqlalchemy-demo-0htClb7e/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1960, in _save_or_update_state
+    self._save_or_update_impl(state)
+  File "/Users/frank/.local/share/virtualenvs/mysqlalchemy-demo-0htClb7e/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2303, in _save_or_update_impl
+    self._update_impl(state)
+  File "/Users/frank/.local/share/virtualenvs/mysqlalchemy-demo-0htClb7e/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2286, in _update_impl
+    to_attach = self._before_attach(state, obj)
+  File "/Users/frank/.local/share/virtualenvs/mysqlalchemy-demo-0htClb7e/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2374, in _before_attach
+    % (state_str(state), state.session_id, self.hash_key)
+sqlalchemy.exc.InvalidRequestError: Object '<Person at 0x1120ff208>' is already attached to session '6' (this is '7')
+
+# 直到s1.close()之后,s2才能操作person。   
+s1.close()
+s2.add(p)
+s2.commit()
+
+```
+
+```
+DATABASE = 'postgresql://%s:%s@%s:%s/%s' % (
+    "imp_ext06",
+    "sspiAuth",
+    "localhost",
+    "5432",
+    "str"
+)
+ENGINE  = create_engine(
+    DATABASE,  # 数据库配置  
+    client_encoding="utf8",  
+    poolclass=NullPool,
+    echo=False  
+)
+
+session = scoped_session(
+    sessionmaker(
+        autocommit=False,
+        autoflush=False,
+        bind=ENGINE
+    )
+)
+
+p2 = Person(name='frank-2', mobile='222222', id_card_number='123456789')
+
+s3= session()
+s4= session()
+
+# 两个session同时操作一个对象. 打印id发现 其实生成的是一个session同一个id
+>>> s3 is s4
+True
+
+
+>>> s3.add(p2)
+>>> s4.add(p2)
+>>> s4.commit()
+
+```
+
+
+
+
+
 
 
 
