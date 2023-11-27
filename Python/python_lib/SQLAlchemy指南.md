@@ -149,10 +149,11 @@ class User(Base):
     id = Column(Integer, primary_key=True, nullable=False, comment='用户ID')
     name = Column(String, primary_key=False, nullable=False, comment='用户名')
     nickname = Column(String, primary_key=False, nullable=False, comment='用户昵称')
+
 ```
 
 
-# 五.
+# 五.查询
 
 
 
