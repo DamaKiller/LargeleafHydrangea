@@ -131,18 +131,22 @@ session 和scopedsession 本质上都是 用来 操作 数据库的. 只是sessi
 # 四.声明映射
 在Python中创建的一个类,都对应着数据库中的一张表，类的每个属性，就是这个表的字段名。这种的类对应于数据库中表的类，就称为映射类，
 我们要创建一个映射类，是基于基类定义的，每个映射类都要继承这个基类 **declarative_base()**。
+
 ```
 from sqlalchemy.ext.declarative import declarative_base
 
 # 只要有了这个“基”类，就可以根据它定义任意数量的映射类。
 Base = declarative_base()
-```　
 
-**创建数据库类**  
 ```
+
+**创建数据库类**
+
+```
+
 from sqlalchemy import Column, Integer, String
 
-
+# 使用几个字段就写几个，不用全部写出来。  
 class User(Base):
     __tablename__ = 'users'
 
