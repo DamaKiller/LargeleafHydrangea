@@ -123,12 +123,9 @@ True
 >>> s4.commit()
 
 ```
-
-
-
-
-
-
+** session 和scopedsession 的区别： ** 
+scoped_session 实现了一个线程的隔离, 保证不同的线程拿到不同的session, 同一个线程拿到的session 是同一个值。    
+session 和scopedsession 本质上都是 用来 操作 数据库的. 只是session 只适合在单线程下面使用。  
 
 
 # 四.声明映射
@@ -139,11 +136,23 @@ from sqlalchemy.ext.declarative import declarative_base
 
 # 只要有了这个“基”类，就可以根据它定义任意数量的映射类。
 Base = declarative_base()
+```　
+
+**创建数据库类**  
+```
+from sqlalchemy import Column, Integer, String
+
+
+class User(Base):
+    __tablename__ = 'users'
+
+    id = Column(Integer, primary_key=True, nullable=False, comment='用户ID')
+    name = Column(String, primary_key=False, nullable=False, comment='用户名')
+    nickname = Column(String, primary_key=False, nullable=False, comment='用户昵称')
 ```
 
 
-
-
+# 五.
 
 
 
