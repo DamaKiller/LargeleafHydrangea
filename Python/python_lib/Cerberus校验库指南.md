@@ -9,11 +9,11 @@ from cerberus import Validator
 
 # 校验器规则
 student_shema = {
-    'name' : {'type' : 'string', 'required' : True, 'empty' : False, 'regex':'^[a-zA-Z]*$'},
-     # 'required'表示是否可以不传这个参数， 'empty'表示是否可以为空
-    'age' : {'type' : 'integer', 'required' : True, 'empty' : False, 'regex':'^[0-9]*$', 'min' : 18, 'max' : 65},
+    'name' : {'type' : 'string', 'required' : True, 'empty' : False,'nullable': True,'regex':'^[a-zA-Z]*$'},
+     # 'required'表示是否可以不传这个参数， 'empty'表示是否可以为空,'nullable'表示该值是否可以传入null或none值。
+    'age' : {'type' : 'integer', 'required' : True, 'empty' : False,'nullable': True, 'regex':'^[0-9]*$', 'min' : 18, 'max' : 65},
      # 'regex'为正则表达式，该参数需满足的规则，'min'和'max'为对应参数的最小值和最大值
-    'email' : {'type' : 'string', 'required' : True, 'empty' : False, 'regex':'^.+@.+\\..+$'}
+    'email' : {'type' : 'string', 'required' : True, 'empty' : False,'nullable': True, 'regex':'^.+@.+\\..+$'}
 }
 
 # 实例化一个Validator
